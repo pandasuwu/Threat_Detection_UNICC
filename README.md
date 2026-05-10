@@ -170,7 +170,7 @@ The LLM is given only the content retrieved from Neo4j and Qdrant — it cannot 
 
 ---
 
-## Efforts by
+## Information
 
 - **Institution:** IIT Gandhinagar 
 - **Supervisor:** Prof. Sameer Kulkarni
