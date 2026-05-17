@@ -8,8 +8,11 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-COPY phase3 ./phase3
-COPY phase4 ./phase4
+COPY ingest ./ingest
+COPY graph ./graph
+COPY search ./search
+COPY api ./api
+COPY eval ./eval
 
 EXPOSE 8000
-CMD ["uvicorn", "phase4.api:app", "--host", "0.0.0.0", "--port", "8000"]
+CMD ["uvicorn", "api.api:app", "--host", "0.0.0.0", "--port", "8000"]
