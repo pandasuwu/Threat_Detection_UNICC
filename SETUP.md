@@ -77,7 +77,7 @@ curl http://localhost:6333/health   # Qdrant health
 
 ## Step 2 — Environment variables
 
-Create `phase4/.env`:
+Create `api/.env`:
 ```env
 NEO4J_URI=bolt://localhost:7687
 NEO4J_USER=neo4j
@@ -104,10 +104,10 @@ git clone https://github.com/CVEProject/cvelistV5.git ~/data/json/cvelistV5
 
 ```bash
 # Downloads enterprise-attack.json (~44MB) and loads nodes
-python phase3/stix_to_neo4j.py --wipe
+python graph/stix_to_neo4j.py --wipe
 
 # Loads relationships (uses indexed MATCH — fast)
-python phase3/fast_attack_rels.py
+python graph/fast_attack_rels.py
 ```
 
 Expected output:
@@ -122,12 +122,12 @@ Loaded: 16,102 USES + 1,445 MITIGATES + 475 SUBTECHNIQUE_OF + 887 ENABLES_TACTIC
 
 ```bash
 # Normalize CVE JSON → JSONL (~10 min on 12 cores)
-python parse/normalize_cves.py
-# Output: phase4/cve_normalized.jsonl (323k records)
+python ingest/normalize_cves.py
+# Output: ingest/cve_normalized.jsonl (323k records)
 
 # Embed CVE descriptions → .npy + metadata JSONL (~45 min, has checkpoint/resume)
-python phase4/embedder.py
-# Output: phase4/cve_embeddings.npy + phase4/cve_metadata.jsonl
+python ingest/embedder.py
+# Output: ingest/cve_embeddings.npy + ingest/cve_metadata.jsonl
 ```
 
 ---
@@ -135,7 +135,7 @@ python phase4/embedder.py
 ## Step 6 — Load CVE embeddings into Qdrant
 
 ```bash
-python phase4/qdrant_loader.py
+python ingest/qdrant_loader.py
 # Output: 249k vectors in Qdrant collection 'cve_descriptions'
 ```
 
@@ -144,7 +144,7 @@ python phase4/qdrant_loader.py
 ## Step 7 — Load CVE graph into Neo4j
 
 ```bash
-python phase3/pipeline.py structural
+python graph/pipeline.py structural
 # Output: 323k Vulnerability nodes + 174k PATTERN_OF edges
 # Links CVEs to CWEs to ATT&CK techniques deterministically
 # ~10 min
@@ -165,7 +165,7 @@ python phase3/pipeline.py structural
 docker run --rm \
   -v $(pwd)/data/pdfs:/input \
   -v $(pwd)/data/parsed:/output \
-  <docling-image> python parse/parse.py
+  <docling-image> python ingest/parse.py
 # Output: data/parsed/*.json + data/parsed/*.md
 ```
 
@@ -173,7 +173,7 @@ docker run --rm \
 
 **Ingest parsed chunks into Qdrant:**
 ```bash
-python phase4/pdf_chunk_loader.py
+python ingest/pdf_chunk_loader.py
 # Output: pdf_chunks collection in Qdrant
 # Uses three-tier chunking: hard-anchored / soft-anchored / narrative
 ```
@@ -195,8 +195,7 @@ EOF
 ## Step 9 — Start the API
 
 ```bash
-cd phase4
-uvicorn api:app --host 0.0.0.0 --port 8000 --reload
+uvicorn api.api:app --host 0.0.0.0 --port 8000 --reload
 ```
 
 Open http://localhost:8000/docs for the interactive API explorer.
@@ -230,16 +229,16 @@ bash run_eval.sh
 ## Troubleshooting
 
 **`ImportError: attempted relative import in non-package`**
-→ Run uvicorn from inside `phase4/`, not from the repo root: `cd phase4 && uvicorn api:app`
+→ Run uvicorn from the repo root, not from inside `api/`: `uvicorn api.api:app`
 
 **Neo4j relationship loading times out**
 → Make sure `stix_to_neo4j.py` ran first to create the constraint indexes. Then run `fast_attack_rels.py` (not the relationship step of `stix_to_neo4j.py`).
 
 **embedder.py runs out of memory**
-→ Reduce batch size: `python phase4/embedder.py --batch-size 512`
+→ Reduce batch size: `python ingest/embedder.py --batch-size 512`
 
 **pdf_chunk_loader.py finds no JSON files**
-→ Check `PARSE_DIR` at the top of `pdf_chunk_loader.py` matches where `parse/parse.py` wrote its output.
+→ Check `PARSE_DIR` at the top of `pdf_chunk_loader.py` matches where `ingest/parse.py` wrote its output.
 
 **OpenRouter returns 402 / quota exceeded**
 → The free tier has rate limits. The pipeline falls back to returning search results without a narrative if the LLM call fails — search still works.
@@ -250,13 +249,13 @@ bash run_eval.sh
 
 ```bash
 # Neo4j wipe + reload
-python phase3/stix_to_neo4j.py --wipe
-python phase3/fast_attack_rels.py
-python phase3/pipeline.py structural
+python graph/stix_to_neo4j.py --wipe
+python graph/fast_attack_rels.py
+python graph/pipeline.py structural
 
 # Qdrant wipe + reload
-python phase4/qdrant_loader.py --wipe
-python phase4/pdf_chunk_loader.py --wipe
+python ingest/qdrant_loader.py --wipe
+python ingest/pdf_chunk_loader.py --wipe
 ```
 
 Both loaders accept a `--wipe` flag that deletes and recreates the collection before loading.
