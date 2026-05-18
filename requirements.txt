@@ -1,0 +1,21 @@
+# API layer
+fastapi>=0.109.0
+uvicorn[standard]>=0.27.0
+pydantic>=2.0.0,<3.0.0
+openai>=1.0.0,<2.0.0          # used via OpenRouter (OpenAI-compatible)
+
+# Graph / knowledge base
+neo4j>=5.0.0,<6.0.0
+stix2>=3.0.0,<4.0.0
+requests>=2.31.0               # stix_to_neo4j downloads enterprise-attack.json
+
+# Vector search / ingest
+qdrant-client>=1.7.0,<2.0.0   # server v1.7 tested; API changed in v2
+sentence-transformers>=2.7.0
+numpy>=1.26.0
+
+# Eval
+httpx>=0.27.0
+
+# Utilities
+python-dotenv>=1.0.0           # load api/.env before starting uvicorn
