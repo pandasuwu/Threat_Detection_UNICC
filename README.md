@@ -9,7 +9,7 @@ Developed under **Prof. Sameer Kulkarni** at IIT Gandhinagar in collaboration wi
 
 Given a natural language query from a security analyst — *"What do we know about Log4Shell exploitation campaigns?"* — the pipeline:
 
-1. Searches 323,647 CVE records and 8 threat landscape reports (ENISA, Microsoft, AT&T) using hybrid vector + graph retrieval
+1. Searches 323,647 CVE records and 7 threat landscape reports (ENISA, Microsoft, AT&T) using hybrid vector + graph retrieval
 2. Traverses a Neo4j knowledge graph to surface linked ATT&CK techniques, threat actor groups, malware, and mitigations
 3. Generates a grounded 5-section narrative via LLM — every claim is anchored to a verified source node
 
@@ -25,7 +25,7 @@ Designed for internal use by security operations teams. All data is local; no ex
 | MITRE ATT&CK STIX graph (691 techniques, 172 groups, 784 software) | 
 | CWE → ATT&CK deterministic mapping (~95% corpus coverage) |
 | Qdrant vector search (249k CVE + 691 ATT&CK vectors) | 
-| PDF threat report ingestion (8 reports) | 
+| PDF threat report ingestion (7 reports) | 
 | Search API (`/search`, `/investigate`, `/cve`, `/technique`) | 
 | Grounded LLM narratives (hallucination rate measured by eval suite) | 
 | Eval suite + efficiency multiplier (computed, not hardcoded) | 
@@ -38,7 +38,7 @@ Designed for internal use by security operations teams. All data is local; no ex
 Data Sources
 ├── CVE List v5 (323k JSON files)          ──► normalize_cves.py
 ├── MITRE ATT&CK STIX 2.1 bundle           ──► stix_to_neo4j.py + fast_attack_rels.py
-└── Threat Reports (8 PDFs)                ──► pdf_chunk_loader.py
+└── Threat Reports (7 PDFs)                ──► pdf_chunk_loader.py
         │                                          │
         ▼                                          ▼
    Neo4j 5.13                              Qdrant 1.7
@@ -185,13 +185,17 @@ The efficiency multiplier (analyst hours ÷ system seconds) is computed from act
 
 ## Data Sources
 
-| Source | Records | Notes |
+| Source | Version / Coverage | Source Label |
 |---|---|---|
-| CVE List v5 (MITRE) | 323,647 CVEs | Normalized to JSONL, embedded with all-mpnet-base-v2 |
-| MITRE ATT&CK Enterprise v14 | 691 techniques, 172 groups, 784 software | STIX 2.1 bundle |
-| ENISA Threat Landscape 2022/2023/2024 | 3 reports | Ingested via pdf_chunk_loader.py |
-| Microsoft Digital Defense Report 2022/2023 | 2 reports | Ingested via pdf_chunk_loader.py |
-| AT&T Cybersecurity Insights Report | 3 reports | Ingested via pdf_chunk_loader.py |
+| CVE List v5 (MITRE) | 323,647 CVEs — normalized to JSONL, embedded with all-mpnet-base-v2 | — |
+| MITRE ATT&CK Enterprise | 697 techniques, 174 groups, 821 software — STIX 2.1 bundle (spec 3.3.0) | — |
+| ENISA Threat Landscape 2023 | full report | `ENISA_2023` |
+| ENISA Threat Landscape 2024 | full report | `ENISA_2024` |
+| ENISA Threat Landscape 2025 | booklet only (6 pp; full ETL not available) | `ENISA_2025` |
+| Microsoft Digital Defense Report 2023 | executive summary only (13 pp) | `Microsoft_DDFR_2023` |
+| Microsoft Digital Defense Report 2024 | full report | `Microsoft_DDFR_2024` |
+| Microsoft Digital Defense Report 2025 | government exec. summary | `Microsoft_DDFR_2025` |
+| AT&T Cybersecurity Insights Report v6 | full report | `ATT_CSRIC_v6` |
 
 All sources are publicly available. No proprietary or confidential data.
 

@@ -17,6 +17,8 @@ The level-based stack is the correct implementation — it degenerates gracefull
 a flat single-element section_path for level-1-only documents.  This is expected
 behaviour given Docling's heading detection on styled (non-semantic) PDF headings.
 
+Operates on 7 source PDFs in data/pdfs/. SOURCE_MAP retains historical 8-report labels from pdf_chunk_loader.py for backward compatibility.
+
 Usage:
   # Single file
   python -m ingest.chunker --input data/parsed/ENISA_2025.json --source ENISA_2025
