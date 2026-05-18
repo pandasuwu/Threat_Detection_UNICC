@@ -70,7 +70,8 @@ threat-intel-pipeline/
 │   ├── normalize_cves.py      # CVE List v5 → cve_normalized.jsonl
 │   ├── embedder.py            # CVE descriptions → embeddings (.npy)
 │   ├── qdrant_loader.py       # cve_embeddings.npy → Qdrant (uuid5 IDs, --wipe)
-│   └── pdf_chunk_loader.py    # Parsed PDF chunks → Qdrant (three-tier)
+│   ├── pdf_chunk_loader.py    # Parsed PDF chunks → Qdrant (three-tier)
+│   └── alias_dictionary.py    # ATT&CK Groups + Software → data/alias_dictionary.json
 │
 ├── graph/
 │   ├── stix_to_neo4j.py       # ATT&CK STIX bundle → Neo4j nodes
@@ -102,6 +103,41 @@ threat-intel-pipeline/
 ├── SETUP.md                   # Step-by-step setup from scratch
 └── README.md                  # This file
 ```
+
+---
+
+## Alias Dictionary
+
+`data/alias_dictionary.json` maps every ATT&CK Group and Software entity to all of its known aliases (sourced from the Neo4j graph). It is the lookup table for entity extraction in PDF report chunks (Issue #4).
+
+**Structure:**
+
+```json
+{
+  "version": "attack-spec-3.3.0",
+  "generated_at": "<ISO8601>",
+  "entities": [
+    {
+      "canonical": "APT28",
+      "attack_id": "G0007",
+      "type": "group",
+      "aliases": ["APT28", "Fancy Bear", "STRONTIUM", "Sofacy", "Forest Blizzard", "..."]
+    }
+  ]
+}
+```
+
+**Regenerating** (requires Neo4j running with ATT&CK data loaded):
+
+```bash
+# Review ambiguous aliases before committing a new dictionary:
+python -m ingest.alias_dictionary --audit
+
+# Write data/alias_dictionary.json:
+python -m ingest.alias_dictionary --generate
+```
+
+The `--audit` mode prints all aliases ≤5 characters and single common English words for STOPLIST review. The `STOPLIST` constant in `ingest/alias_dictionary.py` documents every dropped alias and its rationale.
 
 ---
 

@@ -1,0 +1,8603 @@
+{
+  "version": "attack-spec-3.3.0",
+  "generated_at": "2026-06-18T14:01:59.412477+00:00",
+  "entities": [
+    {
+      "canonical": "Axiom",
+      "attack_id": "G0001",
+      "type": "group",
+      "aliases": [
+        "Axiom",
+        "Group 72"
+      ]
+    },
+    {
+      "canonical": "Moafee",
+      "attack_id": "G0002",
+      "type": "group",
+      "aliases": [
+        "Moafee"
+      ]
+    },
+    {
+      "canonical": "Cleaver",
+      "attack_id": "G0003",
+      "type": "group",
+      "aliases": [
+        "Cleaver",
+        "Threat Group 2889",
+        "TG-2889"
+      ]
+    },
+    {
+      "canonical": "Ke3chang",
+      "attack_id": "G0004",
+      "type": "group",
+      "aliases": [
+        "Ke3chang",
+        "APT15",
+        "Mirage",
+        "Vixen Panda",
+        "GREF",
+        "Playful Dragon",
+        "RoyalAPT",
+        "NICKEL",
+        "Nylon Typhoon"
+      ]
+    },
+    {
+      "canonical": "APT12",
+      "attack_id": "G0005",
+      "type": "group",
+      "aliases": [
+        "APT12",
+        "IXESHE",
+        "DynCalc",
+        "Numbered Panda",
+        "DNSCALC"
+      ]
+    },
+    {
+      "canonical": "APT1",
+      "attack_id": "G0006",
+      "type": "group",
+      "aliases": [
+        "APT1",
+        "Comment Crew",
+        "Comment Group",
+        "Comment Panda"
+      ]
+    },
+    {
+      "canonical": "APT28",
+      "attack_id": "G0007",
+      "type": "group",
+      "aliases": [
+        "APT28",
+        "IRON TWILIGHT",
+        "SNAKEMACKEREL",
+        "Swallowtail",
+        "Group 74",
+        "Sednit",
+        "Sofacy",
+        "Pawn Storm",
+        "Fancy Bear",
+        "STRONTIUM",
+        "Tsar Team",
+        "Threat Group-4127",
+        "TG-4127",
+        "Forest Blizzard",
+        "FROZENLAKE",
+        "GruesomeLarch"
+      ]
+    },
+    {
+      "canonical": "Carbanak",
+      "attack_id": "G0008",
+      "type": "group",
+      "aliases": [
+        "Carbanak",
+        "Anunak"
+      ]
+    },
+    {
+      "canonical": "Deep Panda",
+      "attack_id": "G0009",
+      "type": "group",
+      "aliases": [
+        "Deep Panda",
+        "Shell Crew",
+        "WebMasters",
+        "KungFu Kittens",
+        "PinkPanther",
+        "Black Vine"
+      ]
+    },
+    {
+      "canonical": "Turla",
+      "attack_id": "G0010",
+      "type": "group",
+      "aliases": [
+        "Turla",
+        "IRON HUNTER",
+        "Group 88",
+        "Waterbug",
+        "WhiteBear",
+        "Snake",
+        "Krypton",
+        "Venomous Bear",
+        "Secret Blizzard",
+        "BELUGASTURGEON"
+      ]
+    },
+    {
+      "canonical": "PittyTiger",
+      "attack_id": "G0011",
+      "type": "group",
+      "aliases": [
+        "PittyTiger"
+      ]
+    },
+    {
+      "canonical": "Darkhotel",
+      "attack_id": "G0012",
+      "type": "group",
+      "aliases": [
+        "Darkhotel",
+        "DUBNIUM",
+        "Zigzag Hail"
+      ]
+    },
+    {
+      "canonical": "APT30",
+      "attack_id": "G0013",
+      "type": "group",
+      "aliases": [
+        "APT30"
+      ]
+    },
+    {
+      "canonical": "APT29",
+      "attack_id": "G0016",
+      "type": "group",
+      "aliases": [
+        "APT29",
+        "IRON RITUAL",
+        "IRON HEMLOCK",
+        "NobleBaron",
+        "Dark Halo",
+        "NOBELIUM",
+        "UNC2452",
+        "YTTRIUM",
+        "The Dukes",
+        "Cozy Bear",
+        "CozyDuke",
+        "SolarStorm",
+        "Blue Kitsune",
+        "UNC3524",
+        "Midnight Blizzard"
+      ]
+    },
+    {
+      "canonical": "DragonOK",
+      "attack_id": "G0017",
+      "type": "group",
+      "aliases": [
+        "DragonOK"
+      ]
+    },
+    {
+      "canonical": "admin@338",
+      "attack_id": "G0018",
+      "type": "group",
+      "aliases": [
+        "admin@338"
+      ]
+    },
+    {
+      "canonical": "Naikon",
+      "attack_id": "G0019",
+      "type": "group",
+      "aliases": [
+        "Naikon"
+      ]
+    },
+    {
+      "canonical": "Equation",
+      "attack_id": "G0020",
+      "type": "group",
+      "aliases": [
+        "Equation"
+      ]
+    },
+    {
+      "canonical": "Molerats",
+      "attack_id": "G0021",
+      "type": "group",
+      "aliases": [
+        "Molerats",
+        "Operation Molerats",
+        "Gaza Cybergang"
+      ]
+    },
+    {
+      "canonical": "APT3",
+      "attack_id": "G0022",
+      "type": "group",
+      "aliases": [
+        "APT3",
+        "Gothic Panda",
+        "Pirpi",
+        "UPS Team",
+        "Buckeye",
+        "Threat Group-0110",
+        "TG-0110"
+      ]
+    },
+    {
+      "canonical": "APT16",
+      "attack_id": "G0023",
+      "type": "group",
+      "aliases": [
+        "APT16"
+      ]
+    },
+    {
+      "canonical": "Putter Panda",
+      "attack_id": "G0024",
+      "type": "group",
+      "aliases": [
+        "Putter Panda",
+        "APT2",
+        "MSUpdater"
+      ]
+    },
+    {
+      "canonical": "APT17",
+      "attack_id": "G0025",
+      "type": "group",
+      "aliases": [
+        "APT17",
+        "Deputy Dog"
+      ]
+    },
+    {
+      "canonical": "APT18",
+      "attack_id": "G0026",
+      "type": "group",
+      "aliases": [
+        "APT18",
+        "TG-0416",
+        "Dynamite Panda",
+        "Threat Group-0416"
+      ]
+    },
+    {
+      "canonical": "Threat Group-3390",
+      "attack_id": "G0027",
+      "type": "group",
+      "aliases": [
+        "Threat Group-3390",
+        "Earth Smilodon",
+        "TG-3390",
+        "Emissary Panda",
+        "BRONZE UNION",
+        "APT27",
+        "Iron Tiger",
+        "LuckyMouse",
+        "Linen Typhoon"
+      ]
+    },
+    {
+      "canonical": "Threat Group-1314",
+      "attack_id": "G0028",
+      "type": "group",
+      "aliases": [
+        "Threat Group-1314",
+        "TG-1314"
+      ]
+    },
+    {
+      "canonical": "Scarlet Mimic",
+      "attack_id": "G0029",
+      "type": "group",
+      "aliases": [
+        "Scarlet Mimic"
+      ]
+    },
+    {
+      "canonical": "Lotus Blossom",
+      "attack_id": "G0030",
+      "type": "group",
+      "aliases": [
+        "Lotus Blossom",
+        "DRAGONFISH",
+        "Spring Dragon",
+        "RADIUM",
+        "Raspberry Typhoon",
+        "Bilbug",
+        "Thrip"
+      ]
+    },
+    {
+      "canonical": "Lazarus Group",
+      "attack_id": "G0032",
+      "type": "group",
+      "aliases": [
+        "Lazarus Group",
+        "Labyrinth Chollima",
+        "HIDDEN COBRA",
+        "Guardians of Peace",
+        "ZINC",
+        "NICKEL ACADEMY",
+        "Diamond Sleet"
+      ]
+    },
+    {
+      "canonical": "Poseidon Group",
+      "attack_id": "G0033",
+      "type": "group",
+      "aliases": [
+        "Poseidon Group"
+      ]
+    },
+    {
+      "canonical": "Sandworm Team",
+      "attack_id": "G0034",
+      "type": "group",
+      "aliases": [
+        "Sandworm Team",
+        "ELECTRUM",
+        "Telebots",
+        "IRON VIKING",
+        "BlackEnergy (Group)",
+        "Quedagh",
+        "Voodoo Bear",
+        "IRIDIUM",
+        "Seashell Blizzard",
+        "FROZENBARENTS",
+        "APT44"
+      ]
+    },
+    {
+      "canonical": "Dragonfly",
+      "attack_id": "G0035",
+      "type": "group",
+      "aliases": [
+        "Dragonfly",
+        "TEMP.Isotope",
+        "DYMALLOY",
+        "Berserk Bear",
+        "TG-4192",
+        "Crouching Yeti",
+        "IRON LIBERTY",
+        "Energetic Bear",
+        "Ghost Blizzard",
+        "BROMINE"
+      ]
+    },
+    {
+      "canonical": "GCMAN",
+      "attack_id": "G0036",
+      "type": "group",
+      "aliases": [
+        "GCMAN"
+      ]
+    },
+    {
+      "canonical": "FIN6",
+      "attack_id": "G0037",
+      "type": "group",
+      "aliases": [
+        "FIN6",
+        "Magecart Group 6",
+        "ITG08",
+        "Skeleton Spider",
+        "TAAL",
+        "Camouflage Tempest"
+      ]
+    },
+    {
+      "canonical": "Stealth Falcon",
+      "attack_id": "G0038",
+      "type": "group",
+      "aliases": [
+        "Stealth Falcon"
+      ]
+    },
+    {
+      "canonical": "Suckfly",
+      "attack_id": "G0039",
+      "type": "group",
+      "aliases": [
+        "Suckfly"
+      ]
+    },
+    {
+      "canonical": "Patchwork",
+      "attack_id": "G0040",
+      "type": "group",
+      "aliases": [
+        "Patchwork",
+        "Hangover Group",
+        "Dropping Elephant",
+        "Chinastrats",
+        "MONSOON",
+        "Operation Hangover"
+      ]
+    },
+    {
+      "canonical": "Strider",
+      "attack_id": "G0041",
+      "type": "group",
+      "aliases": [
+        "Strider",
+        "ProjectSauron"
+      ]
+    },
+    {
+      "canonical": "Group5",
+      "attack_id": "G0043",
+      "type": "group",
+      "aliases": [
+        "Group5"
+      ]
+    },
+    {
+      "canonical": "Winnti Group",
+      "attack_id": "G0044",
+      "type": "group",
+      "aliases": [
+        "Winnti Group",
+        "Blackfly"
+      ]
+    },
+    {
+      "canonical": "menuPass",
+      "attack_id": "G0045",
+      "type": "group",
+      "aliases": [
+        "menuPass",
+        "Cicada",
+        "POTASSIUM",
+        "Stone Panda",
+        "APT10",
+        "Red Apollo",
+        "CVNX",
+        "HOGFISH",
+        "BRONZE RIVERSIDE"
+      ]
+    },
+    {
+      "canonical": "FIN7",
+      "attack_id": "G0046",
+      "type": "group",
+      "aliases": [
+        "FIN7",
+        "GOLD NIAGARA",
+        "ITG14",
+        "Carbon Spider",
+        "ELBRUS",
+        "Sangria Tempest"
+      ]
+    },
+    {
+      "canonical": "Gamaredon Group",
+      "attack_id": "G0047",
+      "type": "group",
+      "aliases": [
+        "Gamaredon Group",
+        "IRON TILDEN",
+        "Primitive Bear",
+        "ACTINIUM",
+        "Armageddon",
+        "Shuckworm",
+        "DEV-0157",
+        "Aqua Blizzard",
+        "NastyShrew"
+      ]
+    },
+    {
+      "canonical": "RTM",
+      "attack_id": "G0048",
+      "type": "group",
+      "aliases": []
+    },
+    {
+      "canonical": "OilRig",
+      "attack_id": "G0049",
+      "type": "group",
+      "aliases": [
+        "OilRig",
+        "COBALT GYPSY",
+        "IRN2",
+        "APT34",
+        "Helix Kitten",
+        "Evasive Serpens",
+        "Hazel Sandstorm",
+        "EUROPIUM",
+        "ITG13",
+        "Earth Simnavaz",
+        "Crambus",
+        "TA452"
+      ]
+    },
+    {
+      "canonical": "APT32",
+      "attack_id": "G0050",
+      "type": "group",
+      "aliases": [
+        "APT32",
+        "SeaLotus",
+        "OceanLotus",
+        "APT-C-00",
+        "Canvas Cyclone",
+        "BISMUTH"
+      ]
+    },
+    {
+      "canonical": "FIN10",
+      "attack_id": "G0051",
+      "type": "group",
+      "aliases": [
+        "FIN10"
+      ]
+    },
+    {
+      "canonical": "CopyKittens",
+      "attack_id": "G0052",
+      "type": "group",
+      "aliases": [
+        "CopyKittens"
+      ]
+    },
+    {
+      "canonical": "FIN5",
+      "attack_id": "G0053",
+      "type": "group",
+      "aliases": [
+        "FIN5"
+      ]
+    },
+    {
+      "canonical": "Sowbug",
+      "attack_id": "G0054",
+      "type": "group",
+      "aliases": [
+        "Sowbug"
+      ]
+    },
+    {
+      "canonical": "NEODYMIUM",
+      "attack_id": "G0055",
+      "type": "group",
+      "aliases": [
+        "NEODYMIUM"
+      ]
+    },
+    {
+      "canonical": "PROMETHIUM",
+      "attack_id": "G0056",
+      "type": "group",
+      "aliases": [
+        "PROMETHIUM",
+        "StrongPity"
+      ]
+    },
+    {
+      "canonical": "Magic Hound",
+      "attack_id": "G0059",
+      "type": "group",
+      "aliases": [
+        "Magic Hound",
+        "TA453",
+        "COBALT ILLUSION",
+        "Charming Kitten",
+        "ITG18",
+        "Phosphorus",
+        "Newscaster",
+        "APT35",
+        "Mint Sandstorm"
+      ]
+    },
+    {
+      "canonical": "BRONZE BUTLER",
+      "attack_id": "G0060",
+      "type": "group",
+      "aliases": [
+        "BRONZE BUTLER",
+        "REDBALDKNIGHT",
+        "Tick"
+      ]
+    },
+    {
+      "canonical": "FIN8",
+      "attack_id": "G0061",
+      "type": "group",
+      "aliases": [
+        "FIN8",
+        "Syssphinx"
+      ]
+    },
+    {
+      "canonical": "TA459",
+      "attack_id": "G0062",
+      "type": "group",
+      "aliases": [
+        "TA459"
+      ]
+    },
+    {
+      "canonical": "BlackOasis",
+      "attack_id": "G0063",
+      "type": "group",
+      "aliases": [
+        "BlackOasis"
+      ]
+    },
+    {
+      "canonical": "APT33",
+      "attack_id": "G0064",
+      "type": "group",
+      "aliases": [
+        "APT33",
+        "HOLMIUM",
+        "Elfin",
+        "Peach Sandstorm"
+      ]
+    },
+    {
+      "canonical": "Leviathan",
+      "attack_id": "G0065",
+      "type": "group",
+      "aliases": [
+        "Leviathan",
+        "MUDCARP",
+        "Kryptonite Panda",
+        "Gadolinium",
+        "BRONZE MOHAWK",
+        "TEMP.Jumper",
+        "APT40",
+        "TEMP.Periscope",
+        "Gingham Typhoon"
+      ]
+    },
+    {
+      "canonical": "Elderwood",
+      "attack_id": "G0066",
+      "type": "group",
+      "aliases": [
+        "Elderwood",
+        "Elderwood Gang",
+        "Beijing Group",
+        "Sneaky Panda"
+      ]
+    },
+    {
+      "canonical": "APT37",
+      "attack_id": "G0067",
+      "type": "group",
+      "aliases": [
+        "APT37",
+        "InkySquid",
+        "ScarCruft",
+        "Reaper",
+        "Group123",
+        "TEMP.Reaper",
+        "Ricochet Chollima"
+      ]
+    },
+    {
+      "canonical": "PLATINUM",
+      "attack_id": "G0068",
+      "type": "group",
+      "aliases": [
+        "PLATINUM"
+      ]
+    },
+    {
+      "canonical": "MuddyWater",
+      "attack_id": "G0069",
+      "type": "group",
+      "aliases": [
+        "MuddyWater",
+        "Earth Vetala",
+        "MERCURY",
+        "Static Kitten",
+        "Seedworm",
+        "TEMP.Zagros",
+        "Mango Sandstorm",
+        "TA450",
+        "MuddyKrill"
+      ]
+    },
+    {
+      "canonical": "Dark Caracal",
+      "attack_id": "G0070",
+      "type": "group",
+      "aliases": [
+        "Dark Caracal"
+      ]
+    },
+    {
+      "canonical": "Orangeworm",
+      "attack_id": "G0071",
+      "type": "group",
+      "aliases": [
+        "Orangeworm"
+      ]
+    },
+    {
+      "canonical": "APT19",
+      "attack_id": "G0073",
+      "type": "group",
+      "aliases": [
+        "APT19",
+        "Codoso",
+        "C0d0so0",
+        "Codoso Team",
+        "Sunshop Group"
+      ]
+    },
+    {
+      "canonical": "Rancor",
+      "attack_id": "G0075",
+      "type": "group",
+      "aliases": [
+        "Rancor"
+      ]
+    },
+    {
+      "canonical": "Thrip",
+      "attack_id": "G0076",
+      "type": "group",
+      "aliases": [
+        "Thrip"
+      ]
+    },
+    {
+      "canonical": "Leafminer",
+      "attack_id": "G0077",
+      "type": "group",
+      "aliases": [
+        "Leafminer",
+        "Raspite"
+      ]
+    },
+    {
+      "canonical": "Gorgon Group",
+      "attack_id": "G0078",
+      "type": "group",
+      "aliases": [
+        "Gorgon Group"
+      ]
+    },
+    {
+      "canonical": "DarkHydrus",
+      "attack_id": "G0079",
+      "type": "group",
+      "aliases": [
+        "DarkHydrus"
+      ]
+    },
+    {
+      "canonical": "Cobalt Group",
+      "attack_id": "G0080",
+      "type": "group",
+      "aliases": [
+        "Cobalt Group",
+        "GOLD KINGSWOOD",
+        "Cobalt Gang",
+        "Cobalt Spider"
+      ]
+    },
+    {
+      "canonical": "Tropic Trooper",
+      "attack_id": "G0081",
+      "type": "group",
+      "aliases": [
+        "Tropic Trooper",
+        "Pirate Panda",
+        "KeyBoy"
+      ]
+    },
+    {
+      "canonical": "APT38",
+      "attack_id": "G0082",
+      "type": "group",
+      "aliases": [
+        "APT38",
+        "NICKEL GLADSTONE",
+        "BeagleBoyz",
+        "Bluenoroff",
+        "Stardust Chollima",
+        "Sapphire Sleet",
+        "COPERNICIUM"
+      ]
+    },
+    {
+      "canonical": "SilverTerrier",
+      "attack_id": "G0083",
+      "type": "group",
+      "aliases": [
+        "SilverTerrier"
+      ]
+    },
+    {
+      "canonical": "Gallmaker",
+      "attack_id": "G0084",
+      "type": "group",
+      "aliases": [
+        "Gallmaker"
+      ]
+    },
+    {
+      "canonical": "FIN4",
+      "attack_id": "G0085",
+      "type": "group",
+      "aliases": [
+        "FIN4"
+      ]
+    },
+    {
+      "canonical": "APT39",
+      "attack_id": "G0087",
+      "type": "group",
+      "aliases": [
+        "APT39",
+        "ITG07",
+        "Chafer",
+        "Remix Kitten"
+      ]
+    },
+    {
+      "canonical": "TEMP.Veles",
+      "attack_id": "G0088",
+      "type": "group",
+      "aliases": [
+        "TEMP.Veles",
+        "XENOTIME"
+      ]
+    },
+    {
+      "canonical": "The White Company",
+      "attack_id": "G0089",
+      "type": "group",
+      "aliases": [
+        "The White Company"
+      ]
+    },
+    {
+      "canonical": "WIRTE",
+      "attack_id": "G0090",
+      "type": "group",
+      "aliases": [
+        "WIRTE",
+        "Ashen Lepus"
+      ]
+    },
+    {
+      "canonical": "Silence",
+      "attack_id": "G0091",
+      "type": "group",
+      "aliases": [
+        "Silence",
+        "Whisper Spider"
+      ]
+    },
+    {
+      "canonical": "TA505",
+      "attack_id": "G0092",
+      "type": "group",
+      "aliases": [
+        "TA505",
+        "Hive0065",
+        "Spandex Tempest",
+        "CHIMBORAZO"
+      ]
+    },
+    {
+      "canonical": "GALLIUM",
+      "attack_id": "G0093",
+      "type": "group",
+      "aliases": [
+        "GALLIUM",
+        "Granite Typhoon"
+      ]
+    },
+    {
+      "canonical": "Kimsuky",
+      "attack_id": "G0094",
+      "type": "group",
+      "aliases": [
+        "Kimsuky",
+        "Black Banshee",
+        "Velvet Chollima",
+        "Emerald Sleet",
+        "THALLIUM",
+        "APT43",
+        "TA427",
+        "Springtail",
+        "Earth Kumiho",
+        "PatheticSlug"
+      ]
+    },
+    {
+      "canonical": "Machete",
+      "attack_id": "G0095",
+      "type": "group",
+      "aliases": [
+        "Machete",
+        "APT-C-43",
+        "El Machete"
+      ]
+    },
+    {
+      "canonical": "APT41",
+      "attack_id": "G0096",
+      "type": "group",
+      "aliases": [
+        "APT41",
+        "Wicked Panda",
+        "Brass Typhoon",
+        "BARIUM"
+      ]
+    },
+    {
+      "canonical": "BlackTech",
+      "attack_id": "G0098",
+      "type": "group",
+      "aliases": [
+        "BlackTech",
+        "Palmerworm"
+      ]
+    },
+    {
+      "canonical": "APT-C-36",
+      "attack_id": "G0099",
+      "type": "group",
+      "aliases": [
+        "APT-C-36",
+        "Blind Eagle",
+        "TAG-144",
+        "AguilaCiega",
+        "APT-Q-98"
+      ]
+    },
+    {
+      "canonical": "Inception",
+      "attack_id": "G0100",
+      "type": "group",
+      "aliases": [
+        "Inception",
+        "Inception Framework",
+        "Cloud Atlas"
+      ]
+    },
+    {
+      "canonical": "Wizard Spider",
+      "attack_id": "G0102",
+      "type": "group",
+      "aliases": [
+        "Wizard Spider",
+        "UNC1878",
+        "TEMP.MixMaster",
+        "Grim Spider",
+        "FIN12",
+        "GOLD BLACKBURN",
+        "ITG23",
+        "Periwinkle Tempest",
+        "DEV-0193",
+        "Pistachio Tempest",
+        "DEV-0237"
+      ]
+    },
+    {
+      "canonical": "Mofang",
+      "attack_id": "G0103",
+      "type": "group",
+      "aliases": [
+        "Mofang"
+      ]
+    },
+    {
+      "canonical": "DarkVishnya",
+      "attack_id": "G0105",
+      "type": "group",
+      "aliases": [
+        "DarkVishnya"
+      ]
+    },
+    {
+      "canonical": "Rocke",
+      "attack_id": "G0106",
+      "type": "group",
+      "aliases": [
+        "Rocke"
+      ]
+    },
+    {
+      "canonical": "Whitefly",
+      "attack_id": "G0107",
+      "type": "group",
+      "aliases": [
+        "Whitefly"
+      ]
+    },
+    {
+      "canonical": "Blue Mockingbird",
+      "attack_id": "G0108",
+      "type": "group",
+      "aliases": [
+        "Blue Mockingbird"
+      ]
+    },
+    {
+      "canonical": "Windshift",
+      "attack_id": "G0112",
+      "type": "group",
+      "aliases": [
+        "Windshift",
+        "Bahamut"
+      ]
+    },
+    {
+      "canonical": "Chimera",
+      "attack_id": "G0114",
+      "type": "group",
+      "aliases": [
+        "Chimera"
+      ]
+    },
+    {
+      "canonical": "GOLD SOUTHFIELD",
+      "attack_id": "G0115",
+      "type": "group",
+      "aliases": [
+        "GOLD SOUTHFIELD",
+        "Pinchy Spider"
+      ]
+    },
+    {
+      "canonical": "Fox Kitten",
+      "attack_id": "G0117",
+      "type": "group",
+      "aliases": [
+        "Fox Kitten",
+        "UNC757",
+        "Parisite",
+        "Pioneer Kitten",
+        "RUBIDIUM",
+        "Lemon Sandstorm"
+      ]
+    },
+    {
+      "canonical": "Indrik Spider",
+      "attack_id": "G0119",
+      "type": "group",
+      "aliases": [
+        "Indrik Spider",
+        "Evil Corp",
+        "Manatee Tempest",
+        "DEV-0243",
+        "UNC2165"
+      ]
+    },
+    {
+      "canonical": "Evilnum",
+      "attack_id": "G0120",
+      "type": "group",
+      "aliases": [
+        "Evilnum"
+      ]
+    },
+    {
+      "canonical": "Sidewinder",
+      "attack_id": "G0121",
+      "type": "group",
+      "aliases": [
+        "Sidewinder",
+        "T-APT-04",
+        "Rattlesnake"
+      ]
+    },
+    {
+      "canonical": "Silent Librarian",
+      "attack_id": "G0122",
+      "type": "group",
+      "aliases": [
+        "Silent Librarian",
+        "TA407",
+        "COBALT DICKENS"
+      ]
+    },
+    {
+      "canonical": "Volatile Cedar",
+      "attack_id": "G0123",
+      "type": "group",
+      "aliases": [
+        "Volatile Cedar",
+        "Lebanese Cedar"
+      ]
+    },
+    {
+      "canonical": "Windigo",
+      "attack_id": "G0124",
+      "type": "group",
+      "aliases": [
+        "Windigo"
+      ]
+    },
+    {
+      "canonical": "HAFNIUM",
+      "attack_id": "G0125",
+      "type": "group",
+      "aliases": [
+        "HAFNIUM",
+        "Operation Exchange Marauder",
+        "Silk Typhoon"
+      ]
+    },
+    {
+      "canonical": "Higaisa",
+      "attack_id": "G0126",
+      "type": "group",
+      "aliases": [
+        "Higaisa"
+      ]
+    },
+    {
+      "canonical": "TA551",
+      "attack_id": "G0127",
+      "type": "group",
+      "aliases": [
+        "TA551",
+        "GOLD CABIN",
+        "Shathak"
+      ]
+    },
+    {
+      "canonical": "ZIRCONIUM",
+      "attack_id": "G0128",
+      "type": "group",
+      "aliases": [
+        "ZIRCONIUM",
+        "APT31",
+        "Violet Typhoon"
+      ]
+    },
+    {
+      "canonical": "Mustang Panda",
+      "attack_id": "G0129",
+      "type": "group",
+      "aliases": [
+        "Mustang Panda",
+        "TA416",
+        "RedDelta",
+        "BRONZE PRESIDENT",
+        "STATELY TAURUS",
+        "FIREANT",
+        "CAMARO DRAGON",
+        "EARTH PRETA",
+        "HIVE0154",
+        "TWILL TYPHOON",
+        "TANTALUM",
+        "LUMINOUS MOTH",
+        "UNC6384",
+        "TEMP.Hex",
+        "Red Lich",
+        "ClumsyToad"
+      ]
+    },
+    {
+      "canonical": "Ajax Security Team",
+      "attack_id": "G0130",
+      "type": "group",
+      "aliases": [
+        "Ajax Security Team",
+        "Operation Woolen-Goldfish",
+        "AjaxTM",
+        "Rocket Kitten",
+        "Flying Kitten",
+        "Operation Saffron Rose"
+      ]
+    },
+    {
+      "canonical": "Tonto Team",
+      "attack_id": "G0131",
+      "type": "group",
+      "aliases": [
+        "Tonto Team",
+        "Earth Akhlut",
+        "BRONZE HUNTLEY",
+        "CactusPete",
+        "Karma Panda"
+      ]
+    },
+    {
+      "canonical": "Nomadic Octopus",
+      "attack_id": "G0133",
+      "type": "group",
+      "aliases": [
+        "Nomadic Octopus",
+        "DustSquad"
+      ]
+    },
+    {
+      "canonical": "Transparent Tribe",
+      "attack_id": "G0134",
+      "type": "group",
+      "aliases": [
+        "Transparent Tribe",
+        "COPPER FIELDSTONE",
+        "APT36",
+        "Mythic Leopard",
+        "ProjectM"
+      ]
+    },
+    {
+      "canonical": "BackdoorDiplomacy",
+      "attack_id": "G0135",
+      "type": "group",
+      "aliases": [
+        "BackdoorDiplomacy"
+      ]
+    },
+    {
+      "canonical": "IndigoZebra",
+      "attack_id": "G0136",
+      "type": "group",
+      "aliases": [
+        "IndigoZebra"
+      ]
+    },
+    {
+      "canonical": "Ferocious Kitten",
+      "attack_id": "G0137",
+      "type": "group",
+      "aliases": [
+        "Ferocious Kitten"
+      ]
+    },
+    {
+      "canonical": "Andariel",
+      "attack_id": "G0138",
+      "type": "group",
+      "aliases": [
+        "Andariel",
+        "Silent Chollima",
+        "PLUTONIUM",
+        "Onyx Sleet"
+      ]
+    },
+    {
+      "canonical": "TeamTNT",
+      "attack_id": "G0139",
+      "type": "group",
+      "aliases": [
+        "TeamTNT"
+      ]
+    },
+    {
+      "canonical": "LazyScripter",
+      "attack_id": "G0140",
+      "type": "group",
+      "aliases": [
+        "LazyScripter"
+      ]
+    },
+    {
+      "canonical": "Confucius",
+      "attack_id": "G0142",
+      "type": "group",
+      "aliases": [
+        "Confucius",
+        "Confucius APT"
+      ]
+    },
+    {
+      "canonical": "Aquatic Panda",
+      "attack_id": "G0143",
+      "type": "group",
+      "aliases": [
+        "Aquatic Panda"
+      ]
+    },
+    {
+      "canonical": "HEXANE",
+      "attack_id": "G1001",
+      "type": "group",
+      "aliases": [
+        "HEXANE",
+        "Lyceum",
+        "Siamesekitten",
+        "Spirlin"
+      ]
+    },
+    {
+      "canonical": "BITTER",
+      "attack_id": "G1002",
+      "type": "group",
+      "aliases": [
+        "BITTER",
+        "T-APT-17"
+      ]
+    },
+    {
+      "canonical": "Ember Bear",
+      "attack_id": "G1003",
+      "type": "group",
+      "aliases": [
+        "Ember Bear",
+        "UNC2589",
+        "Bleeding Bear",
+        "DEV-0586",
+        "Cadet Blizzard",
+        "Frozenvista",
+        "UAC-0056"
+      ]
+    },
+    {
+      "canonical": "LAPSUS$",
+      "attack_id": "G1004",
+      "type": "group",
+      "aliases": [
+        "LAPSUS$",
+        "DEV-0537",
+        "Strawberry Tempest"
+      ]
+    },
+    {
+      "canonical": "POLONIUM",
+      "attack_id": "G1005",
+      "type": "group",
+      "aliases": [
+        "POLONIUM",
+        "Plaid Rain"
+      ]
+    },
+    {
+      "canonical": "Earth Lusca",
+      "attack_id": "G1006",
+      "type": "group",
+      "aliases": [
+        "Earth Lusca",
+        "TAG-22",
+        "Charcoal Typhoon",
+        "CHROMIUM",
+        "ControlX"
+      ]
+    },
+    {
+      "canonical": "Aoqin Dragon",
+      "attack_id": "G1007",
+      "type": "group",
+      "aliases": [
+        "Aoqin Dragon"
+      ]
+    },
+    {
+      "canonical": "SideCopy",
+      "attack_id": "G1008",
+      "type": "group",
+      "aliases": [
+        "SideCopy"
+      ]
+    },
+    {
+      "canonical": "Moses Staff",
+      "attack_id": "G1009",
+      "type": "group",
+      "aliases": [
+        "Moses Staff",
+        "DEV-0500",
+        "Marigold Sandstorm"
+      ]
+    },
+    {
+      "canonical": "EXOTIC LILY",
+      "attack_id": "G1011",
+      "type": "group",
+      "aliases": [
+        "EXOTIC LILY"
+      ]
+    },
+    {
+      "canonical": "CURIUM",
+      "attack_id": "G1012",
+      "type": "group",
+      "aliases": [
+        "CURIUM",
+        "Crimson Sandstorm",
+        "TA456",
+        "Tortoise Shell",
+        "Yellow Liderc"
+      ]
+    },
+    {
+      "canonical": "Metador",
+      "attack_id": "G1013",
+      "type": "group",
+      "aliases": [
+        "Metador"
+      ]
+    },
+    {
+      "canonical": "LuminousMoth",
+      "attack_id": "G1014",
+      "type": "group",
+      "aliases": [
+        "LuminousMoth"
+      ]
+    },
+    {
+      "canonical": "Scattered Spider",
+      "attack_id": "G1015",
+      "type": "group",
+      "aliases": [
+        "Scattered Spider",
+        "Roasted 0ktapus",
+        "Octo Tempest",
+        "Storm-0875",
+        "UNC3944"
+      ]
+    },
+    {
+      "canonical": "FIN13",
+      "attack_id": "G1016",
+      "type": "group",
+      "aliases": [
+        "FIN13",
+        "Elephant Beetle"
+      ]
+    },
+    {
+      "canonical": "Volt Typhoon",
+      "attack_id": "G1017",
+      "type": "group",
+      "aliases": [
+        "Volt Typhoon",
+        "BRONZE SILHOUETTE",
+        "Vanguard Panda",
+        "DEV-0391",
+        "UNC3236",
+        "Voltzite",
+        "Insidious Taurus",
+        "DazedToad"
+      ]
+    },
+    {
+      "canonical": "TA2541",
+      "attack_id": "G1018",
+      "type": "group",
+      "aliases": [
+        "TA2541"
+      ]
+    },
+    {
+      "canonical": "MoustachedBouncer",
+      "attack_id": "G1019",
+      "type": "group",
+      "aliases": [
+        "MoustachedBouncer"
+      ]
+    },
+    {
+      "canonical": "Mustard Tempest",
+      "attack_id": "G1020",
+      "type": "group",
+      "aliases": [
+        "Mustard Tempest",
+        "DEV-0206",
+        "TA569",
+        "GOLD PRELUDE",
+        "UNC1543"
+      ]
+    },
+    {
+      "canonical": "Cinnamon Tempest",
+      "attack_id": "G1021",
+      "type": "group",
+      "aliases": [
+        "Cinnamon Tempest",
+        "DEV-0401",
+        "Emperor Dragonfly",
+        "BRONZE STARLIGHT"
+      ]
+    },
+    {
+      "canonical": "ToddyCat",
+      "attack_id": "G1022",
+      "type": "group",
+      "aliases": [
+        "ToddyCat"
+      ]
+    },
+    {
+      "canonical": "APT5",
+      "attack_id": "G1023",
+      "type": "group",
+      "aliases": [
+        "APT5",
+        "Mulberry Typhoon",
+        "MANGANESE",
+        "BRONZE FLEETWOOD",
+        "Keyhole Panda",
+        "UNC2630"
+      ]
+    },
+    {
+      "canonical": "Akira",
+      "attack_id": "G1024",
+      "type": "group",
+      "aliases": [
+        "Akira",
+        "GOLD SAHARA",
+        "PUNK SPIDER",
+        "Howling Scorpius"
+      ]
+    },
+    {
+      "canonical": "Malteiro",
+      "attack_id": "G1026",
+      "type": "group",
+      "aliases": [
+        "Malteiro"
+      ]
+    },
+    {
+      "canonical": "APT-C-23",
+      "attack_id": "G1028",
+      "type": "group",
+      "aliases": [
+        "APT-C-23",
+        "Mantis",
+        "Arid Viper",
+        "Desert Falcon",
+        "TAG-63",
+        "Grey Karkadann",
+        "Big Bang APT",
+        "Two-tailed Scorpion"
+      ]
+    },
+    {
+      "canonical": "Agrius",
+      "attack_id": "G1030",
+      "type": "group",
+      "aliases": [
+        "Agrius",
+        "Pink Sandstorm",
+        "AMERICIUM",
+        "Agonizing Serpens",
+        "BlackShadow"
+      ]
+    },
+    {
+      "canonical": "Saint Bear",
+      "attack_id": "G1031",
+      "type": "group",
+      "aliases": [
+        "Saint Bear",
+        "Storm-0587",
+        "TA471",
+        "UAC-0056",
+        "Lorec53"
+      ]
+    },
+    {
+      "canonical": "INC Ransom",
+      "attack_id": "G1032",
+      "type": "group",
+      "aliases": [
+        "INC Ransom",
+        "GOLD IONIC"
+      ]
+    },
+    {
+      "canonical": "Star Blizzard",
+      "attack_id": "G1033",
+      "type": "group",
+      "aliases": [
+        "Star Blizzard",
+        "SEABORGIUM",
+        "Callisto Group",
+        "TA446",
+        "COLDRIVER"
+      ]
+    },
+    {
+      "canonical": "Daggerfly",
+      "attack_id": "G1034",
+      "type": "group",
+      "aliases": [
+        "Daggerfly",
+        "Evasive Panda",
+        "BRONZE HIGHLAND"
+      ]
+    },
+    {
+      "canonical": "Winter Vivern",
+      "attack_id": "G1035",
+      "type": "group",
+      "aliases": [
+        "Winter Vivern",
+        "TA473",
+        "UAC-0114"
+      ]
+    },
+    {
+      "canonical": "Moonstone Sleet",
+      "attack_id": "G1036",
+      "type": "group",
+      "aliases": [
+        "Moonstone Sleet",
+        "Storm-1789"
+      ]
+    },
+    {
+      "canonical": "TA577",
+      "attack_id": "G1037",
+      "type": "group",
+      "aliases": [
+        "TA577"
+      ]
+    },
+    {
+      "canonical": "TA578",
+      "attack_id": "G1038",
+      "type": "group",
+      "aliases": [
+        "TA578"
+      ]
+    },
+    {
+      "canonical": "RedCurl",
+      "attack_id": "G1039",
+      "type": "group",
+      "aliases": [
+        "RedCurl"
+      ]
+    },
+    {
+      "canonical": "Play",
+      "attack_id": "G1040",
+      "type": "group",
+      "aliases": []
+    },
+    {
+      "canonical": "Sea Turtle",
+      "attack_id": "G1041",
+      "type": "group",
+      "aliases": [
+        "Sea Turtle",
+        "Teal Kurma",
+        "Marbled Dust",
+        "Cosmic Wolf",
+        "SILICON"
+      ]
+    },
+    {
+      "canonical": "RedEcho",
+      "attack_id": "G1042",
+      "type": "group",
+      "aliases": [
+        "RedEcho"
+      ]
+    },
+    {
+      "canonical": "BlackByte",
+      "attack_id": "G1043",
+      "type": "group",
+      "aliases": [
+        "BlackByte",
+        "Hecamede"
+      ]
+    },
+    {
+      "canonical": "APT42",
+      "attack_id": "G1044",
+      "type": "group",
+      "aliases": [
+        "APT42"
+      ]
+    },
+    {
+      "canonical": "Salt Typhoon",
+      "attack_id": "G1045",
+      "type": "group",
+      "aliases": [
+        "Salt Typhoon"
+      ]
+    },
+    {
+      "canonical": "Storm-1811",
+      "attack_id": "G1046",
+      "type": "group",
+      "aliases": [
+        "Storm-1811"
+      ]
+    },
+    {
+      "canonical": "Velvet Ant",
+      "attack_id": "G1047",
+      "type": "group",
+      "aliases": [
+        "Velvet Ant"
+      ]
+    },
+    {
+      "canonical": "UNC3886",
+      "attack_id": "G1048",
+      "type": "group",
+      "aliases": [
+        "UNC3886"
+      ]
+    },
+    {
+      "canonical": "AppleJeus",
+      "attack_id": "G1049",
+      "type": "group",
+      "aliases": [
+        "AppleJeus",
+        "Gleaming Pisces",
+        "Citrine Sleet",
+        "UNC1720",
+        "UNC4736"
+      ]
+    },
+    {
+      "canonical": "Water Galura",
+      "attack_id": "G1050",
+      "type": "group",
+      "aliases": [
+        "Water Galura",
+        "GOLD FEATHER"
+      ]
+    },
+    {
+      "canonical": "Medusa Group",
+      "attack_id": "G1051",
+      "type": "group",
+      "aliases": [
+        "Medusa Group"
+      ]
+    },
+    {
+      "canonical": "Contagious Interview",
+      "attack_id": "G1052",
+      "type": "group",
+      "aliases": [
+        "Contagious Interview",
+        "DeceptiveDevelopment",
+        "Gwisin Gang",
+        "Tenacious Pungsan",
+        "DEV#POPPER",
+        "PurpleBravo",
+        "TAG-121"
+      ]
+    },
+    {
+      "canonical": "Storm-0501",
+      "attack_id": "G1053",
+      "type": "group",
+      "aliases": [
+        "Storm-0501"
+      ]
+    },
+    {
+      "canonical": "MirrorFace",
+      "attack_id": "G1054",
+      "type": "group",
+      "aliases": [
+        "MirrorFace",
+        "Earth Kasha"
+      ]
+    },
+    {
+      "canonical": "VOID MANTICORE",
+      "attack_id": "G1055",
+      "type": "group",
+      "aliases": [
+        "VOID MANTICORE",
+        "COBALT MYSTIQUE",
+        "Handala Hack",
+        "Homeland Justice",
+        "Karma",
+        "Karmabelow80",
+        "BANISHED KITTEN",
+        "Red Sandstorm"
+      ]
+    },
+    {
+      "canonical": "Trojan.Mebromi",
+      "attack_id": "S0001",
+      "type": "software",
+      "aliases": [
+        "Trojan.Mebromi"
+      ]
+    },
+    {
+      "canonical": "Mimikatz",
+      "attack_id": "S0002",
+      "type": "software",
+      "aliases": [
+        "Mimikatz"
+      ]
+    },
+    {
+      "canonical": "RIPTIDE",
+      "attack_id": "S0003",
+      "type": "software",
+      "aliases": [
+        "RIPTIDE"
+      ]
+    },
+    {
+      "canonical": "TinyZBot",
+      "attack_id": "S0004",
+      "type": "software",
+      "aliases": [
+        "TinyZBot"
+      ]
+    },
+    {
+      "canonical": "Windows Credential Editor",
+      "attack_id": "S0005",
+      "type": "software",
+      "aliases": [
+        "Windows Credential Editor"
+      ]
+    },
+    {
+      "canonical": "pwdump",
+      "attack_id": "S0006",
+      "type": "software",
+      "aliases": [
+        "pwdump"
+      ]
+    },
+    {
+      "canonical": "Skeleton Key",
+      "attack_id": "S0007",
+      "type": "software",
+      "aliases": [
+        "Skeleton Key"
+      ]
+    },
+    {
+      "canonical": "gsecdump",
+      "attack_id": "S0008",
+      "type": "software",
+      "aliases": [
+        "gsecdump"
+      ]
+    },
+    {
+      "canonical": "Hikit",
+      "attack_id": "S0009",
+      "type": "software",
+      "aliases": [
+        "Hikit"
+      ]
+    },
+    {
+      "canonical": "Lurid",
+      "attack_id": "S0010",
+      "type": "software",
+      "aliases": [
+        "Lurid",
+        "Enfal"
+      ]
+    },
+    {
+      "canonical": "Taidoor",
+      "attack_id": "S0011",
+      "type": "software",
+      "aliases": [
+        "Taidoor"
+      ]
+    },
+    {
+      "canonical": "PoisonIvy",
+      "attack_id": "S0012",
+      "type": "software",
+      "aliases": [
+        "PoisonIvy",
+        "Breut",
+        "Poison Ivy",
+        "Darkmoon"
+      ]
+    },
+    {
+      "canonical": "PlugX",
+      "attack_id": "S0013",
+      "type": "software",
+      "aliases": [
+        "PlugX",
+        "Thoper",
+        "DestroyRAT",
+        "Sogu",
+        "Kaba",
+        "Korplug"
+      ]
+    },
+    {
+      "canonical": "BS2005",
+      "attack_id": "S0014",
+      "type": "software",
+      "aliases": [
+        "BS2005"
+      ]
+    },
+    {
+      "canonical": "Ixeshe",
+      "attack_id": "S0015",
+      "type": "software",
+      "aliases": [
+        "Ixeshe"
+      ]
+    },
+    {
+      "canonical": "P2P ZeuS",
+      "attack_id": "S0016",
+      "type": "software",
+      "aliases": [
+        "P2P ZeuS",
+        "Peer-to-Peer ZeuS",
+        "Gameover ZeuS"
+      ]
+    },
+    {
+      "canonical": "BISCUIT",
+      "attack_id": "S0017",
+      "type": "software",
+      "aliases": [
+        "BISCUIT"
+      ]
+    },
+    {
+      "canonical": "Sykipot",
+      "attack_id": "S0018",
+      "type": "software",
+      "aliases": [
+        "Sykipot"
+      ]
+    },
+    {
+      "canonical": "Regin",
+      "attack_id": "S0019",
+      "type": "software",
+      "aliases": [
+        "Regin"
+      ]
+    },
+    {
+      "canonical": "China Chopper",
+      "attack_id": "S0020",
+      "type": "software",
+      "aliases": [
+        "China Chopper"
+      ]
+    },
+    {
+      "canonical": "Derusbi",
+      "attack_id": "S0021",
+      "type": "software",
+      "aliases": [
+        "Derusbi",
+        "PHOTO"
+      ]
+    },
+    {
+      "canonical": "Uroburos",
+      "attack_id": "S0022",
+      "type": "software",
+      "aliases": [
+        "Uroburos",
+        "Snake"
+      ]
+    },
+    {
+      "canonical": "CHOPSTICK",
+      "attack_id": "S0023",
+      "type": "software",
+      "aliases": [
+        "CHOPSTICK",
+        "Backdoor.SofacyX",
+        "SPLM",
+        "Xagent",
+        "X-Agent",
+        "webhp"
+      ]
+    },
+    {
+      "canonical": "Dyre",
+      "attack_id": "S0024",
+      "type": "software",
+      "aliases": [
+        "Dyre",
+        "Dyzap",
+        "Dyreza"
+      ]
+    },
+    {
+      "canonical": "CALENDAR",
+      "attack_id": "S0025",
+      "type": "software",
+      "aliases": [
+        "CALENDAR"
+      ]
+    },
+    {
+      "canonical": "GLOOXMAIL",
+      "attack_id": "S0026",
+      "type": "software",
+      "aliases": [
+        "GLOOXMAIL",
+        "Trojan.GTALK"
+      ]
+    },
+    {
+      "canonical": "Zeroaccess",
+      "attack_id": "S0027",
+      "type": "software",
+      "aliases": []
+    },
+    {
+      "canonical": "SHIPSHAPE",
+      "attack_id": "S0028",
+      "type": "software",
+      "aliases": [
+        "SHIPSHAPE"
+      ]
+    },
+    {
+      "canonical": "PsExec",
+      "attack_id": "S0029",
+      "type": "software",
+      "aliases": [
+        "PsExec"
+      ]
+    },
+    {
+      "canonical": "Carbanak",
+      "attack_id": "S0030",
+      "type": "software",
+      "aliases": [
+        "Carbanak",
+        "Anunak"
+      ]
+    },
+    {
+      "canonical": "BACKSPACE",
+      "attack_id": "S0031",
+      "type": "software",
+      "aliases": [
+        "BACKSPACE",
+        "Lecna"
+      ]
+    },
+    {
+      "canonical": "gh0st RAT",
+      "attack_id": "S0032",
+      "type": "software",
+      "aliases": [
+        "gh0st RAT",
+        "Mydoor",
+        "Moudoor"
+      ]
+    },
+    {
+      "canonical": "NetTraveler",
+      "attack_id": "S0033",
+      "type": "software",
+      "aliases": [
+        "NetTraveler"
+      ]
+    },
+    {
+      "canonical": "NETEAGLE",
+      "attack_id": "S0034",
+      "type": "software",
+      "aliases": [
+        "NETEAGLE"
+      ]
+    },
+    {
+      "canonical": "SPACESHIP",
+      "attack_id": "S0035",
+      "type": "software",
+      "aliases": [
+        "SPACESHIP"
+      ]
+    },
+    {
+      "canonical": "FLASHFLOOD",
+      "attack_id": "S0036",
+      "type": "software",
+      "aliases": [
+        "FLASHFLOOD"
+      ]
+    },
+    {
+      "canonical": "HAMMERTOSS",
+      "attack_id": "S0037",
+      "type": "software",
+      "aliases": [
+        "HAMMERTOSS",
+        "HammerDuke",
+        "NetDuke"
+      ]
+    },
+    {
+      "canonical": "Duqu",
+      "attack_id": "S0038",
+      "type": "software",
+      "aliases": [
+        "Duqu"
+      ]
+    },
+    {
+      "canonical": "Net",
+      "attack_id": "S0039",
+      "type": "software",
+      "aliases": [
+        "net.exe"
+      ]
+    },
+    {
+      "canonical": "HTRAN",
+      "attack_id": "S0040",
+      "type": "software",
+      "aliases": [
+        "HTRAN",
+        "HUC Packet Transmit Tool"
+      ]
+    },
+    {
+      "canonical": "Wiper",
+      "attack_id": "S0041",
+      "type": "software",
+      "aliases": []
+    },
+    {
+      "canonical": "LOWBALL",
+      "attack_id": "S0042",
+      "type": "software",
+      "aliases": [
+        "LOWBALL"
+      ]
+    },
+    {
+      "canonical": "BUBBLEWRAP",
+      "attack_id": "S0043",
+      "type": "software",
+      "aliases": [
+        "BUBBLEWRAP",
+        "Backdoor.APT.FakeWinHTTPHelper"
+      ]
+    },
+    {
+      "canonical": "JHUHUGIT",
+      "attack_id": "S0044",
+      "type": "software",
+      "aliases": [
+        "JHUHUGIT",
+        "Trojan.Sofacy",
+        "Seduploader",
+        "JKEYSKW",
+        "Sednit",
+        "GAMEFISH",
+        "SofacyCarberp"
+      ]
+    },
+    {
+      "canonical": "ADVSTORESHELL",
+      "attack_id": "S0045",
+      "type": "software",
+      "aliases": [
+        "ADVSTORESHELL",
+        "AZZY",
+        "EVILTOSS",
+        "NETUI",
+        "Sedreco"
+      ]
+    },
+    {
+      "canonical": "CozyCar",
+      "attack_id": "S0046",
+      "type": "software",
+      "aliases": [
+        "CozyCar",
+        "CozyDuke",
+        "CozyBear",
+        "Cozer",
+        "EuroAPT"
+      ]
+    },
+    {
+      "canonical": "Hacking Team UEFI Rootkit",
+      "attack_id": "S0047",
+      "type": "software",
+      "aliases": [
+        "Hacking Team UEFI Rootkit"
+      ]
+    },
+    {
+      "canonical": "PinchDuke",
+      "attack_id": "S0048",
+      "type": "software",
+      "aliases": [
+        "PinchDuke"
+      ]
+    },
+    {
+      "canonical": "GeminiDuke",
+      "attack_id": "S0049",
+      "type": "software",
+      "aliases": [
+        "GeminiDuke"
+      ]
+    },
+    {
+      "canonical": "CosmicDuke",
+      "attack_id": "S0050",
+      "type": "software",
+      "aliases": [
+        "CosmicDuke",
+        "TinyBaron",
+        "BotgenStudios",
+        "NemesisGemina"
+      ]
+    },
+    {
+      "canonical": "MiniDuke",
+      "attack_id": "S0051",
+      "type": "software",
+      "aliases": [
+        "MiniDuke"
+      ]
+    },
+    {
+      "canonical": "OnionDuke",
+      "attack_id": "S0052",
+      "type": "software",
+      "aliases": [
+        "OnionDuke"
+      ]
+    },
+    {
+      "canonical": "SeaDuke",
+      "attack_id": "S0053",
+      "type": "software",
+      "aliases": [
+        "SeaDuke",
+        "SeaDaddy",
+        "SeaDesk"
+      ]
+    },
+    {
+      "canonical": "CloudDuke",
+      "attack_id": "S0054",
+      "type": "software",
+      "aliases": [
+        "CloudDuke",
+        "MiniDionis",
+        "CloudLook"
+      ]
+    },
+    {
+      "canonical": "RARSTONE",
+      "attack_id": "S0055",
+      "type": "software",
+      "aliases": [
+        "RARSTONE"
+      ]
+    },
+    {
+      "canonical": "Net Crawler",
+      "attack_id": "S0056",
+      "type": "software",
+      "aliases": [
+        "Net Crawler",
+        "NetC"
+      ]
+    },
+    {
+      "canonical": "Tasklist",
+      "attack_id": "S0057",
+      "type": "software",
+      "aliases": [
+        "Tasklist"
+      ]
+    },
+    {
+      "canonical": "SslMM",
+      "attack_id": "S0058",
+      "type": "software",
+      "aliases": [
+        "SslMM"
+      ]
+    },
+    {
+      "canonical": "WinMM",
+      "attack_id": "S0059",
+      "type": "software",
+      "aliases": [
+        "WinMM"
+      ]
+    },
+    {
+      "canonical": "Sys10",
+      "attack_id": "S0060",
+      "type": "software",
+      "aliases": [
+        "Sys10"
+      ]
+    },
+    {
+      "canonical": "HDoor",
+      "attack_id": "S0061",
+      "type": "software",
+      "aliases": [
+        "HDoor",
+        "Custom HDoor"
+      ]
+    },
+    {
+      "canonical": "DustySky",
+      "attack_id": "S0062",
+      "type": "software",
+      "aliases": [
+        "DustySky",
+        "NeD Worm"
+      ]
+    },
+    {
+      "canonical": "SHOTPUT",
+      "attack_id": "S0063",
+      "type": "software",
+      "aliases": [
+        "SHOTPUT",
+        "Backdoor.APT.CookieCutter",
+        "Pirpi"
+      ]
+    },
+    {
+      "canonical": "ELMER",
+      "attack_id": "S0064",
+      "type": "software",
+      "aliases": [
+        "ELMER"
+      ]
+    },
+    {
+      "canonical": "4H RAT",
+      "attack_id": "S0065",
+      "type": "software",
+      "aliases": [
+        "4H RAT"
+      ]
+    },
+    {
+      "canonical": "3PARA RAT",
+      "attack_id": "S0066",
+      "type": "software",
+      "aliases": [
+        "3PARA RAT"
+      ]
+    },
+    {
+      "canonical": "pngdowner",
+      "attack_id": "S0067",
+      "type": "software",
+      "aliases": [
+        "pngdowner"
+      ]
+    },
+    {
+      "canonical": "httpclient",
+      "attack_id": "S0068",
+      "type": "software",
+      "aliases": [
+        "httpclient"
+      ]
+    },
+    {
+      "canonical": "BLACKCOFFEE",
+      "attack_id": "S0069",
+      "type": "software",
+      "aliases": [
+        "BLACKCOFFEE"
+      ]
+    },
+    {
+      "canonical": "HTTPBrowser",
+      "attack_id": "S0070",
+      "type": "software",
+      "aliases": [
+        "HTTPBrowser",
+        "Token Control",
+        "HttpDump"
+      ]
+    },
+    {
+      "canonical": "hcdLoader",
+      "attack_id": "S0071",
+      "type": "software",
+      "aliases": [
+        "hcdLoader"
+      ]
+    },
+    {
+      "canonical": "OwaAuth",
+      "attack_id": "S0072",
+      "type": "software",
+      "aliases": [
+        "OwaAuth"
+      ]
+    },
+    {
+      "canonical": "ASPXSpy",
+      "attack_id": "S0073",
+      "type": "software",
+      "aliases": [
+        "ASPXSpy",
+        "ASPXTool"
+      ]
+    },
+    {
+      "canonical": "Sakula",
+      "attack_id": "S0074",
+      "type": "software",
+      "aliases": [
+        "Sakula",
+        "Sakurel",
+        "VIPER"
+      ]
+    },
+    {
+      "canonical": "Reg",
+      "attack_id": "S0075",
+      "type": "software",
+      "aliases": [
+        "reg.exe"
+      ]
+    },
+    {
+      "canonical": "FakeM",
+      "attack_id": "S0076",
+      "type": "software",
+      "aliases": [
+        "FakeM"
+      ]
+    },
+    {
+      "canonical": "CallMe",
+      "attack_id": "S0077",
+      "type": "software",
+      "aliases": [
+        "CallMe"
+      ]
+    },
+    {
+      "canonical": "Psylo",
+      "attack_id": "S0078",
+      "type": "software",
+      "aliases": [
+        "Psylo"
+      ]
+    },
+    {
+      "canonical": "MobileOrder",
+      "attack_id": "S0079",
+      "type": "software",
+      "aliases": []
+    },
+    {
+      "canonical": "Mivast",
+      "attack_id": "S0080",
+      "type": "software",
+      "aliases": [
+        "Mivast"
+      ]
+    },
+    {
+      "canonical": "Elise",
+      "attack_id": "S0081",
+      "type": "software",
+      "aliases": [
+        "Elise",
+        "BKDR_ESILE"
+      ]
+    },
+    {
+      "canonical": "Emissary",
+      "attack_id": "S0082",
+      "type": "software",
+      "aliases": [
+        "Emissary"
+      ]
+    },
+    {
+      "canonical": "Misdat",
+      "attack_id": "S0083",
+      "type": "software",
+      "aliases": [
+        "Misdat"
+      ]
+    },
+    {
+      "canonical": "Mis-Type",
+      "attack_id": "S0084",
+      "type": "software",
+      "aliases": [
+        "Mis-Type"
+      ]
+    },
+    {
+      "canonical": "S-Type",
+      "attack_id": "S0085",
+      "type": "software",
+      "aliases": [
+        "S-Type"
+      ]
+    },
+    {
+      "canonical": "ZLib",
+      "attack_id": "S0086",
+      "type": "software",
+      "aliases": [
+        "ZLib"
+      ]
+    },
+    {
+      "canonical": "Hi-Zor",
+      "attack_id": "S0087",
+      "type": "software",
+      "aliases": [
+        "Hi-Zor"
+      ]
+    },
+    {
+      "canonical": "Kasidet",
+      "attack_id": "S0088",
+      "type": "software",
+      "aliases": [
+        "Kasidet"
+      ]
+    },
+    {
+      "canonical": "BlackEnergy",
+      "attack_id": "S0089",
+      "type": "software",
+      "aliases": [
+        "BlackEnergy",
+        "Black Energy"
+      ]
+    },
+    {
+      "canonical": "Rover",
+      "attack_id": "S0090",
+      "type": "software",
+      "aliases": []
+    },
+    {
+      "canonical": "Epic",
+      "attack_id": "S0091",
+      "type": "software",
+      "aliases": [
+        "Epic",
+        "Tavdig",
+        "Wipbot",
+        "WorldCupSec",
+        "TadjMakhal"
+      ]
+    },
+    {
+      "canonical": "Agent.btz",
+      "attack_id": "S0092",
+      "type": "software",
+      "aliases": [
+        "Agent.btz"
+      ]
+    },
+    {
+      "canonical": "Backdoor.Oldrea",
+      "attack_id": "S0093",
+      "type": "software",
+      "aliases": [
+        "Backdoor.Oldrea",
+        "Havex"
+      ]
+    },
+    {
+      "canonical": "Trojan.Karagany",
+      "attack_id": "S0094",
+      "type": "software",
+      "aliases": [
+        "Trojan.Karagany",
+        "xFrost",
+        "Karagany"
+      ]
+    },
+    {
+      "canonical": "ftp",
+      "attack_id": "S0095",
+      "type": "software",
+      "aliases": [
+        "ftp.exe"
+      ]
+    },
+    {
+      "canonical": "Systeminfo",
+      "attack_id": "S0096",
+      "type": "software",
+      "aliases": [
+        "Systeminfo"
+      ]
+    },
+    {
+      "canonical": "Ping",
+      "attack_id": "S0097",
+      "type": "software",
+      "aliases": []
+    },
+    {
+      "canonical": "T9000",
+      "attack_id": "S0098",
+      "type": "software",
+      "aliases": [
+        "T9000"
+      ]
+    },
+    {
+      "canonical": "Arp",
+      "attack_id": "S0099",
+      "type": "software",
+      "aliases": [
+        "arp.exe"
+      ]
+    },
+    {
+      "canonical": "ipconfig",
+      "attack_id": "S0100",
+      "type": "software",
+      "aliases": [
+        "ipconfig"
+      ]
+    },
+    {
+      "canonical": "ifconfig",
+      "attack_id": "S0101",
+      "type": "software",
+      "aliases": []
+    },
+    {
+      "canonical": "nbtstat",
+      "attack_id": "S0102",
+      "type": "software",
+      "aliases": [
+        "nbtstat"
+      ]
+    },
+    {
+      "canonical": "route",
+      "attack_id": "S0103",
+      "type": "software",
+      "aliases": []
+    },
+    {
+      "canonical": "netstat",
+      "attack_id": "S0104",
+      "type": "software",
+      "aliases": [
+        "netstat"
+      ]
+    },
+    {
+      "canonical": "dsquery",
+      "attack_id": "S0105",
+      "type": "software",
+      "aliases": [
+        "dsquery",
+        "dsquery.exe"
+      ]
+    },
+    {
+      "canonical": "cmd",
+      "attack_id": "S0106",
+      "type": "software",
+      "aliases": [
+        "cmd.exe"
+      ]
+    },
+    {
+      "canonical": "Cherry Picker",
+      "attack_id": "S0107",
+      "type": "software",
+      "aliases": [
+        "Cherry Picker"
+      ]
+    },
+    {
+      "canonical": "netsh",
+      "attack_id": "S0108",
+      "type": "software",
+      "aliases": [
+        "netsh",
+        "netsh.exe"
+      ]
+    },
+    {
+      "canonical": "WEBC2",
+      "attack_id": "S0109",
+      "type": "software",
+      "aliases": [
+        "WEBC2"
+      ]
+    },
+    {
+      "canonical": "at",
+      "attack_id": "S0110",
+      "type": "software",
+      "aliases": [
+        "at.exe"
+      ]
+    },
+    {
+      "canonical": "schtasks",
+      "attack_id": "S0111",
+      "type": "software",
+      "aliases": [
+        "schtasks",
+        "schtasks.exe"
+      ]
+    },
+    {
+      "canonical": "ROCKBOOT",
+      "attack_id": "S0112",
+      "type": "software",
+      "aliases": [
+        "ROCKBOOT"
+      ]
+    },
+    {
+      "canonical": "Prikormka",
+      "attack_id": "S0113",
+      "type": "software",
+      "aliases": [
+        "Prikormka"
+      ]
+    },
+    {
+      "canonical": "BOOTRASH",
+      "attack_id": "S0114",
+      "type": "software",
+      "aliases": [
+        "BOOTRASH"
+      ]
+    },
+    {
+      "canonical": "Crimson",
+      "attack_id": "S0115",
+      "type": "software",
+      "aliases": [
+        "Crimson",
+        "MSIL/Crimson"
+      ]
+    },
+    {
+      "canonical": "UACMe",
+      "attack_id": "S0116",
+      "type": "software",
+      "aliases": []
+    },
+    {
+      "canonical": "XTunnel",
+      "attack_id": "S0117",
+      "type": "software",
+      "aliases": [
+        "XTunnel",
+        "Trojan.Shunnael",
+        "X-Tunnel",
+        "XAPS"
+      ]
+    },
+    {
+      "canonical": "Nidiran",
+      "attack_id": "S0118",
+      "type": "software",
+      "aliases": [
+        "Nidiran",
+        "Backdoor.Nidiran"
+      ]
+    },
+    {
+      "canonical": "Cachedump",
+      "attack_id": "S0119",
+      "type": "software",
+      "aliases": [
+        "Cachedump"
+      ]
+    },
+    {
+      "canonical": "Fgdump",
+      "attack_id": "S0120",
+      "type": "software",
+      "aliases": [
+        "Fgdump"
+      ]
+    },
+    {
+      "canonical": "Lslsass",
+      "attack_id": "S0121",
+      "type": "software",
+      "aliases": [
+        "Lslsass"
+      ]
+    },
+    {
+      "canonical": "Pass-The-Hash Toolkit",
+      "attack_id": "S0122",
+      "type": "software",
+      "aliases": []
+    },
+    {
+      "canonical": "xCmd",
+      "attack_id": "S0123",
+      "type": "software",
+      "aliases": []
+    },
+    {
+      "canonical": "Pisloader",
+      "attack_id": "S0124",
+      "type": "software",
+      "aliases": [
+        "Pisloader"
+      ]
+    },
+    {
+      "canonical": "Remsec",
+      "attack_id": "S0125",
+      "type": "software",
+      "aliases": [
+        "Remsec",
+        "Backdoor.Remsec",
+        "ProjectSauron"
+      ]
+    },
+    {
+      "canonical": "ComRAT",
+      "attack_id": "S0126",
+      "type": "software",
+      "aliases": [
+        "ComRAT"
+      ]
+    },
+    {
+      "canonical": "BBSRAT",
+      "attack_id": "S0127",
+      "type": "software",
+      "aliases": [
+        "BBSRAT"
+      ]
+    },
+    {
+      "canonical": "BADNEWS",
+      "attack_id": "S0128",
+      "type": "software",
+      "aliases": [
+        "BADNEWS"
+      ]
+    },
+    {
+      "canonical": "AutoIt backdoor",
+      "attack_id": "S0129",
+      "type": "software",
+      "aliases": [
+        "AutoIt backdoor"
+      ]
+    },
+    {
+      "canonical": "Unknown Logger",
+      "attack_id": "S0130",
+      "type": "software",
+      "aliases": [
+        "Unknown Logger"
+      ]
+    },
+    {
+      "canonical": "TINYTYPHON",
+      "attack_id": "S0131",
+      "type": "software",
+      "aliases": [
+        "TINYTYPHON"
+      ]
+    },
+    {
+      "canonical": "H1N1",
+      "attack_id": "S0132",
+      "type": "software",
+      "aliases": [
+        "H1N1"
+      ]
+    },
+    {
+      "canonical": "Miner-C",
+      "attack_id": "S0133",
+      "type": "software",
+      "aliases": [
+        "Miner-C"
+      ]
+    },
+    {
+      "canonical": "Downdelph",
+      "attack_id": "S0134",
+      "type": "software",
+      "aliases": [
+        "Downdelph",
+        "Delphacy"
+      ]
+    },
+    {
+      "canonical": "HIDEDRV",
+      "attack_id": "S0135",
+      "type": "software",
+      "aliases": [
+        "HIDEDRV"
+      ]
+    },
+    {
+      "canonical": "USBStealer",
+      "attack_id": "S0136",
+      "type": "software",
+      "aliases": [
+        "USBStealer",
+        "USB Stealer",
+        "Win32/USBStealer"
+      ]
+    },
+    {
+      "canonical": "CORESHELL",
+      "attack_id": "S0137",
+      "type": "software",
+      "aliases": [
+        "CORESHELL",
+        "Sofacy",
+        "SOURFACE"
+      ]
+    },
+    {
+      "canonical": "OLDBAIT",
+      "attack_id": "S0138",
+      "type": "software",
+      "aliases": [
+        "OLDBAIT",
+        "Sasfis"
+      ]
+    },
+    {
+      "canonical": "PowerDuke",
+      "attack_id": "S0139",
+      "type": "software",
+      "aliases": [
+        "PowerDuke"
+      ]
+    },
+    {
+      "canonical": "Shamoon",
+      "attack_id": "S0140",
+      "type": "software",
+      "aliases": [
+        "Shamoon",
+        "Disttrack"
+      ]
+    },
+    {
+      "canonical": "Winnti for Windows",
+      "attack_id": "S0141",
+      "type": "software",
+      "aliases": [
+        "Winnti for Windows"
+      ]
+    },
+    {
+      "canonical": "StreamEx",
+      "attack_id": "S0142",
+      "type": "software",
+      "aliases": [
+        "StreamEx"
+      ]
+    },
+    {
+      "canonical": "Flame",
+      "attack_id": "S0143",
+      "type": "software",
+      "aliases": [
+        "Flame",
+        "Flamer",
+        "sKyWIper"
+      ]
+    },
+    {
+      "canonical": "ChChes",
+      "attack_id": "S0144",
+      "type": "software",
+      "aliases": [
+        "ChChes",
+        "Scorpion",
+        "HAYMAKER"
+      ]
+    },
+    {
+      "canonical": "POWERSOURCE",
+      "attack_id": "S0145",
+      "type": "software",
+      "aliases": [
+        "POWERSOURCE",
+        "DNSMessenger"
+      ]
+    },
+    {
+      "canonical": "TEXTMATE",
+      "attack_id": "S0146",
+      "type": "software",
+      "aliases": [
+        "TEXTMATE",
+        "DNSMessenger"
+      ]
+    },
+    {
+      "canonical": "Pteranodon",
+      "attack_id": "S0147",
+      "type": "software",
+      "aliases": [
+        "Pteranodon",
+        "Pterodo"
+      ]
+    },
+    {
+      "canonical": "RTM",
+      "attack_id": "S0148",
+      "type": "software",
+      "aliases": [
+        "Redaman"
+      ]
+    },
+    {
+      "canonical": "MoonWind",
+      "attack_id": "S0149",
+      "type": "software",
+      "aliases": [
+        "MoonWind"
+      ]
+    },
+    {
+      "canonical": "POSHSPY",
+      "attack_id": "S0150",
+      "type": "software",
+      "aliases": [
+        "POSHSPY"
+      ]
+    },
+    {
+      "canonical": "HALFBAKED",
+      "attack_id": "S0151",
+      "type": "software",
+      "aliases": []
+    },
+    {
+      "canonical": "EvilGrab",
+      "attack_id": "S0152",
+      "type": "software",
+      "aliases": [
+        "EvilGrab"
+      ]
+    },
+    {
+      "canonical": "RedLeaves",
+      "attack_id": "S0153",
+      "type": "software",
+      "aliases": [
+        "RedLeaves",
+        "BUGJUICE"
+      ]
+    },
+    {
+      "canonical": "Cobalt Strike",
+      "attack_id": "S0154",
+      "type": "software",
+      "aliases": [
+        "Cobalt Strike"
+      ]
+    },
+    {
+      "canonical": "WINDSHIELD",
+      "attack_id": "S0155",
+      "type": "software",
+      "aliases": []
+    },
+    {
+      "canonical": "KOMPROGO",
+      "attack_id": "S0156",
+      "type": "software",
+      "aliases": [
+        "KOMPROGO"
+      ]
+    },
+    {
+      "canonical": "SOUNDBITE",
+      "attack_id": "S0157",
+      "type": "software",
+      "aliases": [
+        "SOUNDBITE"
+      ]
+    },
+    {
+      "canonical": "PHOREAL",
+      "attack_id": "S0158",
+      "type": "software",
+      "aliases": [
+        "PHOREAL"
+      ]
+    },
+    {
+      "canonical": "SNUGRIDE",
+      "attack_id": "S0159",
+      "type": "software",
+      "aliases": [
+        "SNUGRIDE"
+      ]
+    },
+    {
+      "canonical": "certutil",
+      "attack_id": "S0160",
+      "type": "software",
+      "aliases": [
+        "certutil",
+        "certutil.exe"
+      ]
+    },
+    {
+      "canonical": "XAgentOSX",
+      "attack_id": "S0161",
+      "type": "software",
+      "aliases": [
+        "XAgentOSX",
+        "OSX.Sofacy"
+      ]
+    },
+    {
+      "canonical": "Komplex",
+      "attack_id": "S0162",
+      "type": "software",
+      "aliases": [
+        "Komplex"
+      ]
+    },
+    {
+      "canonical": "Janicab",
+      "attack_id": "S0163",
+      "type": "software",
+      "aliases": [
+        "Janicab"
+      ]
+    },
+    {
+      "canonical": "TDTESS",
+      "attack_id": "S0164",
+      "type": "software",
+      "aliases": [
+        "TDTESS"
+      ]
+    },
+    {
+      "canonical": "OSInfo",
+      "attack_id": "S0165",
+      "type": "software",
+      "aliases": [
+        "OSInfo"
+      ]
+    },
+    {
+      "canonical": "RemoteCMD",
+      "attack_id": "S0166",
+      "type": "software",
+      "aliases": [
+        "RemoteCMD"
+      ]
+    },
+    {
+      "canonical": "Matryoshka",
+      "attack_id": "S0167",
+      "type": "software",
+      "aliases": [
+        "Matryoshka"
+      ]
+    },
+    {
+      "canonical": "Gazer",
+      "attack_id": "S0168",
+      "type": "software",
+      "aliases": [
+        "Gazer",
+        "WhiteBear"
+      ]
+    },
+    {
+      "canonical": "RawPOS",
+      "attack_id": "S0169",
+      "type": "software",
+      "aliases": [
+        "RawPOS",
+        "FIENDCRY",
+        "DUEBREW",
+        "DRIFTWOOD"
+      ]
+    },
+    {
+      "canonical": "Helminth",
+      "attack_id": "S0170",
+      "type": "software",
+      "aliases": [
+        "Helminth"
+      ]
+    },
+    {
+      "canonical": "Felismus",
+      "attack_id": "S0171",
+      "type": "software",
+      "aliases": [
+        "Felismus"
+      ]
+    },
+    {
+      "canonical": "Reaver",
+      "attack_id": "S0172",
+      "type": "software",
+      "aliases": [
+        "Reaver"
+      ]
+    },
+    {
+      "canonical": "FLIPSIDE",
+      "attack_id": "S0173",
+      "type": "software",
+      "aliases": [
+        "FLIPSIDE"
+      ]
+    },
+    {
+      "canonical": "Responder",
+      "attack_id": "S0174",
+      "type": "software",
+      "aliases": [
+        "Responder"
+      ]
+    },
+    {
+      "canonical": "meek",
+      "attack_id": "S0175",
+      "type": "software",
+      "aliases": []
+    },
+    {
+      "canonical": "Wingbird",
+      "attack_id": "S0176",
+      "type": "software",
+      "aliases": [
+        "Wingbird"
+      ]
+    },
+    {
+      "canonical": "Power Loader",
+      "attack_id": "S0177",
+      "type": "software",
+      "aliases": []
+    },
+    {
+      "canonical": "Truvasys",
+      "attack_id": "S0178",
+      "type": "software",
+      "aliases": [
+        "Truvasys"
+      ]
+    },
+    {
+      "canonical": "MimiPenguin",
+      "attack_id": "S0179",
+      "type": "software",
+      "aliases": [
+        "MimiPenguin"
+      ]
+    },
+    {
+      "canonical": "Volgmer",
+      "attack_id": "S0180",
+      "type": "software",
+      "aliases": [
+        "Volgmer"
+      ]
+    },
+    {
+      "canonical": "FALLCHILL",
+      "attack_id": "S0181",
+      "type": "software",
+      "aliases": [
+        "FALLCHILL"
+      ]
+    },
+    {
+      "canonical": "FinFisher",
+      "attack_id": "S0182",
+      "type": "software",
+      "aliases": [
+        "FinFisher",
+        "FinSpy"
+      ]
+    },
+    {
+      "canonical": "Tor",
+      "attack_id": "S0183",
+      "type": "software",
+      "aliases": []
+    },
+    {
+      "canonical": "POWRUNER",
+      "attack_id": "S0184",
+      "type": "software",
+      "aliases": [
+        "POWRUNER"
+      ]
+    },
+    {
+      "canonical": "SEASHARPEE",
+      "attack_id": "S0185",
+      "type": "software",
+      "aliases": [
+        "SEASHARPEE"
+      ]
+    },
+    {
+      "canonical": "DownPaper",
+      "attack_id": "S0186",
+      "type": "software",
+      "aliases": [
+        "DownPaper"
+      ]
+    },
+    {
+      "canonical": "Daserf",
+      "attack_id": "S0187",
+      "type": "software",
+      "aliases": [
+        "Daserf",
+        "Muirim",
+        "Nioupale"
+      ]
+    },
+    {
+      "canonical": "Starloader",
+      "attack_id": "S0188",
+      "type": "software",
+      "aliases": [
+        "Starloader"
+      ]
+    },
+    {
+      "canonical": "ISMInjector",
+      "attack_id": "S0189",
+      "type": "software",
+      "aliases": [
+        "ISMInjector"
+      ]
+    },
+    {
+      "canonical": "BITSAdmin",
+      "attack_id": "S0190",
+      "type": "software",
+      "aliases": [
+        "BITSAdmin"
+      ]
+    },
+    {
+      "canonical": "Winexe",
+      "attack_id": "S0191",
+      "type": "software",
+      "aliases": [
+        "Winexe"
+      ]
+    },
+    {
+      "canonical": "Pupy",
+      "attack_id": "S0192",
+      "type": "software",
+      "aliases": [
+        "Pupy"
+      ]
+    },
+    {
+      "canonical": "Forfiles",
+      "attack_id": "S0193",
+      "type": "software",
+      "aliases": []
+    },
+    {
+      "canonical": "PowerSploit",
+      "attack_id": "S0194",
+      "type": "software",
+      "aliases": [
+        "PowerSploit"
+      ]
+    },
+    {
+      "canonical": "SDelete",
+      "attack_id": "S0195",
+      "type": "software",
+      "aliases": [
+        "SDelete"
+      ]
+    },
+    {
+      "canonical": "PUNCHBUGGY",
+      "attack_id": "S0196",
+      "type": "software",
+      "aliases": [
+        "PUNCHBUGGY",
+        "ShellTea"
+      ]
+    },
+    {
+      "canonical": "PUNCHTRACK",
+      "attack_id": "S0197",
+      "type": "software",
+      "aliases": [
+        "PUNCHTRACK",
+        "PSVC"
+      ]
+    },
+    {
+      "canonical": "NETWIRE",
+      "attack_id": "S0198",
+      "type": "software",
+      "aliases": [
+        "NETWIRE"
+      ]
+    },
+    {
+      "canonical": "TURNEDUP",
+      "attack_id": "S0199",
+      "type": "software",
+      "aliases": [
+        "TURNEDUP"
+      ]
+    },
+    {
+      "canonical": "Dipsind",
+      "attack_id": "S0200",
+      "type": "software",
+      "aliases": [
+        "Dipsind"
+      ]
+    },
+    {
+      "canonical": "JPIN",
+      "attack_id": "S0201",
+      "type": "software",
+      "aliases": [
+        "JPIN"
+      ]
+    },
+    {
+      "canonical": "adbupd",
+      "attack_id": "S0202",
+      "type": "software",
+      "aliases": [
+        "adbupd"
+      ]
+    },
+    {
+      "canonical": "Hydraq",
+      "attack_id": "S0203",
+      "type": "software",
+      "aliases": [
+        "Hydraq",
+        "Roarur",
+        "MdmBot",
+        "HomeUnix",
+        "Homux",
+        "HidraQ",
+        "McRat",
+        "Aurora",
+        "9002 RAT"
+      ]
+    },
+    {
+      "canonical": "Briba",
+      "attack_id": "S0204",
+      "type": "software",
+      "aliases": [
+        "Briba"
+      ]
+    },
+    {
+      "canonical": "Naid",
+      "attack_id": "S0205",
+      "type": "software",
+      "aliases": [
+        "Naid"
+      ]
+    },
+    {
+      "canonical": "Wiarp",
+      "attack_id": "S0206",
+      "type": "software",
+      "aliases": [
+        "Wiarp"
+      ]
+    },
+    {
+      "canonical": "Vasport",
+      "attack_id": "S0207",
+      "type": "software",
+      "aliases": [
+        "Vasport"
+      ]
+    },
+    {
+      "canonical": "Pasam",
+      "attack_id": "S0208",
+      "type": "software",
+      "aliases": [
+        "Pasam"
+      ]
+    },
+    {
+      "canonical": "Nerex",
+      "attack_id": "S0210",
+      "type": "software",
+      "aliases": [
+        "Nerex"
+      ]
+    },
+    {
+      "canonical": "Linfo",
+      "attack_id": "S0211",
+      "type": "software",
+      "aliases": [
+        "Linfo"
+      ]
+    },
+    {
+      "canonical": "CORALDECK",
+      "attack_id": "S0212",
+      "type": "software",
+      "aliases": [
+        "CORALDECK"
+      ]
+    },
+    {
+      "canonical": "DOGCALL",
+      "attack_id": "S0213",
+      "type": "software",
+      "aliases": [
+        "DOGCALL"
+      ]
+    },
+    {
+      "canonical": "HAPPYWORK",
+      "attack_id": "S0214",
+      "type": "software",
+      "aliases": [
+        "HAPPYWORK"
+      ]
+    },
+    {
+      "canonical": "KARAE",
+      "attack_id": "S0215",
+      "type": "software",
+      "aliases": [
+        "KARAE"
+      ]
+    },
+    {
+      "canonical": "POORAIM",
+      "attack_id": "S0216",
+      "type": "software",
+      "aliases": [
+        "POORAIM"
+      ]
+    },
+    {
+      "canonical": "SHUTTERSPEED",
+      "attack_id": "S0217",
+      "type": "software",
+      "aliases": [
+        "SHUTTERSPEED"
+      ]
+    },
+    {
+      "canonical": "SLOWDRIFT",
+      "attack_id": "S0218",
+      "type": "software",
+      "aliases": [
+        "SLOWDRIFT"
+      ]
+    },
+    {
+      "canonical": "WINERACK",
+      "attack_id": "S0219",
+      "type": "software",
+      "aliases": [
+        "WINERACK"
+      ]
+    },
+    {
+      "canonical": "Chaos",
+      "attack_id": "S0220",
+      "type": "software",
+      "aliases": [
+        "Chaos"
+      ]
+    },
+    {
+      "canonical": "Umbreon",
+      "attack_id": "S0221",
+      "type": "software",
+      "aliases": [
+        "Umbreon"
+      ]
+    },
+    {
+      "canonical": "CCBkdr",
+      "attack_id": "S0222",
+      "type": "software",
+      "aliases": [
+        "CCBkdr"
+      ]
+    },
+    {
+      "canonical": "POWERSTATS",
+      "attack_id": "S0223",
+      "type": "software",
+      "aliases": [
+        "POWERSTATS",
+        "Powermud"
+      ]
+    },
+    {
+      "canonical": "Havij",
+      "attack_id": "S0224",
+      "type": "software",
+      "aliases": []
+    },
+    {
+      "canonical": "sqlmap",
+      "attack_id": "S0225",
+      "type": "software",
+      "aliases": [
+        "sqlmap"
+      ]
+    },
+    {
+      "canonical": "Smoke Loader",
+      "attack_id": "S0226",
+      "type": "software",
+      "aliases": [
+        "Smoke Loader",
+        "Dofoil"
+      ]
+    },
+    {
+      "canonical": "spwebmember",
+      "attack_id": "S0227",
+      "type": "software",
+      "aliases": [
+        "spwebmember"
+      ]
+    },
+    {
+      "canonical": "NanHaiShu",
+      "attack_id": "S0228",
+      "type": "software",
+      "aliases": [
+        "NanHaiShu"
+      ]
+    },
+    {
+      "canonical": "Orz",
+      "attack_id": "S0229",
+      "type": "software",
+      "aliases": [
+        "AIRBREAK"
+      ]
+    },
+    {
+      "canonical": "ZeroT",
+      "attack_id": "S0230",
+      "type": "software",
+      "aliases": [
+        "ZeroT"
+      ]
+    },
+    {
+      "canonical": "Invoke-PSImage",
+      "attack_id": "S0231",
+      "type": "software",
+      "aliases": [
+        "Invoke-PSImage"
+      ]
+    },
+    {
+      "canonical": "HOMEFRY",
+      "attack_id": "S0232",
+      "type": "software",
+      "aliases": [
+        "HOMEFRY"
+      ]
+    },
+    {
+      "canonical": "MURKYTOP",
+      "attack_id": "S0233",
+      "type": "software",
+      "aliases": [
+        "MURKYTOP"
+      ]
+    },
+    {
+      "canonical": "Bandook",
+      "attack_id": "S0234",
+      "type": "software",
+      "aliases": [
+        "Bandook"
+      ]
+    },
+    {
+      "canonical": "CrossRAT",
+      "attack_id": "S0235",
+      "type": "software",
+      "aliases": [
+        "CrossRAT"
+      ]
+    },
+    {
+      "canonical": "Kwampirs",
+      "attack_id": "S0236",
+      "type": "software",
+      "aliases": [
+        "Kwampirs"
+      ]
+    },
+    {
+      "canonical": "GravityRAT",
+      "attack_id": "S0237",
+      "type": "software",
+      "aliases": [
+        "GravityRAT"
+      ]
+    },
+    {
+      "canonical": "Proxysvc",
+      "attack_id": "S0238",
+      "type": "software",
+      "aliases": [
+        "Proxysvc"
+      ]
+    },
+    {
+      "canonical": "Bankshot",
+      "attack_id": "S0239",
+      "type": "software",
+      "aliases": [
+        "Bankshot",
+        "Trojan Manuscript"
+      ]
+    },
+    {
+      "canonical": "ROKRAT",
+      "attack_id": "S0240",
+      "type": "software",
+      "aliases": [
+        "ROKRAT"
+      ]
+    },
+    {
+      "canonical": "RATANKBA",
+      "attack_id": "S0241",
+      "type": "software",
+      "aliases": [
+        "RATANKBA"
+      ]
+    },
+    {
+      "canonical": "SynAck",
+      "attack_id": "S0242",
+      "type": "software",
+      "aliases": [
+        "SynAck"
+      ]
+    },
+    {
+      "canonical": "DealersChoice",
+      "attack_id": "S0243",
+      "type": "software",
+      "aliases": [
+        "DealersChoice"
+      ]
+    },
+    {
+      "canonical": "Comnie",
+      "attack_id": "S0244",
+      "type": "software",
+      "aliases": [
+        "Comnie"
+      ]
+    },
+    {
+      "canonical": "BADCALL",
+      "attack_id": "S0245",
+      "type": "software",
+      "aliases": [
+        "BADCALL"
+      ]
+    },
+    {
+      "canonical": "HARDRAIN",
+      "attack_id": "S0246",
+      "type": "software",
+      "aliases": [
+        "HARDRAIN"
+      ]
+    },
+    {
+      "canonical": "NavRAT",
+      "attack_id": "S0247",
+      "type": "software",
+      "aliases": [
+        "NavRAT"
+      ]
+    },
+    {
+      "canonical": "yty",
+      "attack_id": "S0248",
+      "type": "software",
+      "aliases": []
+    },
+    {
+      "canonical": "Gold Dragon",
+      "attack_id": "S0249",
+      "type": "software",
+      "aliases": [
+        "Gold Dragon"
+      ]
+    },
+    {
+      "canonical": "Koadic",
+      "attack_id": "S0250",
+      "type": "software",
+      "aliases": [
+        "Koadic"
+      ]
+    },
+    {
+      "canonical": "Zebrocy",
+      "attack_id": "S0251",
+      "type": "software",
+      "aliases": [
+        "Zebrocy",
+        "Zekapab"
+      ]
+    },
+    {
+      "canonical": "Brave Prince",
+      "attack_id": "S0252",
+      "type": "software",
+      "aliases": [
+        "Brave Prince"
+      ]
+    },
+    {
+      "canonical": "RunningRAT",
+      "attack_id": "S0253",
+      "type": "software",
+      "aliases": [
+        "RunningRAT"
+      ]
+    },
+    {
+      "canonical": "PLAINTEE",
+      "attack_id": "S0254",
+      "type": "software",
+      "aliases": [
+        "PLAINTEE"
+      ]
+    },
+    {
+      "canonical": "DDKONG",
+      "attack_id": "S0255",
+      "type": "software",
+      "aliases": [
+        "DDKONG"
+      ]
+    },
+    {
+      "canonical": "Mosquito",
+      "attack_id": "S0256",
+      "type": "software",
+      "aliases": [
+        "Mosquito"
+      ]
+    },
+    {
+      "canonical": "VERMIN",
+      "attack_id": "S0257",
+      "type": "software",
+      "aliases": [
+        "VERMIN"
+      ]
+    },
+    {
+      "canonical": "RGDoor",
+      "attack_id": "S0258",
+      "type": "software",
+      "aliases": [
+        "RGDoor"
+      ]
+    },
+    {
+      "canonical": "InnaputRAT",
+      "attack_id": "S0259",
+      "type": "software",
+      "aliases": [
+        "InnaputRAT"
+      ]
+    },
+    {
+      "canonical": "InvisiMole",
+      "attack_id": "S0260",
+      "type": "software",
+      "aliases": [
+        "InvisiMole"
+      ]
+    },
+    {
+      "canonical": "Catchamas",
+      "attack_id": "S0261",
+      "type": "software",
+      "aliases": [
+        "Catchamas"
+      ]
+    },
+    {
+      "canonical": "QuasarRAT",
+      "attack_id": "S0262",
+      "type": "software",
+      "aliases": [
+        "QuasarRAT",
+        "xRAT"
+      ]
+    },
+    {
+      "canonical": "TYPEFRAME",
+      "attack_id": "S0263",
+      "type": "software",
+      "aliases": [
+        "TYPEFRAME"
+      ]
+    },
+    {
+      "canonical": "OopsIE",
+      "attack_id": "S0264",
+      "type": "software",
+      "aliases": [
+        "OopsIE"
+      ]
+    },
+    {
+      "canonical": "Kazuar",
+      "attack_id": "S0265",
+      "type": "software",
+      "aliases": [
+        "Kazuar"
+      ]
+    },
+    {
+      "canonical": "TrickBot",
+      "attack_id": "S0266",
+      "type": "software",
+      "aliases": [
+        "TrickBot",
+        "Totbrick",
+        "TSPY_TRICKLOAD"
+      ]
+    },
+    {
+      "canonical": "FELIXROOT",
+      "attack_id": "S0267",
+      "type": "software",
+      "aliases": [
+        "FELIXROOT",
+        "GreyEnergy mini"
+      ]
+    },
+    {
+      "canonical": "Bisonal",
+      "attack_id": "S0268",
+      "type": "software",
+      "aliases": [
+        "Bisonal"
+      ]
+    },
+    {
+      "canonical": "QUADAGENT",
+      "attack_id": "S0269",
+      "type": "software",
+      "aliases": [
+        "QUADAGENT"
+      ]
+    },
+    {
+      "canonical": "RogueRobin",
+      "attack_id": "S0270",
+      "type": "software",
+      "aliases": [
+        "RogueRobin"
+      ]
+    },
+    {
+      "canonical": "KEYMARBLE",
+      "attack_id": "S0271",
+      "type": "software",
+      "aliases": [
+        "KEYMARBLE"
+      ]
+    },
+    {
+      "canonical": "NDiskMonitor",
+      "attack_id": "S0272",
+      "type": "software",
+      "aliases": [
+        "NDiskMonitor"
+      ]
+    },
+    {
+      "canonical": "Socksbot",
+      "attack_id": "S0273",
+      "type": "software",
+      "aliases": [
+        "Socksbot"
+      ]
+    },
+    {
+      "canonical": "Calisto",
+      "attack_id": "S0274",
+      "type": "software",
+      "aliases": [
+        "Calisto"
+      ]
+    },
+    {
+      "canonical": "UPPERCUT",
+      "attack_id": "S0275",
+      "type": "software",
+      "aliases": [
+        "UPPERCUT",
+        "ANEL"
+      ]
+    },
+    {
+      "canonical": "Keydnap",
+      "attack_id": "S0276",
+      "type": "software",
+      "aliases": [
+        "Keydnap",
+        "OSX/Keydnap"
+      ]
+    },
+    {
+      "canonical": "FruitFly",
+      "attack_id": "S0277",
+      "type": "software",
+      "aliases": [
+        "FruitFly"
+      ]
+    },
+    {
+      "canonical": "iKitten",
+      "attack_id": "S0278",
+      "type": "software",
+      "aliases": [
+        "iKitten",
+        "OSX/MacDownloader"
+      ]
+    },
+    {
+      "canonical": "Proton",
+      "attack_id": "S0279",
+      "type": "software",
+      "aliases": [
+        "Proton"
+      ]
+    },
+    {
+      "canonical": "MirageFox",
+      "attack_id": "S0280",
+      "type": "software",
+      "aliases": [
+        "MirageFox"
+      ]
+    },
+    {
+      "canonical": "Dok",
+      "attack_id": "S0281",
+      "type": "software",
+      "aliases": [
+        "Retefe"
+      ]
+    },
+    {
+      "canonical": "MacSpy",
+      "attack_id": "S0282",
+      "type": "software",
+      "aliases": [
+        "MacSpy"
+      ]
+    },
+    {
+      "canonical": "jRAT",
+      "attack_id": "S0283",
+      "type": "software",
+      "aliases": [
+        "jRAT",
+        "JSocket",
+        "AlienSpy",
+        "Frutas",
+        "Sockrat",
+        "Unrecom",
+        "jFrutas",
+        "Adwind",
+        "jBiFrost",
+        "Trojan.Maljava"
+      ]
+    },
+    {
+      "canonical": "More_eggs",
+      "attack_id": "S0284",
+      "type": "software",
+      "aliases": [
+        "More_eggs",
+        "SKID",
+        "Terra Loader",
+        "SpicyOmelette"
+      ]
+    },
+    {
+      "canonical": "Zeus Panda",
+      "attack_id": "S0330",
+      "type": "software",
+      "aliases": [
+        "Zeus Panda"
+      ]
+    },
+    {
+      "canonical": "Agent Tesla",
+      "attack_id": "S0331",
+      "type": "software",
+      "aliases": [
+        "Agent Tesla"
+      ]
+    },
+    {
+      "canonical": "Remcos",
+      "attack_id": "S0332",
+      "type": "software",
+      "aliases": [
+        "Remcos"
+      ]
+    },
+    {
+      "canonical": "UBoatRAT",
+      "attack_id": "S0333",
+      "type": "software",
+      "aliases": [
+        "UBoatRAT"
+      ]
+    },
+    {
+      "canonical": "DarkComet",
+      "attack_id": "S0334",
+      "type": "software",
+      "aliases": [
+        "DarkComet",
+        "DarkKomet",
+        "Fynloski",
+        "Krademok",
+        "FYNLOS"
+      ]
+    },
+    {
+      "canonical": "Carbon",
+      "attack_id": "S0335",
+      "type": "software",
+      "aliases": []
+    },
+    {
+      "canonical": "NanoCore",
+      "attack_id": "S0336",
+      "type": "software",
+      "aliases": [
+        "NanoCore"
+      ]
+    },
+    {
+      "canonical": "BadPatch",
+      "attack_id": "S0337",
+      "type": "software",
+      "aliases": [
+        "BadPatch"
+      ]
+    },
+    {
+      "canonical": "Cobian RAT",
+      "attack_id": "S0338",
+      "type": "software",
+      "aliases": [
+        "Cobian RAT"
+      ]
+    },
+    {
+      "canonical": "Micropsia",
+      "attack_id": "S0339",
+      "type": "software",
+      "aliases": [
+        "Micropsia"
+      ]
+    },
+    {
+      "canonical": "Octopus",
+      "attack_id": "S0340",
+      "type": "software",
+      "aliases": [
+        "Octopus"
+      ]
+    },
+    {
+      "canonical": "Xbash",
+      "attack_id": "S0341",
+      "type": "software",
+      "aliases": [
+        "Xbash"
+      ]
+    },
+    {
+      "canonical": "GreyEnergy",
+      "attack_id": "S0342",
+      "type": "software",
+      "aliases": [
+        "GreyEnergy"
+      ]
+    },
+    {
+      "canonical": "Exaramel for Windows",
+      "attack_id": "S0343",
+      "type": "software",
+      "aliases": [
+        "Exaramel for Windows"
+      ]
+    },
+    {
+      "canonical": "Azorult",
+      "attack_id": "S0344",
+      "type": "software",
+      "aliases": [
+        "Azorult"
+      ]
+    },
+    {
+      "canonical": "Seasalt",
+      "attack_id": "S0345",
+      "type": "software",
+      "aliases": [
+        "Seasalt"
+      ]
+    },
+    {
+      "canonical": "OceanSalt",
+      "attack_id": "S0346",
+      "type": "software",
+      "aliases": [
+        "OceanSalt"
+      ]
+    },
+    {
+      "canonical": "AuditCred",
+      "attack_id": "S0347",
+      "type": "software",
+      "aliases": [
+        "AuditCred",
+        "Roptimizer"
+      ]
+    },
+    {
+      "canonical": "Cardinal RAT",
+      "attack_id": "S0348",
+      "type": "software",
+      "aliases": [
+        "Cardinal RAT"
+      ]
+    },
+    {
+      "canonical": "LaZagne",
+      "attack_id": "S0349",
+      "type": "software",
+      "aliases": [
+        "LaZagne"
+      ]
+    },
+    {
+      "canonical": "zwShell",
+      "attack_id": "S0350",
+      "type": "software",
+      "aliases": [
+        "zwShell"
+      ]
+    },
+    {
+      "canonical": "Cannon",
+      "attack_id": "S0351",
+      "type": "software",
+      "aliases": [
+        "Cannon"
+      ]
+    },
+    {
+      "canonical": "OSX_OCEANLOTUS.D",
+      "attack_id": "S0352",
+      "type": "software",
+      "aliases": [
+        "OSX_OCEANLOTUS.D",
+        "Backdoor.MacOS.OCEANLOTUS.F"
+      ]
+    },
+    {
+      "canonical": "NOKKI",
+      "attack_id": "S0353",
+      "type": "software",
+      "aliases": [
+        "NOKKI"
+      ]
+    },
+    {
+      "canonical": "Denis",
+      "attack_id": "S0354",
+      "type": "software",
+      "aliases": [
+        "Denis"
+      ]
+    },
+    {
+      "canonical": "Final1stspy",
+      "attack_id": "S0355",
+      "type": "software",
+      "aliases": [
+        "Final1stspy"
+      ]
+    },
+    {
+      "canonical": "KONNI",
+      "attack_id": "S0356",
+      "type": "software",
+      "aliases": [
+        "KONNI"
+      ]
+    },
+    {
+      "canonical": "Impacket",
+      "attack_id": "S0357",
+      "type": "software",
+      "aliases": [
+        "Impacket"
+      ]
+    },
+    {
+      "canonical": "Ruler",
+      "attack_id": "S0358",
+      "type": "software",
+      "aliases": [
+        "Ruler"
+      ]
+    },
+    {
+      "canonical": "Nltest",
+      "attack_id": "S0359",
+      "type": "software",
+      "aliases": [
+        "Nltest"
+      ]
+    },
+    {
+      "canonical": "BONDUPDATER",
+      "attack_id": "S0360",
+      "type": "software",
+      "aliases": [
+        "BONDUPDATER"
+      ]
+    },
+    {
+      "canonical": "Expand",
+      "attack_id": "S0361",
+      "type": "software",
+      "aliases": [
+        "Expand"
+      ]
+    },
+    {
+      "canonical": "Linux Rabbit",
+      "attack_id": "S0362",
+      "type": "software",
+      "aliases": [
+        "Linux Rabbit"
+      ]
+    },
+    {
+      "canonical": "Empire",
+      "attack_id": "S0363",
+      "type": "software",
+      "aliases": [
+        "EmPyre",
+        "PowerShell Empire"
+      ]
+    },
+    {
+      "canonical": "RawDisk",
+      "attack_id": "S0364",
+      "type": "software",
+      "aliases": [
+        "RawDisk"
+      ]
+    },
+    {
+      "canonical": "Olympic Destroyer",
+      "attack_id": "S0365",
+      "type": "software",
+      "aliases": [
+        "Olympic Destroyer"
+      ]
+    },
+    {
+      "canonical": "WannaCry",
+      "attack_id": "S0366",
+      "type": "software",
+      "aliases": [
+        "WannaCry",
+        "WanaCry",
+        "WanaCrypt",
+        "WanaCrypt0r",
+        "WCry"
+      ]
+    },
+    {
+      "canonical": "Emotet",
+      "attack_id": "S0367",
+      "type": "software",
+      "aliases": [
+        "Emotet",
+        "Geodo"
+      ]
+    },
+    {
+      "canonical": "NotPetya",
+      "attack_id": "S0368",
+      "type": "software",
+      "aliases": [
+        "NotPetya",
+        "ExPetr",
+        "Diskcoder.C",
+        "GoldenEye",
+        "Petrwrap",
+        "Nyetya"
+      ]
+    },
+    {
+      "canonical": "CoinTicker",
+      "attack_id": "S0369",
+      "type": "software",
+      "aliases": [
+        "CoinTicker"
+      ]
+    },
+    {
+      "canonical": "SamSam",
+      "attack_id": "S0370",
+      "type": "software",
+      "aliases": [
+        "SamSam",
+        "Samas"
+      ]
+    },
+    {
+      "canonical": "POWERTON",
+      "attack_id": "S0371",
+      "type": "software",
+      "aliases": [
+        "POWERTON"
+      ]
+    },
+    {
+      "canonical": "LockerGoga",
+      "attack_id": "S0372",
+      "type": "software",
+      "aliases": [
+        "LockerGoga"
+      ]
+    },
+    {
+      "canonical": "Astaroth",
+      "attack_id": "S0373",
+      "type": "software",
+      "aliases": [
+        "Astaroth",
+        "Guildma"
+      ]
+    },
+    {
+      "canonical": "SpeakUp",
+      "attack_id": "S0374",
+      "type": "software",
+      "aliases": [
+        "SpeakUp"
+      ]
+    },
+    {
+      "canonical": "Remexi",
+      "attack_id": "S0375",
+      "type": "software",
+      "aliases": [
+        "Remexi"
+      ]
+    },
+    {
+      "canonical": "HOPLIGHT",
+      "attack_id": "S0376",
+      "type": "software",
+      "aliases": [
+        "HOPLIGHT"
+      ]
+    },
+    {
+      "canonical": "Ebury",
+      "attack_id": "S0377",
+      "type": "software",
+      "aliases": [
+        "Ebury"
+      ]
+    },
+    {
+      "canonical": "PoshC2",
+      "attack_id": "S0378",
+      "type": "software",
+      "aliases": [
+        "PoshC2"
+      ]
+    },
+    {
+      "canonical": "Revenge RAT",
+      "attack_id": "S0379",
+      "type": "software",
+      "aliases": [
+        "Revenge RAT"
+      ]
+    },
+    {
+      "canonical": "StoneDrill",
+      "attack_id": "S0380",
+      "type": "software",
+      "aliases": [
+        "StoneDrill",
+        "DROPSHOT"
+      ]
+    },
+    {
+      "canonical": "FlawedAmmyy",
+      "attack_id": "S0381",
+      "type": "software",
+      "aliases": [
+        "FlawedAmmyy"
+      ]
+    },
+    {
+      "canonical": "ServHelper",
+      "attack_id": "S0382",
+      "type": "software",
+      "aliases": [
+        "ServHelper"
+      ]
+    },
+    {
+      "canonical": "FlawedGrace",
+      "attack_id": "S0383",
+      "type": "software",
+      "aliases": [
+        "FlawedGrace"
+      ]
+    },
+    {
+      "canonical": "Dridex",
+      "attack_id": "S0384",
+      "type": "software",
+      "aliases": [
+        "Dridex",
+        "Bugat v5"
+      ]
+    },
+    {
+      "canonical": "njRAT",
+      "attack_id": "S0385",
+      "type": "software",
+      "aliases": [
+        "njRAT",
+        "Njw0rm",
+        "Bladabindi"
+      ]
+    },
+    {
+      "canonical": "Ursnif",
+      "attack_id": "S0386",
+      "type": "software",
+      "aliases": [
+        "Ursnif",
+        "Gozi-ISFB",
+        "PE_URSNIF",
+        "Dreambot"
+      ]
+    },
+    {
+      "canonical": "KeyBoy",
+      "attack_id": "S0387",
+      "type": "software",
+      "aliases": [
+        "KeyBoy"
+      ]
+    },
+    {
+      "canonical": "YAHOYAH",
+      "attack_id": "S0388",
+      "type": "software",
+      "aliases": [
+        "YAHOYAH"
+      ]
+    },
+    {
+      "canonical": "JCry",
+      "attack_id": "S0389",
+      "type": "software",
+      "aliases": [
+        "JCry"
+      ]
+    },
+    {
+      "canonical": "SQLRat",
+      "attack_id": "S0390",
+      "type": "software",
+      "aliases": [
+        "SQLRat"
+      ]
+    },
+    {
+      "canonical": "HAWKBALL",
+      "attack_id": "S0391",
+      "type": "software",
+      "aliases": [
+        "HAWKBALL"
+      ]
+    },
+    {
+      "canonical": "PowerStallion",
+      "attack_id": "S0393",
+      "type": "software",
+      "aliases": [
+        "PowerStallion"
+      ]
+    },
+    {
+      "canonical": "HiddenWasp",
+      "attack_id": "S0394",
+      "type": "software",
+      "aliases": [
+        "HiddenWasp"
+      ]
+    },
+    {
+      "canonical": "LightNeuron",
+      "attack_id": "S0395",
+      "type": "software",
+      "aliases": [
+        "LightNeuron"
+      ]
+    },
+    {
+      "canonical": "EvilBunny",
+      "attack_id": "S0396",
+      "type": "software",
+      "aliases": [
+        "EvilBunny"
+      ]
+    },
+    {
+      "canonical": "LoJax",
+      "attack_id": "S0397",
+      "type": "software",
+      "aliases": [
+        "LoJax"
+      ]
+    },
+    {
+      "canonical": "HyperBro",
+      "attack_id": "S0398",
+      "type": "software",
+      "aliases": [
+        "HyperBro"
+      ]
+    },
+    {
+      "canonical": "RobbinHood",
+      "attack_id": "S0400",
+      "type": "software",
+      "aliases": [
+        "RobbinHood"
+      ]
+    },
+    {
+      "canonical": "Exaramel for Linux",
+      "attack_id": "S0401",
+      "type": "software",
+      "aliases": [
+        "Exaramel for Linux"
+      ]
+    },
+    {
+      "canonical": "OSX/Shlayer",
+      "attack_id": "S0402",
+      "type": "software",
+      "aliases": [
+        "OSX/Shlayer",
+        "Zshlayer",
+        "Crossrider"
+      ]
+    },
+    {
+      "canonical": "esentutl",
+      "attack_id": "S0404",
+      "type": "software",
+      "aliases": [
+        "esentutl",
+        "esentutl.exe"
+      ]
+    },
+    {
+      "canonical": "Machete",
+      "attack_id": "S0409",
+      "type": "software",
+      "aliases": [
+        "Machete",
+        "Pyark"
+      ]
+    },
+    {
+      "canonical": "Fysbis",
+      "attack_id": "S0410",
+      "type": "software",
+      "aliases": [
+        "Fysbis"
+      ]
+    },
+    {
+      "canonical": "ZxShell",
+      "attack_id": "S0412",
+      "type": "software",
+      "aliases": [
+        "ZxShell",
+        "Sensocode"
+      ]
+    },
+    {
+      "canonical": "MailSniper",
+      "attack_id": "S0413",
+      "type": "software",
+      "aliases": [
+        "MailSniper"
+      ]
+    },
+    {
+      "canonical": "BabyShark",
+      "attack_id": "S0414",
+      "type": "software",
+      "aliases": [
+        "BabyShark",
+        "LATEOP"
+      ]
+    },
+    {
+      "canonical": "BOOSTWRITE",
+      "attack_id": "S0415",
+      "type": "software",
+      "aliases": [
+        "BOOSTWRITE"
+      ]
+    },
+    {
+      "canonical": "RDFSNIFFER",
+      "attack_id": "S0416",
+      "type": "software",
+      "aliases": [
+        "RDFSNIFFER"
+      ]
+    },
+    {
+      "canonical": "GRIFFON",
+      "attack_id": "S0417",
+      "type": "software",
+      "aliases": [
+        "GRIFFON"
+      ]
+    },
+    {
+      "canonical": "PoetRAT",
+      "attack_id": "S0428",
+      "type": "software",
+      "aliases": [
+        "PoetRAT"
+      ]
+    },
+    {
+      "canonical": "Winnti for Linux",
+      "attack_id": "S0430",
+      "type": "software",
+      "aliases": [
+        "Winnti for Linux"
+      ]
+    },
+    {
+      "canonical": "HotCroissant",
+      "attack_id": "S0431",
+      "type": "software",
+      "aliases": [
+        "HotCroissant"
+      ]
+    },
+    {
+      "canonical": "Rifdoor",
+      "attack_id": "S0433",
+      "type": "software",
+      "aliases": [
+        "Rifdoor"
+      ]
+    },
+    {
+      "canonical": "Imminent Monitor",
+      "attack_id": "S0434",
+      "type": "software",
+      "aliases": [
+        "Imminent Monitor"
+      ]
+    },
+    {
+      "canonical": "PLEAD",
+      "attack_id": "S0435",
+      "type": "software",
+      "aliases": [
+        "PLEAD"
+      ]
+    },
+    {
+      "canonical": "TSCookie",
+      "attack_id": "S0436",
+      "type": "software",
+      "aliases": [
+        "TSCookie"
+      ]
+    },
+    {
+      "canonical": "Kivars",
+      "attack_id": "S0437",
+      "type": "software",
+      "aliases": [
+        "Kivars"
+      ]
+    },
+    {
+      "canonical": "Attor",
+      "attack_id": "S0438",
+      "type": "software",
+      "aliases": [
+        "Attor"
+      ]
+    },
+    {
+      "canonical": "Okrum",
+      "attack_id": "S0439",
+      "type": "software",
+      "aliases": [
+        "Okrum"
+      ]
+    },
+    {
+      "canonical": "PowerShower",
+      "attack_id": "S0441",
+      "type": "software",
+      "aliases": [
+        "PowerShower"
+      ]
+    },
+    {
+      "canonical": "VBShower",
+      "attack_id": "S0442",
+      "type": "software",
+      "aliases": [
+        "VBShower"
+      ]
+    },
+    {
+      "canonical": "MESSAGETAP",
+      "attack_id": "S0443",
+      "type": "software",
+      "aliases": [
+        "MESSAGETAP"
+      ]
+    },
+    {
+      "canonical": "ShimRat",
+      "attack_id": "S0444",
+      "type": "software",
+      "aliases": [
+        "ShimRat"
+      ]
+    },
+    {
+      "canonical": "ShimRatReporter",
+      "attack_id": "S0445",
+      "type": "software",
+      "aliases": [
+        "ShimRatReporter"
+      ]
+    },
+    {
+      "canonical": "Ryuk",
+      "attack_id": "S0446",
+      "type": "software",
+      "aliases": [
+        "Ryuk"
+      ]
+    },
+    {
+      "canonical": "Lokibot",
+      "attack_id": "S0447",
+      "type": "software",
+      "aliases": [
+        "Lokibot"
+      ]
+    },
+    {
+      "canonical": "Rising Sun",
+      "attack_id": "S0448",
+      "type": "software",
+      "aliases": [
+        "Rising Sun"
+      ]
+    },
+    {
+      "canonical": "Maze",
+      "attack_id": "S0449",
+      "type": "software",
+      "aliases": [
+        "Maze"
+      ]
+    },
+    {
+      "canonical": "SHARPSTATS",
+      "attack_id": "S0450",
+      "type": "software",
+      "aliases": [
+        "SHARPSTATS"
+      ]
+    },
+    {
+      "canonical": "LoudMiner",
+      "attack_id": "S0451",
+      "type": "software",
+      "aliases": [
+        "LoudMiner"
+      ]
+    },
+    {
+      "canonical": "USBferry",
+      "attack_id": "S0452",
+      "type": "software",
+      "aliases": [
+        "USBferry"
+      ]
+    },
+    {
+      "canonical": "Pony",
+      "attack_id": "S0453",
+      "type": "software",
+      "aliases": [
+        "Pony"
+      ]
+    },
+    {
+      "canonical": "Cadelspy",
+      "attack_id": "S0454",
+      "type": "software",
+      "aliases": [
+        "Cadelspy"
+      ]
+    },
+    {
+      "canonical": "Metamorfo",
+      "attack_id": "S0455",
+      "type": "software",
+      "aliases": [
+        "Metamorfo",
+        "Casbaneiro"
+      ]
+    },
+    {
+      "canonical": "Aria-body",
+      "attack_id": "S0456",
+      "type": "software",
+      "aliases": [
+        "Aria-body"
+      ]
+    },
+    {
+      "canonical": "Netwalker",
+      "attack_id": "S0457",
+      "type": "software",
+      "aliases": [
+        "Netwalker"
+      ]
+    },
+    {
+      "canonical": "Ramsay",
+      "attack_id": "S0458",
+      "type": "software",
+      "aliases": [
+        "Ramsay"
+      ]
+    },
+    {
+      "canonical": "MechaFlounder",
+      "attack_id": "S0459",
+      "type": "software",
+      "aliases": [
+        "MechaFlounder"
+      ]
+    },
+    {
+      "canonical": "Get2",
+      "attack_id": "S0460",
+      "type": "software",
+      "aliases": [
+        "Get2"
+      ]
+    },
+    {
+      "canonical": "SDBbot",
+      "attack_id": "S0461",
+      "type": "software",
+      "aliases": [
+        "SDBbot"
+      ]
+    },
+    {
+      "canonical": "CARROTBAT",
+      "attack_id": "S0462",
+      "type": "software",
+      "aliases": [
+        "CARROTBAT"
+      ]
+    },
+    {
+      "canonical": "SYSCON",
+      "attack_id": "S0464",
+      "type": "software",
+      "aliases": [
+        "SYSCON"
+      ]
+    },
+    {
+      "canonical": "CARROTBALL",
+      "attack_id": "S0465",
+      "type": "software",
+      "aliases": [
+        "CARROTBALL"
+      ]
+    },
+    {
+      "canonical": "WindTail",
+      "attack_id": "S0466",
+      "type": "software",
+      "aliases": [
+        "WindTail"
+      ]
+    },
+    {
+      "canonical": "TajMahal",
+      "attack_id": "S0467",
+      "type": "software",
+      "aliases": [
+        "TajMahal"
+      ]
+    },
+    {
+      "canonical": "Skidmap",
+      "attack_id": "S0468",
+      "type": "software",
+      "aliases": [
+        "Skidmap"
+      ]
+    },
+    {
+      "canonical": "ABK",
+      "attack_id": "S0469",
+      "type": "software",
+      "aliases": []
+    },
+    {
+      "canonical": "BBK",
+      "attack_id": "S0470",
+      "type": "software",
+      "aliases": []
+    },
+    {
+      "canonical": "build_downer",
+      "attack_id": "S0471",
+      "type": "software",
+      "aliases": [
+        "build_downer"
+      ]
+    },
+    {
+      "canonical": "down_new",
+      "attack_id": "S0472",
+      "type": "software",
+      "aliases": [
+        "down_new"
+      ]
+    },
+    {
+      "canonical": "Avenger",
+      "attack_id": "S0473",
+      "type": "software",
+      "aliases": [
+        "Avenger"
+      ]
+    },
+    {
+      "canonical": "BackConfig",
+      "attack_id": "S0475",
+      "type": "software",
+      "aliases": [
+        "BackConfig"
+      ]
+    },
+    {
+      "canonical": "Valak",
+      "attack_id": "S0476",
+      "type": "software",
+      "aliases": [
+        "Valak"
+      ]
+    },
+    {
+      "canonical": "Goopy",
+      "attack_id": "S0477",
+      "type": "software",
+      "aliases": [
+        "Goopy"
+      ]
+    },
+    {
+      "canonical": "Ragnar Locker",
+      "attack_id": "S0481",
+      "type": "software",
+      "aliases": [
+        "Ragnar Locker"
+      ]
+    },
+    {
+      "canonical": "Bundlore",
+      "attack_id": "S0482",
+      "type": "software",
+      "aliases": [
+        "Bundlore",
+        "OSX.Bundlore"
+      ]
+    },
+    {
+      "canonical": "IcedID",
+      "attack_id": "S0483",
+      "type": "software",
+      "aliases": [
+        "IcedID"
+      ]
+    },
+    {
+      "canonical": "Carberp",
+      "attack_id": "S0484",
+      "type": "software",
+      "aliases": [
+        "Carberp"
+      ]
+    },
+    {
+      "canonical": "Bonadan",
+      "attack_id": "S0486",
+      "type": "software",
+      "aliases": [
+        "Bonadan"
+      ]
+    },
+    {
+      "canonical": "Kessel",
+      "attack_id": "S0487",
+      "type": "software",
+      "aliases": [
+        "Kessel"
+      ]
+    },
+    {
+      "canonical": "CrackMapExec",
+      "attack_id": "S0488",
+      "type": "software",
+      "aliases": [
+        "CrackMapExec"
+      ]
+    },
+    {
+      "canonical": "StrongPity",
+      "attack_id": "S0491",
+      "type": "software",
+      "aliases": [
+        "StrongPity"
+      ]
+    },
+    {
+      "canonical": "CookieMiner",
+      "attack_id": "S0492",
+      "type": "software",
+      "aliases": [
+        "CookieMiner"
+      ]
+    },
+    {
+      "canonical": "GoldenSpy",
+      "attack_id": "S0493",
+      "type": "software",
+      "aliases": [
+        "GoldenSpy"
+      ]
+    },
+    {
+      "canonical": "RDAT",
+      "attack_id": "S0495",
+      "type": "software",
+      "aliases": [
+        "RDAT"
+      ]
+    },
+    {
+      "canonical": "REvil",
+      "attack_id": "S0496",
+      "type": "software",
+      "aliases": [
+        "REvil",
+        "Sodin",
+        "Sodinokibi"
+      ]
+    },
+    {
+      "canonical": "Dacls",
+      "attack_id": "S0497",
+      "type": "software",
+      "aliases": [
+        "Dacls"
+      ]
+    },
+    {
+      "canonical": "Cryptoistic",
+      "attack_id": "S0498",
+      "type": "software",
+      "aliases": [
+        "Cryptoistic"
+      ]
+    },
+    {
+      "canonical": "Hancitor",
+      "attack_id": "S0499",
+      "type": "software",
+      "aliases": [
+        "Hancitor",
+        "Chanitor"
+      ]
+    },
+    {
+      "canonical": "MCMD",
+      "attack_id": "S0500",
+      "type": "software",
+      "aliases": [
+        "MCMD"
+      ]
+    },
+    {
+      "canonical": "PipeMon",
+      "attack_id": "S0501",
+      "type": "software",
+      "aliases": [
+        "PipeMon"
+      ]
+    },
+    {
+      "canonical": "Drovorub",
+      "attack_id": "S0502",
+      "type": "software",
+      "aliases": [
+        "Drovorub"
+      ]
+    },
+    {
+      "canonical": "FrameworkPOS",
+      "attack_id": "S0503",
+      "type": "software",
+      "aliases": [
+        "FrameworkPOS",
+        "Trinity"
+      ]
+    },
+    {
+      "canonical": "Anchor",
+      "attack_id": "S0504",
+      "type": "software",
+      "aliases": [
+        "Anchor_DNS"
+      ]
+    },
+    {
+      "canonical": "ngrok",
+      "attack_id": "S0508",
+      "type": "software",
+      "aliases": [
+        "ngrok"
+      ]
+    },
+    {
+      "canonical": "RegDuke",
+      "attack_id": "S0511",
+      "type": "software",
+      "aliases": [
+        "RegDuke"
+      ]
+    },
+    {
+      "canonical": "FatDuke",
+      "attack_id": "S0512",
+      "type": "software",
+      "aliases": [
+        "FatDuke"
+      ]
+    },
+    {
+      "canonical": "LiteDuke",
+      "attack_id": "S0513",
+      "type": "software",
+      "aliases": [
+        "LiteDuke"
+      ]
+    },
+    {
+      "canonical": "WellMess",
+      "attack_id": "S0514",
+      "type": "software",
+      "aliases": [
+        "WellMess"
+      ]
+    },
+    {
+      "canonical": "WellMail",
+      "attack_id": "S0515",
+      "type": "software",
+      "aliases": [
+        "WellMail"
+      ]
+    },
+    {
+      "canonical": "SoreFang",
+      "attack_id": "S0516",
+      "type": "software",
+      "aliases": [
+        "SoreFang"
+      ]
+    },
+    {
+      "canonical": "Pillowmint",
+      "attack_id": "S0517",
+      "type": "software",
+      "aliases": [
+        "Pillowmint"
+      ]
+    },
+    {
+      "canonical": "PolyglotDuke",
+      "attack_id": "S0518",
+      "type": "software",
+      "aliases": [
+        "PolyglotDuke"
+      ]
+    },
+    {
+      "canonical": "SYNful Knock",
+      "attack_id": "S0519",
+      "type": "software",
+      "aliases": [
+        "SYNful Knock"
+      ]
+    },
+    {
+      "canonical": "BLINDINGCAN",
+      "attack_id": "S0520",
+      "type": "software",
+      "aliases": [
+        "BLINDINGCAN"
+      ]
+    },
+    {
+      "canonical": "BloodHound",
+      "attack_id": "S0521",
+      "type": "software",
+      "aliases": [
+        "BloodHound"
+      ]
+    },
+    {
+      "canonical": "KGH_SPY",
+      "attack_id": "S0526",
+      "type": "software",
+      "aliases": [
+        "KGH_SPY"
+      ]
+    },
+    {
+      "canonical": "CSPY Downloader",
+      "attack_id": "S0527",
+      "type": "software",
+      "aliases": [
+        "CSPY Downloader"
+      ]
+    },
+    {
+      "canonical": "Javali",
+      "attack_id": "S0528",
+      "type": "software",
+      "aliases": [
+        "Javali"
+      ]
+    },
+    {
+      "canonical": "Melcoz",
+      "attack_id": "S0530",
+      "type": "software",
+      "aliases": [
+        "Melcoz"
+      ]
+    },
+    {
+      "canonical": "Grandoreiro",
+      "attack_id": "S0531",
+      "type": "software",
+      "aliases": [
+        "Grandoreiro"
+      ]
+    },
+    {
+      "canonical": "Lucifer",
+      "attack_id": "S0532",
+      "type": "software",
+      "aliases": [
+        "Lucifer"
+      ]
+    },
+    {
+      "canonical": "SLOTHFULMEDIA",
+      "attack_id": "S0533",
+      "type": "software",
+      "aliases": [
+        "SLOTHFULMEDIA",
+        "JackOfHearts",
+        "QueenOfClubs"
+      ]
+    },
+    {
+      "canonical": "Bazar",
+      "attack_id": "S0534",
+      "type": "software",
+      "aliases": [
+        "Bazar",
+        "KEGTAP",
+        "Team9",
+        "Bazaloader"
+      ]
+    },
+    {
+      "canonical": "HyperStack",
+      "attack_id": "S0537",
+      "type": "software",
+      "aliases": [
+        "HyperStack"
+      ]
+    },
+    {
+      "canonical": "Crutch",
+      "attack_id": "S0538",
+      "type": "software",
+      "aliases": [
+        "Crutch"
+      ]
+    },
+    {
+      "canonical": "Spark",
+      "attack_id": "S0543",
+      "type": "software",
+      "aliases": []
+    },
+    {
+      "canonical": "SharpStage",
+      "attack_id": "S0546",
+      "type": "software",
+      "aliases": [
+        "SharpStage"
+      ]
+    },
+    {
+      "canonical": "DropBook",
+      "attack_id": "S0547",
+      "type": "software",
+      "aliases": [
+        "DropBook"
+      ]
+    },
+    {
+      "canonical": "AdFind",
+      "attack_id": "S0552",
+      "type": "software",
+      "aliases": [
+        "AdFind"
+      ]
+    },
+    {
+      "canonical": "MoleNet",
+      "attack_id": "S0553",
+      "type": "software",
+      "aliases": [
+        "MoleNet"
+      ]
+    },
+    {
+      "canonical": "Egregor",
+      "attack_id": "S0554",
+      "type": "software",
+      "aliases": [
+        "Egregor"
+      ]
+    },
+    {
+      "canonical": "Pay2Key",
+      "attack_id": "S0556",
+      "type": "software",
+      "aliases": [
+        "Pay2Key"
+      ]
+    },
+    {
+      "canonical": "SUNBURST",
+      "attack_id": "S0559",
+      "type": "software",
+      "aliases": [
+        "SUNBURST",
+        "Solorigate"
+      ]
+    },
+    {
+      "canonical": "TEARDROP",
+      "attack_id": "S0560",
+      "type": "software",
+      "aliases": [
+        "TEARDROP"
+      ]
+    },
+    {
+      "canonical": "GuLoader",
+      "attack_id": "S0561",
+      "type": "software",
+      "aliases": [
+        "GuLoader"
+      ]
+    },
+    {
+      "canonical": "SUNSPOT",
+      "attack_id": "S0562",
+      "type": "software",
+      "aliases": [
+        "SUNSPOT"
+      ]
+    },
+    {
+      "canonical": "BlackMould",
+      "attack_id": "S0564",
+      "type": "software",
+      "aliases": [
+        "BlackMould"
+      ]
+    },
+    {
+      "canonical": "Raindrop",
+      "attack_id": "S0565",
+      "type": "software",
+      "aliases": [
+        "Raindrop"
+      ]
+    },
+    {
+      "canonical": "Dtrack",
+      "attack_id": "S0567",
+      "type": "software",
+      "aliases": [
+        "Dtrack"
+      ]
+    },
+    {
+      "canonical": "EVILNUM",
+      "attack_id": "S0568",
+      "type": "software",
+      "aliases": [
+        "EVILNUM"
+      ]
+    },
+    {
+      "canonical": "Explosive",
+      "attack_id": "S0569",
+      "type": "software",
+      "aliases": [
+        "Explosive"
+      ]
+    },
+    {
+      "canonical": "BitPaymer",
+      "attack_id": "S0570",
+      "type": "software",
+      "aliases": [
+        "BitPaymer",
+        "wp_encrypt",
+        "FriedEx"
+      ]
+    },
+    {
+      "canonical": "Caterpillar WebShell",
+      "attack_id": "S0572",
+      "type": "software",
+      "aliases": [
+        "Caterpillar WebShell"
+      ]
+    },
+    {
+      "canonical": "BendyBear",
+      "attack_id": "S0574",
+      "type": "software",
+      "aliases": [
+        "BendyBear"
+      ]
+    },
+    {
+      "canonical": "Conti",
+      "attack_id": "S0575",
+      "type": "software",
+      "aliases": [
+        "Conti"
+      ]
+    },
+    {
+      "canonical": "MegaCortex",
+      "attack_id": "S0576",
+      "type": "software",
+      "aliases": [
+        "MegaCortex"
+      ]
+    },
+    {
+      "canonical": "SUPERNOVA",
+      "attack_id": "S0578",
+      "type": "software",
+      "aliases": [
+        "SUPERNOVA"
+      ]
+    },
+    {
+      "canonical": "Waterbear",
+      "attack_id": "S0579",
+      "type": "software",
+      "aliases": [
+        "Waterbear"
+      ]
+    },
+    {
+      "canonical": "IronNetInjector",
+      "attack_id": "S0581",
+      "type": "software",
+      "aliases": [
+        "IronNetInjector"
+      ]
+    },
+    {
+      "canonical": "LookBack",
+      "attack_id": "S0582",
+      "type": "software",
+      "aliases": [
+        "LookBack"
+      ]
+    },
+    {
+      "canonical": "Pysa",
+      "attack_id": "S0583",
+      "type": "software",
+      "aliases": [
+        "Pysa",
+        "Mespinoza"
+      ]
+    },
+    {
+      "canonical": "AppleJeus",
+      "attack_id": "S0584",
+      "type": "software",
+      "aliases": [
+        "AppleJeus"
+      ]
+    },
+    {
+      "canonical": "Kerrdown",
+      "attack_id": "S0585",
+      "type": "software",
+      "aliases": [
+        "Kerrdown"
+      ]
+    },
+    {
+      "canonical": "TAINTEDSCRIBE",
+      "attack_id": "S0586",
+      "type": "software",
+      "aliases": [
+        "TAINTEDSCRIBE"
+      ]
+    },
+    {
+      "canonical": "Penquin",
+      "attack_id": "S0587",
+      "type": "software",
+      "aliases": [
+        "Penquin",
+        "Penquin 2.0",
+        "Penquin_x64"
+      ]
+    },
+    {
+      "canonical": "GoldMax",
+      "attack_id": "S0588",
+      "type": "software",
+      "aliases": [
+        "GoldMax",
+        "SUNSHUTTLE"
+      ]
+    },
+    {
+      "canonical": "Sibot",
+      "attack_id": "S0589",
+      "type": "software",
+      "aliases": [
+        "Sibot"
+      ]
+    },
+    {
+      "canonical": "NBTscan",
+      "attack_id": "S0590",
+      "type": "software",
+      "aliases": [
+        "NBTscan"
+      ]
+    },
+    {
+      "canonical": "ConnectWise",
+      "attack_id": "S0591",
+      "type": "software",
+      "aliases": [
+        "ConnectWise",
+        "ScreenConnect"
+      ]
+    },
+    {
+      "canonical": "RemoteUtilities",
+      "attack_id": "S0592",
+      "type": "software",
+      "aliases": [
+        "RemoteUtilities"
+      ]
+    },
+    {
+      "canonical": "ECCENTRICBANDWAGON",
+      "attack_id": "S0593",
+      "type": "software",
+      "aliases": [
+        "ECCENTRICBANDWAGON"
+      ]
+    },
+    {
+      "canonical": "Out1",
+      "attack_id": "S0594",
+      "type": "software",
+      "aliases": [
+        "Out1"
+      ]
+    },
+    {
+      "canonical": "ThiefQuest",
+      "attack_id": "S0595",
+      "type": "software",
+      "aliases": [
+        "ThiefQuest",
+        "MacRansom.K",
+        "EvilQuest"
+      ]
+    },
+    {
+      "canonical": "ShadowPad",
+      "attack_id": "S0596",
+      "type": "software",
+      "aliases": [
+        "ShadowPad",
+        "POISONPLUG.SHADOW"
+      ]
+    },
+    {
+      "canonical": "GoldFinder",
+      "attack_id": "S0597",
+      "type": "software",
+      "aliases": [
+        "GoldFinder"
+      ]
+    },
+    {
+      "canonical": "P.A.S. Webshell",
+      "attack_id": "S0598",
+      "type": "software",
+      "aliases": [
+        "P.A.S. Webshell",
+        "Fobushell"
+      ]
+    },
+    {
+      "canonical": "Kinsing",
+      "attack_id": "S0599",
+      "type": "software",
+      "aliases": [
+        "Kinsing"
+      ]
+    },
+    {
+      "canonical": "Doki",
+      "attack_id": "S0600",
+      "type": "software",
+      "aliases": [
+        "Doki"
+      ]
+    },
+    {
+      "canonical": "Hildegard",
+      "attack_id": "S0601",
+      "type": "software",
+      "aliases": [
+        "Hildegard"
+      ]
+    },
+    {
+      "canonical": "Stuxnet",
+      "attack_id": "S0603",
+      "type": "software",
+      "aliases": [
+        "Stuxnet",
+        "W32.Stuxnet"
+      ]
+    },
+    {
+      "canonical": "Industroyer",
+      "attack_id": "S0604",
+      "type": "software",
+      "aliases": [
+        "Industroyer",
+        "CRASHOVERRIDE",
+        "Win32/Industroyer"
+      ]
+    },
+    {
+      "canonical": "EKANS",
+      "attack_id": "S0605",
+      "type": "software",
+      "aliases": [
+        "EKANS",
+        "SNAKEHOSE"
+      ]
+    },
+    {
+      "canonical": "Bad Rabbit",
+      "attack_id": "S0606",
+      "type": "software",
+      "aliases": [
+        "Bad Rabbit",
+        "Win32/Diskcoder.D"
+      ]
+    },
+    {
+      "canonical": "KillDisk",
+      "attack_id": "S0607",
+      "type": "software",
+      "aliases": [
+        "KillDisk",
+        "Win32/KillDisk.NBI",
+        "Win32/KillDisk.NBH",
+        "Win32/KillDisk.NBD",
+        "Win32/KillDisk.NBC",
+        "Win32/KillDisk.NBB"
+      ]
+    },
+    {
+      "canonical": "Conficker",
+      "attack_id": "S0608",
+      "type": "software",
+      "aliases": [
+        "Conficker",
+        "Kido",
+        "Downadup"
+      ]
+    },
+    {
+      "canonical": "SideTwist",
+      "attack_id": "S0610",
+      "type": "software",
+      "aliases": [
+        "SideTwist"
+      ]
+    },
+    {
+      "canonical": "Clop",
+      "attack_id": "S0611",
+      "type": "software",
+      "aliases": [
+        "Clop"
+      ]
+    },
+    {
+      "canonical": "WastedLocker",
+      "attack_id": "S0612",
+      "type": "software",
+      "aliases": [
+        "WastedLocker"
+      ]
+    },
+    {
+      "canonical": "PS1",
+      "attack_id": "S0613",
+      "type": "software",
+      "aliases": []
+    },
+    {
+      "canonical": "CostaBricks",
+      "attack_id": "S0614",
+      "type": "software",
+      "aliases": [
+        "CostaBricks"
+      ]
+    },
+    {
+      "canonical": "SombRAT",
+      "attack_id": "S0615",
+      "type": "software",
+      "aliases": [
+        "SombRAT"
+      ]
+    },
+    {
+      "canonical": "DEATHRANSOM",
+      "attack_id": "S0616",
+      "type": "software",
+      "aliases": [
+        "DEATHRANSOM"
+      ]
+    },
+    {
+      "canonical": "HELLOKITTY",
+      "attack_id": "S0617",
+      "type": "software",
+      "aliases": [
+        "HELLOKITTY"
+      ]
+    },
+    {
+      "canonical": "FIVEHANDS",
+      "attack_id": "S0618",
+      "type": "software",
+      "aliases": [
+        "FIVEHANDS"
+      ]
+    },
+    {
+      "canonical": "AppleSeed",
+      "attack_id": "S0622",
+      "type": "software",
+      "aliases": [
+        "AppleSeed"
+      ]
+    },
+    {
+      "canonical": "Siloscape",
+      "attack_id": "S0623",
+      "type": "software",
+      "aliases": [
+        "Siloscape"
+      ]
+    },
+    {
+      "canonical": "Ecipekac",
+      "attack_id": "S0624",
+      "type": "software",
+      "aliases": [
+        "Ecipekac",
+        "HEAVYHAND",
+        "SigLoader",
+        "DESLoader"
+      ]
+    },
+    {
+      "canonical": "Cuba",
+      "attack_id": "S0625",
+      "type": "software",
+      "aliases": [
+        "Cuba"
+      ]
+    },
+    {
+      "canonical": "P8RAT",
+      "attack_id": "S0626",
+      "type": "software",
+      "aliases": [
+        "P8RAT",
+        "HEAVYPOT",
+        "GreetCake"
+      ]
+    },
+    {
+      "canonical": "SodaMaster",
+      "attack_id": "S0627",
+      "type": "software",
+      "aliases": [
+        "SodaMaster",
+        "DARKTOWN",
+        "dfls",
+        "DelfsCake"
+      ]
+    },
+    {
+      "canonical": "FYAnti",
+      "attack_id": "S0628",
+      "type": "software",
+      "aliases": [
+        "FYAnti",
+        "DILLJUICE stage2"
+      ]
+    },
+    {
+      "canonical": "RainyDay",
+      "attack_id": "S0629",
+      "type": "software",
+      "aliases": [
+        "RainyDay"
+      ]
+    },
+    {
+      "canonical": "Nebulae",
+      "attack_id": "S0630",
+      "type": "software",
+      "aliases": [
+        "Nebulae"
+      ]
+    },
+    {
+      "canonical": "Chaes",
+      "attack_id": "S0631",
+      "type": "software",
+      "aliases": [
+        "Chaes"
+      ]
+    },
+    {
+      "canonical": "GrimAgent",
+      "attack_id": "S0632",
+      "type": "software",
+      "aliases": [
+        "GrimAgent"
+      ]
+    },
+    {
+      "canonical": "Sliver",
+      "attack_id": "S0633",
+      "type": "software",
+      "aliases": [
+        "Sliver"
+      ]
+    },
+    {
+      "canonical": "EnvyScout",
+      "attack_id": "S0634",
+      "type": "software",
+      "aliases": [
+        "EnvyScout"
+      ]
+    },
+    {
+      "canonical": "BoomBox",
+      "attack_id": "S0635",
+      "type": "software",
+      "aliases": [
+        "BoomBox"
+      ]
+    },
+    {
+      "canonical": "VaporRage",
+      "attack_id": "S0636",
+      "type": "software",
+      "aliases": [
+        "VaporRage"
+      ]
+    },
+    {
+      "canonical": "NativeZone",
+      "attack_id": "S0637",
+      "type": "software",
+      "aliases": [
+        "NativeZone"
+      ]
+    },
+    {
+      "canonical": "Babuk",
+      "attack_id": "S0638",
+      "type": "software",
+      "aliases": [
+        "Babuk",
+        "Babyk",
+        "Vasa Locker"
+      ]
+    },
+    {
+      "canonical": "Seth-Locker",
+      "attack_id": "S0639",
+      "type": "software",
+      "aliases": [
+        "Seth-Locker"
+      ]
+    },
+    {
+      "canonical": "Avaddon",
+      "attack_id": "S0640",
+      "type": "software",
+      "aliases": [
+        "Avaddon"
+      ]
+    },
+    {
+      "canonical": "Kobalos",
+      "attack_id": "S0641",
+      "type": "software",
+      "aliases": [
+        "Kobalos"
+      ]
+    },
+    {
+      "canonical": "BADFLICK",
+      "attack_id": "S0642",
+      "type": "software",
+      "aliases": [
+        "BADFLICK"
+      ]
+    },
+    {
+      "canonical": "Peppy",
+      "attack_id": "S0643",
+      "type": "software",
+      "aliases": [
+        "Peppy"
+      ]
+    },
+    {
+      "canonical": "ObliqueRAT",
+      "attack_id": "S0644",
+      "type": "software",
+      "aliases": [
+        "ObliqueRAT"
+      ]
+    },
+    {
+      "canonical": "Wevtutil",
+      "attack_id": "S0645",
+      "type": "software",
+      "aliases": [
+        "Wevtutil"
+      ]
+    },
+    {
+      "canonical": "SpicyOmelette",
+      "attack_id": "S0646",
+      "type": "software",
+      "aliases": [
+        "SpicyOmelette"
+      ]
+    },
+    {
+      "canonical": "Turian",
+      "attack_id": "S0647",
+      "type": "software",
+      "aliases": [
+        "Turian"
+      ]
+    },
+    {
+      "canonical": "JSS Loader",
+      "attack_id": "S0648",
+      "type": "software",
+      "aliases": [
+        "JSS Loader"
+      ]
+    },
+    {
+      "canonical": "SMOKEDHAM",
+      "attack_id": "S0649",
+      "type": "software",
+      "aliases": [
+        "SMOKEDHAM"
+      ]
+    },
+    {
+      "canonical": "QakBot",
+      "attack_id": "S0650",
+      "type": "software",
+      "aliases": [
+        "QakBot",
+        "Pinkslipbot",
+        "QuackBot",
+        "QBot"
+      ]
+    },
+    {
+      "canonical": "BoxCaon",
+      "attack_id": "S0651",
+      "type": "software",
+      "aliases": [
+        "BoxCaon"
+      ]
+    },
+    {
+      "canonical": "MarkiRAT",
+      "attack_id": "S0652",
+      "type": "software",
+      "aliases": [
+        "MarkiRAT"
+      ]
+    },
+    {
+      "canonical": "xCaon",
+      "attack_id": "S0653",
+      "type": "software",
+      "aliases": [
+        "xCaon"
+      ]
+    },
+    {
+      "canonical": "ProLock",
+      "attack_id": "S0654",
+      "type": "software",
+      "aliases": [
+        "ProLock"
+      ]
+    },
+    {
+      "canonical": "BLUELIGHT",
+      "attack_id": "S0657",
+      "type": "software",
+      "aliases": [
+        "BLUELIGHT"
+      ]
+    },
+    {
+      "canonical": "XCSSET",
+      "attack_id": "S0658",
+      "type": "software",
+      "aliases": [
+        "XCSSET",
+        "OSX.DubRobber"
+      ]
+    },
+    {
+      "canonical": "Diavol",
+      "attack_id": "S0659",
+      "type": "software",
+      "aliases": [
+        "Diavol"
+      ]
+    },
+    {
+      "canonical": "Clambling",
+      "attack_id": "S0660",
+      "type": "software",
+      "aliases": [
+        "Clambling"
+      ]
+    },
+    {
+      "canonical": "FoggyWeb",
+      "attack_id": "S0661",
+      "type": "software",
+      "aliases": [
+        "FoggyWeb"
+      ]
+    },
+    {
+      "canonical": "RCSession",
+      "attack_id": "S0662",
+      "type": "software",
+      "aliases": [
+        "RCSession"
+      ]
+    },
+    {
+      "canonical": "SysUpdate",
+      "attack_id": "S0663",
+      "type": "software",
+      "aliases": [
+        "SysUpdate",
+        "HyperSSL",
+        "Soldier",
+        "FOCUSFJORD"
+      ]
+    },
+    {
+      "canonical": "Pandora",
+      "attack_id": "S0664",
+      "type": "software",
+      "aliases": [
+        "Pandora"
+      ]
+    },
+    {
+      "canonical": "ThreatNeedle",
+      "attack_id": "S0665",
+      "type": "software",
+      "aliases": [
+        "ThreatNeedle"
+      ]
+    },
+    {
+      "canonical": "Gelsemium",
+      "attack_id": "S0666",
+      "type": "software",
+      "aliases": [
+        "Gelsemium",
+        "Gelsevirine",
+        "Gelsenicine",
+        "Gelsemine"
+      ]
+    },
+    {
+      "canonical": "Chrommme",
+      "attack_id": "S0667",
+      "type": "software",
+      "aliases": [
+        "Chrommme"
+      ]
+    },
+    {
+      "canonical": "TinyTurla",
+      "attack_id": "S0668",
+      "type": "software",
+      "aliases": [
+        "TinyTurla"
+      ]
+    },
+    {
+      "canonical": "KOCTOPUS",
+      "attack_id": "S0669",
+      "type": "software",
+      "aliases": [
+        "KOCTOPUS"
+      ]
+    },
+    {
+      "canonical": "WarzoneRAT",
+      "attack_id": "S0670",
+      "type": "software",
+      "aliases": [
+        "WarzoneRAT",
+        "Warzone",
+        "Ave Maria"
+      ]
+    },
+    {
+      "canonical": "Tomiris",
+      "attack_id": "S0671",
+      "type": "software",
+      "aliases": [
+        "Tomiris"
+      ]
+    },
+    {
+      "canonical": "Zox",
+      "attack_id": "S0672",
+      "type": "software",
+      "aliases": [
+        "Gresim",
+        "ZoxRPC",
+        "ZoxPNG"
+      ]
+    },
+    {
+      "canonical": "DarkWatchman",
+      "attack_id": "S0673",
+      "type": "software",
+      "aliases": [
+        "DarkWatchman"
+      ]
+    },
+    {
+      "canonical": "CharmPower",
+      "attack_id": "S0674",
+      "type": "software",
+      "aliases": [
+        "CharmPower"
+      ]
+    },
+    {
+      "canonical": "AADInternals",
+      "attack_id": "S0677",
+      "type": "software",
+      "aliases": [
+        "AADInternals"
+      ]
+    },
+    {
+      "canonical": "Torisma",
+      "attack_id": "S0678",
+      "type": "software",
+      "aliases": [
+        "Torisma"
+      ]
+    },
+    {
+      "canonical": "Ferocious",
+      "attack_id": "S0679",
+      "type": "software",
+      "aliases": [
+        "Ferocious"
+      ]
+    },
+    {
+      "canonical": "LitePower",
+      "attack_id": "S0680",
+      "type": "software",
+      "aliases": [
+        "LitePower"
+      ]
+    },
+    {
+      "canonical": "Lizar",
+      "attack_id": "S0681",
+      "type": "software",
+      "aliases": [
+        "Lizar",
+        "Tirion",
+        "Icebot",
+        "DiceLoader"
+      ]
+    },
+    {
+      "canonical": "TrailBlazer",
+      "attack_id": "S0682",
+      "type": "software",
+      "aliases": [
+        "TrailBlazer"
+      ]
+    },
+    {
+      "canonical": "Peirates",
+      "attack_id": "S0683",
+      "type": "software",
+      "aliases": [
+        "Peirates"
+      ]
+    },
+    {
+      "canonical": "ROADTools",
+      "attack_id": "S0684",
+      "type": "software",
+      "aliases": [
+        "ROADTools"
+      ]
+    },
+    {
+      "canonical": "PowerPunch",
+      "attack_id": "S0685",
+      "type": "software",
+      "aliases": [
+        "PowerPunch"
+      ]
+    },
+    {
+      "canonical": "QuietSieve",
+      "attack_id": "S0686",
+      "type": "software",
+      "aliases": [
+        "QuietSieve"
+      ]
+    },
+    {
+      "canonical": "Cyclops Blink",
+      "attack_id": "S0687",
+      "type": "software",
+      "aliases": [
+        "Cyclops Blink"
+      ]
+    },
+    {
+      "canonical": "Meteor",
+      "attack_id": "S0688",
+      "type": "software",
+      "aliases": [
+        "Meteor"
+      ]
+    },
+    {
+      "canonical": "WhisperGate",
+      "attack_id": "S0689",
+      "type": "software",
+      "aliases": [
+        "WhisperGate"
+      ]
+    },
+    {
+      "canonical": "Green Lambert",
+      "attack_id": "S0690",
+      "type": "software",
+      "aliases": [
+        "Green Lambert"
+      ]
+    },
+    {
+      "canonical": "Neoichor",
+      "attack_id": "S0691",
+      "type": "software",
+      "aliases": [
+        "Neoichor"
+      ]
+    },
+    {
+      "canonical": "SILENTTRINITY",
+      "attack_id": "S0692",
+      "type": "software",
+      "aliases": [
+        "SILENTTRINITY"
+      ]
+    },
+    {
+      "canonical": "CaddyWiper",
+      "attack_id": "S0693",
+      "type": "software",
+      "aliases": [
+        "CaddyWiper"
+      ]
+    },
+    {
+      "canonical": "DRATzarus",
+      "attack_id": "S0694",
+      "type": "software",
+      "aliases": [
+        "DRATzarus"
+      ]
+    },
+    {
+      "canonical": "Donut",
+      "attack_id": "S0695",
+      "type": "software",
+      "aliases": [
+        "Donut"
+      ]
+    },
+    {
+      "canonical": "Flagpro",
+      "attack_id": "S0696",
+      "type": "software",
+      "aliases": [
+        "Flagpro"
+      ]
+    },
+    {
+      "canonical": "HermeticWiper",
+      "attack_id": "S0697",
+      "type": "software",
+      "aliases": [
+        "HermeticWiper",
+        "Trojan.Killdisk",
+        "DriveSlayer"
+      ]
+    },
+    {
+      "canonical": "HermeticWizard",
+      "attack_id": "S0698",
+      "type": "software",
+      "aliases": [
+        "HermeticWizard"
+      ]
+    },
+    {
+      "canonical": "Mythic",
+      "attack_id": "S0699",
+      "type": "software",
+      "aliases": [
+        "Mythic"
+      ]
+    },
+    {
+      "canonical": "VPNFilter",
+      "attack_id": "S1010",
+      "type": "software",
+      "aliases": [
+        "VPNFilter"
+      ]
+    },
+    {
+      "canonical": "Tarrask",
+      "attack_id": "S1011",
+      "type": "software",
+      "aliases": [
+        "Tarrask"
+      ]
+    },
+    {
+      "canonical": "PowerLess",
+      "attack_id": "S1012",
+      "type": "software",
+      "aliases": [
+        "PowerLess"
+      ]
+    },
+    {
+      "canonical": "ZxxZ",
+      "attack_id": "S1013",
+      "type": "software",
+      "aliases": [
+        "ZxxZ"
+      ]
+    },
+    {
+      "canonical": "DanBot",
+      "attack_id": "S1014",
+      "type": "software",
+      "aliases": [
+        "DanBot"
+      ]
+    },
+    {
+      "canonical": "Milan",
+      "attack_id": "S1015",
+      "type": "software",
+      "aliases": [
+        "Milan",
+        "James"
+      ]
+    },
+    {
+      "canonical": "MacMa",
+      "attack_id": "S1016",
+      "type": "software",
+      "aliases": [
+        "MacMa",
+        "OSX.CDDS",
+        "DazzleSpy"
+      ]
+    },
+    {
+      "canonical": "OutSteel",
+      "attack_id": "S1017",
+      "type": "software",
+      "aliases": [
+        "OutSteel"
+      ]
+    },
+    {
+      "canonical": "Saint Bot",
+      "attack_id": "S1018",
+      "type": "software",
+      "aliases": [
+        "Saint Bot"
+      ]
+    },
+    {
+      "canonical": "Shark",
+      "attack_id": "S1019",
+      "type": "software",
+      "aliases": [
+        "Shark"
+      ]
+    },
+    {
+      "canonical": "Kevin",
+      "attack_id": "S1020",
+      "type": "software",
+      "aliases": [
+        "Kevin"
+      ]
+    },
+    {
+      "canonical": "DnsSystem",
+      "attack_id": "S1021",
+      "type": "software",
+      "aliases": [
+        "DnsSystem"
+      ]
+    },
+    {
+      "canonical": "IceApple",
+      "attack_id": "S1022",
+      "type": "software",
+      "aliases": [
+        "IceApple"
+      ]
+    },
+    {
+      "canonical": "CreepyDrive",
+      "attack_id": "S1023",
+      "type": "software",
+      "aliases": [
+        "CreepyDrive"
+      ]
+    },
+    {
+      "canonical": "CreepySnail",
+      "attack_id": "S1024",
+      "type": "software",
+      "aliases": [
+        "CreepySnail"
+      ]
+    },
+    {
+      "canonical": "Amadey",
+      "attack_id": "S1025",
+      "type": "software",
+      "aliases": [
+        "Amadey"
+      ]
+    },
+    {
+      "canonical": "Mongall",
+      "attack_id": "S1026",
+      "type": "software",
+      "aliases": [
+        "Mongall"
+      ]
+    },
+    {
+      "canonical": "Heyoka Backdoor",
+      "attack_id": "S1027",
+      "type": "software",
+      "aliases": [
+        "Heyoka Backdoor"
+      ]
+    },
+    {
+      "canonical": "Action RAT",
+      "attack_id": "S1028",
+      "type": "software",
+      "aliases": [
+        "Action RAT"
+      ]
+    },
+    {
+      "canonical": "AuTo Stealer",
+      "attack_id": "S1029",
+      "type": "software",
+      "aliases": [
+        "AuTo Stealer"
+      ]
+    },
+    {
+      "canonical": "Squirrelwaffle",
+      "attack_id": "S1030",
+      "type": "software",
+      "aliases": [
+        "Squirrelwaffle"
+      ]
+    },
+    {
+      "canonical": "PingPull",
+      "attack_id": "S1031",
+      "type": "software",
+      "aliases": [
+        "PingPull"
+      ]
+    },
+    {
+      "canonical": "PyDCrypt",
+      "attack_id": "S1032",
+      "type": "software",
+      "aliases": [
+        "PyDCrypt"
+      ]
+    },
+    {
+      "canonical": "DCSrv",
+      "attack_id": "S1033",
+      "type": "software",
+      "aliases": [
+        "DCSrv"
+      ]
+    },
+    {
+      "canonical": "StrifeWater",
+      "attack_id": "S1034",
+      "type": "software",
+      "aliases": [
+        "StrifeWater"
+      ]
+    },
+    {
+      "canonical": "Small Sieve",
+      "attack_id": "S1035",
+      "type": "software",
+      "aliases": [
+        "Small Sieve",
+        "GRAMDOOR"
+      ]
+    },
+    {
+      "canonical": "STARWHALE",
+      "attack_id": "S1037",
+      "type": "software",
+      "aliases": [
+        "STARWHALE",
+        "CANOPY"
+      ]
+    },
+    {
+      "canonical": "Bumblebee",
+      "attack_id": "S1039",
+      "type": "software",
+      "aliases": [
+        "Bumblebee"
+      ]
+    },
+    {
+      "canonical": "Rclone",
+      "attack_id": "S1040",
+      "type": "software",
+      "aliases": [
+        "Rclone"
+      ]
+    },
+    {
+      "canonical": "Chinoxy",
+      "attack_id": "S1041",
+      "type": "software",
+      "aliases": [
+        "Chinoxy"
+      ]
+    },
+    {
+      "canonical": "SUGARDUMP",
+      "attack_id": "S1042",
+      "type": "software",
+      "aliases": [
+        "SUGARDUMP"
+      ]
+    },
+    {
+      "canonical": "ccf32",
+      "attack_id": "S1043",
+      "type": "software",
+      "aliases": [
+        "ccf32"
+      ]
+    },
+    {
+      "canonical": "FunnyDream",
+      "attack_id": "S1044",
+      "type": "software",
+      "aliases": [
+        "FunnyDream"
+      ]
+    },
+    {
+      "canonical": "PowGoop",
+      "attack_id": "S1046",
+      "type": "software",
+      "aliases": [
+        "PowGoop"
+      ]
+    },
+    {
+      "canonical": "Mori",
+      "attack_id": "S1047",
+      "type": "software",
+      "aliases": [
+        "Mori"
+      ]
+    },
+    {
+      "canonical": "macOS.OSAMiner",
+      "attack_id": "S1048",
+      "type": "software",
+      "aliases": [
+        "macOS.OSAMiner"
+      ]
+    },
+    {
+      "canonical": "SUGARUSH",
+      "attack_id": "S1049",
+      "type": "software",
+      "aliases": [
+        "SUGARUSH"
+      ]
+    },
+    {
+      "canonical": "PcShare",
+      "attack_id": "S1050",
+      "type": "software",
+      "aliases": [
+        "PcShare"
+      ]
+    },
+    {
+      "canonical": "KEYPLUG",
+      "attack_id": "S1051",
+      "type": "software",
+      "aliases": [
+        "KEYPLUG",
+        "KEYPLUG.LINUX"
+      ]
+    },
+    {
+      "canonical": "DEADEYE",
+      "attack_id": "S1052",
+      "type": "software",
+      "aliases": [
+        "DEADEYE",
+        "DEADEYE.EMBED",
+        "DEADEYE.APPEND"
+      ]
+    },
+    {
+      "canonical": "AvosLocker",
+      "attack_id": "S1053",
+      "type": "software",
+      "aliases": [
+        "AvosLocker"
+      ]
+    },
+    {
+      "canonical": "Prestige",
+      "attack_id": "S1058",
+      "type": "software",
+      "aliases": [
+        "Prestige"
+      ]
+    },
+    {
+      "canonical": "metaMain",
+      "attack_id": "S1059",
+      "type": "software",
+      "aliases": [
+        "metaMain"
+      ]
+    },
+    {
+      "canonical": "Mafalda",
+      "attack_id": "S1060",
+      "type": "software",
+      "aliases": [
+        "Mafalda"
+      ]
+    },
+    {
+      "canonical": "Brute Ratel C4",
+      "attack_id": "S1063",
+      "type": "software",
+      "aliases": [
+        "Brute Ratel C4",
+        "BRc4"
+      ]
+    },
+    {
+      "canonical": "SVCReady",
+      "attack_id": "S1064",
+      "type": "software",
+      "aliases": [
+        "SVCReady"
+      ]
+    },
+    {
+      "canonical": "Woody RAT",
+      "attack_id": "S1065",
+      "type": "software",
+      "aliases": [
+        "Woody RAT"
+      ]
+    },
+    {
+      "canonical": "DarkTortilla",
+      "attack_id": "S1066",
+      "type": "software",
+      "aliases": [
+        "DarkTortilla"
+      ]
+    },
+    {
+      "canonical": "BlackCat",
+      "attack_id": "S1068",
+      "type": "software",
+      "aliases": [
+        "BlackCat",
+        "ALPHV",
+        "Noberus"
+      ]
+    },
+    {
+      "canonical": "Black Basta",
+      "attack_id": "S1070",
+      "type": "software",
+      "aliases": [
+        "Black Basta"
+      ]
+    },
+    {
+      "canonical": "Rubeus",
+      "attack_id": "S1071",
+      "type": "software",
+      "aliases": [
+        "Rubeus"
+      ]
+    },
+    {
+      "canonical": "Industroyer2",
+      "attack_id": "S1072",
+      "type": "software",
+      "aliases": [
+        "Industroyer2"
+      ]
+    },
+    {
+      "canonical": "Royal",
+      "attack_id": "S1073",
+      "type": "software",
+      "aliases": [
+        "Royal"
+      ]
+    },
+    {
+      "canonical": "ANDROMEDA",
+      "attack_id": "S1074",
+      "type": "software",
+      "aliases": [
+        "ANDROMEDA"
+      ]
+    },
+    {
+      "canonical": "KOPILUWAK",
+      "attack_id": "S1075",
+      "type": "software",
+      "aliases": [
+        "KOPILUWAK"
+      ]
+    },
+    {
+      "canonical": "QUIETCANARY",
+      "attack_id": "S1076",
+      "type": "software",
+      "aliases": [
+        "QUIETCANARY",
+        "Tunnus"
+      ]
+    },
+    {
+      "canonical": "RotaJakiro",
+      "attack_id": "S1078",
+      "type": "software",
+      "aliases": [
+        "RotaJakiro"
+      ]
+    },
+    {
+      "canonical": "BADHATCH",
+      "attack_id": "S1081",
+      "type": "software",
+      "aliases": [
+        "BADHATCH"
+      ]
+    },
+    {
+      "canonical": "QUIETEXIT",
+      "attack_id": "S1084",
+      "type": "software",
+      "aliases": [
+        "QUIETEXIT"
+      ]
+    },
+    {
+      "canonical": "Sardonic",
+      "attack_id": "S1085",
+      "type": "software",
+      "aliases": [
+        "Sardonic"
+      ]
+    },
+    {
+      "canonical": "Snip3",
+      "attack_id": "S1086",
+      "type": "software",
+      "aliases": [
+        "Snip3"
+      ]
+    },
+    {
+      "canonical": "AsyncRAT",
+      "attack_id": "S1087",
+      "type": "software",
+      "aliases": [
+        "AsyncRAT"
+      ]
+    },
+    {
+      "canonical": "Disco",
+      "attack_id": "S1088",
+      "type": "software",
+      "aliases": [
+        "Disco"
+      ]
+    },
+    {
+      "canonical": "SharpDisco",
+      "attack_id": "S1089",
+      "type": "software",
+      "aliases": [
+        "SharpDisco"
+      ]
+    },
+    {
+      "canonical": "NightClub",
+      "attack_id": "S1090",
+      "type": "software",
+      "aliases": [
+        "NightClub"
+      ]
+    },
+    {
+      "canonical": "Pacu",
+      "attack_id": "S1091",
+      "type": "software",
+      "aliases": [
+        "Pacu"
+      ]
+    },
+    {
+      "canonical": "Cheerscrypt",
+      "attack_id": "S1096",
+      "type": "software",
+      "aliases": [
+        "Cheerscrypt"
+      ]
+    },
+    {
+      "canonical": "HUI Loader",
+      "attack_id": "S1097",
+      "type": "software",
+      "aliases": [
+        "HUI Loader"
+      ]
+    },
+    {
+      "canonical": "Samurai",
+      "attack_id": "S1099",
+      "type": "software",
+      "aliases": [
+        "Samurai"
+      ]
+    },
+    {
+      "canonical": "Ninja",
+      "attack_id": "S1100",
+      "type": "software",
+      "aliases": [
+        "Ninja"
+      ]
+    },
+    {
+      "canonical": "LoFiSe",
+      "attack_id": "S1101",
+      "type": "software",
+      "aliases": [
+        "LoFiSe"
+      ]
+    },
+    {
+      "canonical": "Pcexter",
+      "attack_id": "S1102",
+      "type": "software",
+      "aliases": [
+        "Pcexter"
+      ]
+    },
+    {
+      "canonical": "SLOWPULSE",
+      "attack_id": "S1104",
+      "type": "software",
+      "aliases": [
+        "SLOWPULSE"
+      ]
+    },
+    {
+      "canonical": "COATHANGER",
+      "attack_id": "S1105",
+      "type": "software",
+      "aliases": [
+        "COATHANGER"
+      ]
+    },
+    {
+      "canonical": "NGLite",
+      "attack_id": "S1106",
+      "type": "software",
+      "aliases": [
+        "NGLite"
+      ]
+    },
+    {
+      "canonical": "NKAbuse",
+      "attack_id": "S1107",
+      "type": "software",
+      "aliases": [
+        "NKAbuse"
+      ]
+    },
+    {
+      "canonical": "PULSECHECK",
+      "attack_id": "S1108",
+      "type": "software",
+      "aliases": [
+        "PULSECHECK"
+      ]
+    },
+    {
+      "canonical": "PACEMAKER",
+      "attack_id": "S1109",
+      "type": "software",
+      "aliases": [
+        "PACEMAKER"
+      ]
+    },
+    {
+      "canonical": "SLIGHTPULSE",
+      "attack_id": "S1110",
+      "type": "software",
+      "aliases": [
+        "SLIGHTPULSE"
+      ]
+    },
+    {
+      "canonical": "DarkGate",
+      "attack_id": "S1111",
+      "type": "software",
+      "aliases": [
+        "DarkGate"
+      ]
+    },
+    {
+      "canonical": "STEADYPULSE",
+      "attack_id": "S1112",
+      "type": "software",
+      "aliases": [
+        "STEADYPULSE"
+      ]
+    },
+    {
+      "canonical": "RAPIDPULSE",
+      "attack_id": "S1113",
+      "type": "software",
+      "aliases": [
+        "RAPIDPULSE"
+      ]
+    },
+    {
+      "canonical": "ZIPLINE",
+      "attack_id": "S1114",
+      "type": "software",
+      "aliases": [
+        "ZIPLINE"
+      ]
+    },
+    {
+      "canonical": "WIREFIRE",
+      "attack_id": "S1115",
+      "type": "software",
+      "aliases": [
+        "WIREFIRE",
+        "GIFTEDVISITOR"
+      ]
+    },
+    {
+      "canonical": "WARPWIRE",
+      "attack_id": "S1116",
+      "type": "software",
+      "aliases": [
+        "WARPWIRE"
+      ]
+    },
+    {
+      "canonical": "GLASSTOKEN",
+      "attack_id": "S1117",
+      "type": "software",
+      "aliases": [
+        "GLASSTOKEN"
+      ]
+    },
+    {
+      "canonical": "BUSHWALK",
+      "attack_id": "S1118",
+      "type": "software",
+      "aliases": [
+        "BUSHWALK"
+      ]
+    },
+    {
+      "canonical": "LIGHTWIRE",
+      "attack_id": "S1119",
+      "type": "software",
+      "aliases": [
+        "LIGHTWIRE"
+      ]
+    },
+    {
+      "canonical": "FRAMESTING",
+      "attack_id": "S1120",
+      "type": "software",
+      "aliases": [
+        "FRAMESTING"
+      ]
+    },
+    {
+      "canonical": "LITTLELAMB.WOOLTEA",
+      "attack_id": "S1121",
+      "type": "software",
+      "aliases": [
+        "LITTLELAMB.WOOLTEA"
+      ]
+    },
+    {
+      "canonical": "Mispadu",
+      "attack_id": "S1122",
+      "type": "software",
+      "aliases": [
+        "Mispadu"
+      ]
+    },
+    {
+      "canonical": "PITSTOP",
+      "attack_id": "S1123",
+      "type": "software",
+      "aliases": [
+        "PITSTOP"
+      ]
+    },
+    {
+      "canonical": "SocGholish",
+      "attack_id": "S1124",
+      "type": "software",
+      "aliases": [
+        "SocGholish",
+        "FakeUpdates"
+      ]
+    },
+    {
+      "canonical": "AcidRain",
+      "attack_id": "S1125",
+      "type": "software",
+      "aliases": [
+        "AcidRain"
+      ]
+    },
+    {
+      "canonical": "Akira",
+      "attack_id": "S1129",
+      "type": "software",
+      "aliases": [
+        "Akira"
+      ]
+    },
+    {
+      "canonical": "Raspberry Robin",
+      "attack_id": "S1130",
+      "type": "software",
+      "aliases": [
+        "Raspberry Robin"
+      ]
+    },
+    {
+      "canonical": "NPPSPY",
+      "attack_id": "S1131",
+      "type": "software",
+      "aliases": [
+        "NPPSPY"
+      ]
+    },
+    {
+      "canonical": "IPsec Helper",
+      "attack_id": "S1132",
+      "type": "software",
+      "aliases": [
+        "IPsec Helper"
+      ]
+    },
+    {
+      "canonical": "Apostle",
+      "attack_id": "S1133",
+      "type": "software",
+      "aliases": [
+        "Apostle"
+      ]
+    },
+    {
+      "canonical": "DEADWOOD",
+      "attack_id": "S1134",
+      "type": "software",
+      "aliases": [
+        "DEADWOOD"
+      ]
+    },
+    {
+      "canonical": "MultiLayer Wiper",
+      "attack_id": "S1135",
+      "type": "software",
+      "aliases": [
+        "MultiLayer Wiper"
+      ]
+    },
+    {
+      "canonical": "BFG Agonizer",
+      "attack_id": "S1136",
+      "type": "software",
+      "aliases": [
+        "BFG Agonizer"
+      ]
+    },
+    {
+      "canonical": "Moneybird",
+      "attack_id": "S1137",
+      "type": "software",
+      "aliases": [
+        "Moneybird"
+      ]
+    },
+    {
+      "canonical": "Gootloader",
+      "attack_id": "S1138",
+      "type": "software",
+      "aliases": [
+        "Gootloader"
+      ]
+    },
+    {
+      "canonical": "INC Ransomware",
+      "attack_id": "S1139",
+      "type": "software",
+      "aliases": [
+        "INC Ransomware"
+      ]
+    },
+    {
+      "canonical": "Spica",
+      "attack_id": "S1140",
+      "type": "software",
+      "aliases": [
+        "Spica"
+      ]
+    },
+    {
+      "canonical": "LunarWeb",
+      "attack_id": "S1141",
+      "type": "software",
+      "aliases": [
+        "LunarWeb"
+      ]
+    },
+    {
+      "canonical": "LunarMail",
+      "attack_id": "S1142",
+      "type": "software",
+      "aliases": [
+        "LunarMail"
+      ]
+    },
+    {
+      "canonical": "LunarLoader",
+      "attack_id": "S1143",
+      "type": "software",
+      "aliases": [
+        "LunarLoader"
+      ]
+    },
+    {
+      "canonical": "FRP",
+      "attack_id": "S1144",
+      "type": "software",
+      "aliases": []
+    },
+    {
+      "canonical": "Pikabot",
+      "attack_id": "S1145",
+      "type": "software",
+      "aliases": [
+        "Pikabot"
+      ]
+    },
+    {
+      "canonical": "MgBot",
+      "attack_id": "S1146",
+      "type": "software",
+      "aliases": [
+        "MgBot"
+      ]
+    },
+    {
+      "canonical": "Nightdoor",
+      "attack_id": "S1147",
+      "type": "software",
+      "aliases": [
+        "Nightdoor"
+      ]
+    },
+    {
+      "canonical": "Raccoon Stealer",
+      "attack_id": "S1148",
+      "type": "software",
+      "aliases": [
+        "Raccoon Stealer"
+      ]
+    },
+    {
+      "canonical": "CHIMNEYSWEEP",
+      "attack_id": "S1149",
+      "type": "software",
+      "aliases": [
+        "CHIMNEYSWEEP"
+      ]
+    },
+    {
+      "canonical": "ROADSWEEP",
+      "attack_id": "S1150",
+      "type": "software",
+      "aliases": [
+        "ROADSWEEP"
+      ]
+    },
+    {
+      "canonical": "ZeroCleare",
+      "attack_id": "S1151",
+      "type": "software",
+      "aliases": [
+        "ZeroCleare",
+        "ZEROCLEAR"
+      ]
+    },
+    {
+      "canonical": "IMAPLoader",
+      "attack_id": "S1152",
+      "type": "software",
+      "aliases": [
+        "IMAPLoader"
+      ]
+    },
+    {
+      "canonical": "Cuckoo Stealer",
+      "attack_id": "S1153",
+      "type": "software",
+      "aliases": [
+        "Cuckoo Stealer"
+      ]
+    },
+    {
+      "canonical": "VersaMem",
+      "attack_id": "S1154",
+      "type": "software",
+      "aliases": [
+        "VersaMem"
+      ]
+    },
+    {
+      "canonical": "Covenant",
+      "attack_id": "S1155",
+      "type": "software",
+      "aliases": [
+        "Covenant"
+      ]
+    },
+    {
+      "canonical": "Manjusaka",
+      "attack_id": "S1156",
+      "type": "software",
+      "aliases": [
+        "Manjusaka"
+      ]
+    },
+    {
+      "canonical": "DUSTPAN",
+      "attack_id": "S1158",
+      "type": "software",
+      "aliases": [
+        "DUSTPAN"
+      ]
+    },
+    {
+      "canonical": "DUSTTRAP",
+      "attack_id": "S1159",
+      "type": "software",
+      "aliases": [
+        "DUSTTRAP"
+      ]
+    },
+    {
+      "canonical": "Latrodectus",
+      "attack_id": "S1160",
+      "type": "software",
+      "aliases": [
+        "Latrodectus",
+        "IceNova",
+        "Unidentified 111"
+      ]
+    },
+    {
+      "canonical": "BPFDoor",
+      "attack_id": "S1161",
+      "type": "software",
+      "aliases": [
+        "BPFDoor",
+        "JustForFun",
+        "Backdoor.Linux.BPFDOOR",
+        "Backdoor.Solaris.BPFDOOR.ZAJE"
+      ]
+    },
+    {
+      "canonical": "Playcrypt",
+      "attack_id": "S1162",
+      "type": "software",
+      "aliases": [
+        "Playcrypt"
+      ]
+    },
+    {
+      "canonical": "SnappyTCP",
+      "attack_id": "S1163",
+      "type": "software",
+      "aliases": [
+        "SnappyTCP"
+      ]
+    },
+    {
+      "canonical": "UPSTYLE",
+      "attack_id": "S1164",
+      "type": "software",
+      "aliases": [
+        "UPSTYLE"
+      ]
+    },
+    {
+      "canonical": "Solar",
+      "attack_id": "S1166",
+      "type": "software",
+      "aliases": [
+        "Solar"
+      ]
+    },
+    {
+      "canonical": "AcidPour",
+      "attack_id": "S1167",
+      "type": "software",
+      "aliases": [
+        "AcidPour"
+      ]
+    },
+    {
+      "canonical": "SampleCheck5000",
+      "attack_id": "S1168",
+      "type": "software",
+      "aliases": [
+        "SampleCheck5000",
+        "SC5k"
+      ]
+    },
+    {
+      "canonical": "Mango",
+      "attack_id": "S1169",
+      "type": "software",
+      "aliases": [
+        "Mango"
+      ]
+    },
+    {
+      "canonical": "ODAgent",
+      "attack_id": "S1170",
+      "type": "software",
+      "aliases": [
+        "ODAgent"
+      ]
+    },
+    {
+      "canonical": "OilCheck",
+      "attack_id": "S1171",
+      "type": "software",
+      "aliases": [
+        "OilCheck"
+      ]
+    },
+    {
+      "canonical": "OilBooster",
+      "attack_id": "S1172",
+      "type": "software",
+      "aliases": [
+        "OilBooster"
+      ]
+    },
+    {
+      "canonical": "PowerExchange",
+      "attack_id": "S1173",
+      "type": "software",
+      "aliases": [
+        "PowerExchange"
+      ]
+    },
+    {
+      "canonical": "attrib",
+      "attack_id": "S1176",
+      "type": "software",
+      "aliases": [
+        "attrib",
+        "attrib.exe"
+      ]
+    },
+    {
+      "canonical": "ShrinkLocker",
+      "attack_id": "S1178",
+      "type": "software",
+      "aliases": [
+        "ShrinkLocker"
+      ]
+    },
+    {
+      "canonical": "Exbyte",
+      "attack_id": "S1179",
+      "type": "software",
+      "aliases": [
+        "Exbyte"
+      ]
+    },
+    {
+      "canonical": "BlackByte Ransomware",
+      "attack_id": "S1180",
+      "type": "software",
+      "aliases": [
+        "BlackByte Ransomware"
+      ]
+    },
+    {
+      "canonical": "BlackByte 2.0 Ransomware",
+      "attack_id": "S1181",
+      "type": "software",
+      "aliases": [
+        "BlackByte 2.0 Ransomware"
+      ]
+    },
+    {
+      "canonical": "MagicRAT",
+      "attack_id": "S1182",
+      "type": "software",
+      "aliases": [
+        "MagicRAT"
+      ]
+    },
+    {
+      "canonical": "StrelaStealer",
+      "attack_id": "S1183",
+      "type": "software",
+      "aliases": [
+        "StrelaStealer"
+      ]
+    },
+    {
+      "canonical": "BOLDMOVE",
+      "attack_id": "S1184",
+      "type": "software",
+      "aliases": [
+        "BOLDMOVE"
+      ]
+    },
+    {
+      "canonical": "LightSpy",
+      "attack_id": "S1185",
+      "type": "software",
+      "aliases": [
+        "LightSpy"
+      ]
+    },
+    {
+      "canonical": "Line Dancer",
+      "attack_id": "S1186",
+      "type": "software",
+      "aliases": [
+        "Line Dancer"
+      ]
+    },
+    {
+      "canonical": "reGeorg",
+      "attack_id": "S1187",
+      "type": "software",
+      "aliases": [
+        "reGeorg"
+      ]
+    },
+    {
+      "canonical": "Line Runner",
+      "attack_id": "S1188",
+      "type": "software",
+      "aliases": [
+        "Line Runner"
+      ]
+    },
+    {
+      "canonical": "Neo-reGeorg",
+      "attack_id": "S1189",
+      "type": "software",
+      "aliases": [
+        "Neo-reGeorg"
+      ]
+    },
+    {
+      "canonical": "Kapeka",
+      "attack_id": "S1190",
+      "type": "software",
+      "aliases": [
+        "Kapeka",
+        "KnuckleTouch"
+      ]
+    },
+    {
+      "canonical": "Megazord",
+      "attack_id": "S1191",
+      "type": "software",
+      "aliases": [
+        "Megazord"
+      ]
+    },
+    {
+      "canonical": "NICECURL",
+      "attack_id": "S1192",
+      "type": "software",
+      "aliases": [
+        "NICECURL"
+      ]
+    },
+    {
+      "canonical": "TAMECAT",
+      "attack_id": "S1193",
+      "type": "software",
+      "aliases": [
+        "TAMECAT"
+      ]
+    },
+    {
+      "canonical": "Akira _v2",
+      "attack_id": "S1194",
+      "type": "software",
+      "aliases": [
+        "Akira _v2"
+      ]
+    },
+    {
+      "canonical": "Troll Stealer",
+      "attack_id": "S1196",
+      "type": "software",
+      "aliases": [
+        "Troll Stealer"
+      ]
+    },
+    {
+      "canonical": "GoBear",
+      "attack_id": "S1197",
+      "type": "software",
+      "aliases": [
+        "GoBear"
+      ]
+    },
+    {
+      "canonical": "Gomir",
+      "attack_id": "S1198",
+      "type": "software",
+      "aliases": [
+        "Gomir"
+      ]
+    },
+    {
+      "canonical": "LockBit 2.0",
+      "attack_id": "S1199",
+      "type": "software",
+      "aliases": [
+        "LockBit 2.0"
+      ]
+    },
+    {
+      "canonical": "StealBit",
+      "attack_id": "S1200",
+      "type": "software",
+      "aliases": [
+        "StealBit"
+      ]
+    },
+    {
+      "canonical": "TRANSLATEXT",
+      "attack_id": "S1201",
+      "type": "software",
+      "aliases": [
+        "TRANSLATEXT"
+      ]
+    },
+    {
+      "canonical": "LockBit 3.0",
+      "attack_id": "S1202",
+      "type": "software",
+      "aliases": [
+        "LockBit 3.0",
+        "LockBit Black"
+      ]
+    },
+    {
+      "canonical": "J-magic",
+      "attack_id": "S1203",
+      "type": "software",
+      "aliases": [
+        "J-magic"
+      ]
+    },
+    {
+      "canonical": "cd00r",
+      "attack_id": "S1204",
+      "type": "software",
+      "aliases": [
+        "cd00r"
+      ]
+    },
+    {
+      "canonical": "cipher.exe",
+      "attack_id": "S1205",
+      "type": "software",
+      "aliases": [
+        "cipher.exe"
+      ]
+    },
+    {
+      "canonical": "JumbledPath",
+      "attack_id": "S1206",
+      "type": "software",
+      "aliases": [
+        "JumbledPath"
+      ]
+    },
+    {
+      "canonical": "XLoader",
+      "attack_id": "S1207",
+      "type": "software",
+      "aliases": [
+        "XLoader",
+        "Formbook"
+      ]
+    },
+    {
+      "canonical": "Quick Assist",
+      "attack_id": "S1209",
+      "type": "software",
+      "aliases": [
+        "Quick Assist"
+      ]
+    },
+    {
+      "canonical": "Sagerunex",
+      "attack_id": "S1210",
+      "type": "software",
+      "aliases": [
+        "Sagerunex"
+      ]
+    },
+    {
+      "canonical": "Hannotog",
+      "attack_id": "S1211",
+      "type": "software",
+      "aliases": [
+        "Hannotog"
+      ]
+    },
+    {
+      "canonical": "RansomHub",
+      "attack_id": "S1212",
+      "type": "software",
+      "aliases": [
+        "RansomHub"
+      ]
+    },
+    {
+      "canonical": "Lumma Stealer",
+      "attack_id": "S1213",
+      "type": "software",
+      "aliases": [
+        "Lumma Stealer",
+        "LummaStealer"
+      ]
+    },
+    {
+      "canonical": "VIRTUALPITA",
+      "attack_id": "S1217",
+      "type": "software",
+      "aliases": [
+        "VIRTUALPITA"
+      ]
+    },
+    {
+      "canonical": "VIRTUALPIE",
+      "attack_id": "S1218",
+      "type": "software",
+      "aliases": [
+        "VIRTUALPIE"
+      ]
+    },
+    {
+      "canonical": "REPTILE",
+      "attack_id": "S1219",
+      "type": "software",
+      "aliases": [
+        "REPTILE"
+      ]
+    },
+    {
+      "canonical": "MEDUSA",
+      "attack_id": "S1220",
+      "type": "software",
+      "aliases": [
+        "MEDUSA"
+      ]
+    },
+    {
+      "canonical": "MOPSLED",
+      "attack_id": "S1221",
+      "type": "software",
+      "aliases": [
+        "MOPSLED"
+      ]
+    },
+    {
+      "canonical": "RIFLESPINE",
+      "attack_id": "S1222",
+      "type": "software",
+      "aliases": [
+        "RIFLESPINE"
+      ]
+    },
+    {
+      "canonical": "THINCRUST",
+      "attack_id": "S1223",
+      "type": "software",
+      "aliases": [
+        "THINCRUST"
+      ]
+    },
+    {
+      "canonical": "CASTLETAP",
+      "attack_id": "S1224",
+      "type": "software",
+      "aliases": [
+        "CASTLETAP"
+      ]
+    },
+    {
+      "canonical": "BOOKWORM",
+      "attack_id": "S1226",
+      "type": "software",
+      "aliases": [
+        "BOOKWORM"
+      ]
+    },
+    {
+      "canonical": "StarProxy",
+      "attack_id": "S1227",
+      "type": "software",
+      "aliases": [
+        "StarProxy"
+      ]
+    },
+    {
+      "canonical": "PUBLOAD",
+      "attack_id": "S1228",
+      "type": "software",
+      "aliases": [
+        "PUBLOAD"
+      ]
+    },
+    {
+      "canonical": "Havoc",
+      "attack_id": "S1229",
+      "type": "software",
+      "aliases": [
+        "Havoc"
+      ]
+    },
+    {
+      "canonical": "HIUPAN",
+      "attack_id": "S1230",
+      "type": "software",
+      "aliases": [
+        "HIUPAN"
+      ]
+    },
+    {
+      "canonical": "SplatDropper",
+      "attack_id": "S1232",
+      "type": "software",
+      "aliases": [
+        "SplatDropper"
+      ]
+    },
+    {
+      "canonical": "PAKLOG",
+      "attack_id": "S1233",
+      "type": "software",
+      "aliases": [
+        "PAKLOG"
+      ]
+    },
+    {
+      "canonical": "SplatCloak",
+      "attack_id": "S1234",
+      "type": "software",
+      "aliases": [
+        "SplatCloak"
+      ]
+    },
+    {
+      "canonical": "CorKLOG",
+      "attack_id": "S1235",
+      "type": "software",
+      "aliases": [
+        "CorKLOG"
+      ]
+    },
+    {
+      "canonical": "CLAIMLOADER",
+      "attack_id": "S1236",
+      "type": "software",
+      "aliases": [
+        "CLAIMLOADER"
+      ]
+    },
+    {
+      "canonical": "CANONSTAGER",
+      "attack_id": "S1237",
+      "type": "software",
+      "aliases": [
+        "CANONSTAGER"
+      ]
+    },
+    {
+      "canonical": "STATICPLUGIN",
+      "attack_id": "S1238",
+      "type": "software",
+      "aliases": [
+        "STATICPLUGIN"
+      ]
+    },
+    {
+      "canonical": "TONESHELL",
+      "attack_id": "S1239",
+      "type": "software",
+      "aliases": [
+        "TONESHELL"
+      ]
+    },
+    {
+      "canonical": "RedLine Stealer",
+      "attack_id": "S1240",
+      "type": "software",
+      "aliases": [
+        "RedLine Stealer"
+      ]
+    },
+    {
+      "canonical": "Qilin",
+      "attack_id": "S1242",
+      "type": "software",
+      "aliases": [
+        "Qilin",
+        "Agenda"
+      ]
+    },
+    {
+      "canonical": "Medusa Ransomware",
+      "attack_id": "S1244",
+      "type": "software",
+      "aliases": [
+        "Medusa Ransomware"
+      ]
+    },
+    {
+      "canonical": "InvisibleFerret",
+      "attack_id": "S1245",
+      "type": "software",
+      "aliases": [
+        "InvisibleFerret"
+      ]
+    },
+    {
+      "canonical": "BeaverTail",
+      "attack_id": "S1246",
+      "type": "software",
+      "aliases": [
+        "BeaverTail"
+      ]
+    },
+    {
+      "canonical": "Embargo",
+      "attack_id": "S1247",
+      "type": "software",
+      "aliases": [
+        "Embargo"
+      ]
+    },
+    {
+      "canonical": "XORIndex Loader",
+      "attack_id": "S1248",
+      "type": "software",
+      "aliases": [
+        "XORIndex Loader"
+      ]
+    },
+    {
+      "canonical": "HexEval Loader",
+      "attack_id": "S1249",
+      "type": "software",
+      "aliases": [
+        "HexEval Loader"
+      ]
+    },
+    {
+      "canonical": "SystemBC",
+      "attack_id": "S9001",
+      "type": "software",
+      "aliases": [
+        "SystemBC",
+        "Coroxy"
+      ]
+    },
+    {
+      "canonical": "Diskpart",
+      "attack_id": "S9002",
+      "type": "software",
+      "aliases": [
+        "Diskpart"
+      ]
+    },
+    {
+      "canonical": "evilginx2",
+      "attack_id": "S9003",
+      "type": "software",
+      "aliases": [
+        "evilginx2"
+      ]
+    },
+    {
+      "canonical": "Crocodilus",
+      "attack_id": "S9004",
+      "type": "software",
+      "aliases": [
+        "Crocodilus"
+      ]
+    },
+    {
+      "canonical": "HTTPTroy",
+      "attack_id": "S9007",
+      "type": "software",
+      "aliases": [
+        "HTTPTroy"
+      ]
+    },
+    {
+      "canonical": "Shai-Hulud",
+      "attack_id": "S9008",
+      "type": "software",
+      "aliases": [
+        "Shai-Hulud"
+      ]
+    },
+    {
+      "canonical": "TruffleHog",
+      "attack_id": "S9009",
+      "type": "software",
+      "aliases": [
+        "TruffleHog"
+      ]
+    },
+    {
+      "canonical": "GlassWorm",
+      "attack_id": "S9010",
+      "type": "software",
+      "aliases": [
+        "GlassWorm"
+      ]
+    },
+    {
+      "canonical": "BRUSHFIRE",
+      "attack_id": "S9011",
+      "type": "software",
+      "aliases": [
+        "BRUSHFIRE"
+      ]
+    },
+    {
+      "canonical": "TRAILBLAZE",
+      "attack_id": "S9012",
+      "type": "software",
+      "aliases": [
+        "TRAILBLAZE"
+      ]
+    },
+    {
+      "canonical": "DRYHOOK",
+      "attack_id": "S9013",
+      "type": "software",
+      "aliases": [
+        "DRYHOOK"
+      ]
+    },
+    {
+      "canonical": "PHASEJAM",
+      "attack_id": "S9014",
+      "type": "software",
+      "aliases": [
+        "PHASEJAM"
+      ]
+    },
+    {
+      "canonical": "BRICKSTORM",
+      "attack_id": "S9015",
+      "type": "software",
+      "aliases": [
+        "BRICKSTORM"
+      ]
+    },
+    {
+      "canonical": "Caminho",
+      "attack_id": "S9016",
+      "type": "software",
+      "aliases": [
+        "Caminho",
+        "VMDetectLoader"
+      ]
+    },
+    {
+      "canonical": "DCRAT",
+      "attack_id": "S9017",
+      "type": "software",
+      "aliases": [
+        "DCRAT"
+      ]
+    },
+    {
+      "canonical": "HeartCrypt",
+      "attack_id": "S9018",
+      "type": "software",
+      "aliases": [
+        "HeartCrypt"
+      ]
+    },
+    {
+      "canonical": "PureCrypter",
+      "attack_id": "S9019",
+      "type": "software",
+      "aliases": [
+        "PureCrypter"
+      ]
+    },
+    {
+      "canonical": "LODEINFO",
+      "attack_id": "S9020",
+      "type": "software",
+      "aliases": [
+        "LODEINFO"
+      ]
+    },
+    {
+      "canonical": "DOWNIISSA",
+      "attack_id": "S9021",
+      "type": "software",
+      "aliases": [
+        "DOWNIISSA"
+      ]
+    },
+    {
+      "canonical": "MirrorStealer",
+      "attack_id": "S9022",
+      "type": "software",
+      "aliases": [
+        "MirrorStealer"
+      ]
+    },
+    {
+      "canonical": "HiddenFace",
+      "attack_id": "S9023",
+      "type": "software",
+      "aliases": [
+        "HiddenFace",
+        "NOOPDOOR"
+      ]
+    },
+    {
+      "canonical": "SPAWNCHIMERA",
+      "attack_id": "S9024",
+      "type": "software",
+      "aliases": [
+        "SPAWNCHIMERA"
+      ]
+    },
+    {
+      "canonical": "NOOPLDR",
+      "attack_id": "S9025",
+      "type": "software",
+      "aliases": [
+        "NOOPLDR"
+      ]
+    },
+    {
+      "canonical": "ROAMINGHOUSE",
+      "attack_id": "S9026",
+      "type": "software",
+      "aliases": [
+        "ROAMINGHOUSE"
+      ]
+    },
+    {
+      "canonical": "ANELLDR",
+      "attack_id": "S9027",
+      "type": "software",
+      "aliases": [
+        "ANELLDR"
+      ]
+    },
+    {
+      "canonical": "PHPsert",
+      "attack_id": "S9028",
+      "type": "software",
+      "aliases": [
+        "PHPsert"
+      ]
+    },
+    {
+      "canonical": "IronWind",
+      "attack_id": "S9029",
+      "type": "software",
+      "aliases": [
+        "IronWind"
+      ]
+    },
+    {
+      "canonical": "SameCoin",
+      "attack_id": "S9030",
+      "type": "software",
+      "aliases": [
+        "SameCoin"
+      ]
+    },
+    {
+      "canonical": "AshTag",
+      "attack_id": "S9031",
+      "type": "software",
+      "aliases": [
+        "AshTag"
+      ]
+    },
+    {
+      "canonical": "MuddyViper",
+      "attack_id": "S9032",
+      "type": "software",
+      "aliases": [
+        "MuddyViper"
+      ]
+    },
+    {
+      "canonical": "Fooder",
+      "attack_id": "S9033",
+      "type": "software",
+      "aliases": [
+        "Fooder"
+      ]
+    },
+    {
+      "canonical": "Tsundere Botnet",
+      "attack_id": "S9034",
+      "type": "software",
+      "aliases": [
+        "Tsundere Botnet",
+        "DinDoor"
+      ]
+    },
+    {
+      "canonical": "LAMEHUG",
+      "attack_id": "S9035",
+      "type": "software",
+      "aliases": [
+        "LAMEHUG",
+        "PROMPTSTEAL"
+      ]
+    },
+    {
+      "canonical": "LP-Notes",
+      "attack_id": "S9036",
+      "type": "software",
+      "aliases": [
+        "LP-Notes"
+      ]
+    },
+    {
+      "canonical": "RustyWater",
+      "attack_id": "S9037",
+      "type": "software",
+      "aliases": [
+        "RustyWater",
+        "Archer RAT / RUSTRIC"
+      ]
+    },
+    {
+      "canonical": "DynoWiper",
+      "attack_id": "S9038",
+      "type": "software",
+      "aliases": [
+        "DynoWiper"
+      ]
+    },
+    {
+      "canonical": "LazyWiper",
+      "attack_id": "S9039",
+      "type": "software",
+      "aliases": [
+        "LazyWiper"
+      ]
+    }
+  ],
+  "_stats": {
+    "n_groups": 174,
+    "n_software": 821,
+    "n_aliases_total": 1653
+  }
+}
