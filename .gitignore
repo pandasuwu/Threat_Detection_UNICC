@@ -1,0 +1,41 @@
+# Python build artifacts
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+*.egg-info/
+dist/
+build/
+
+# Environment / secrets
+.env
+*.env
+.env.*
+!.env.example
+
+# Data artifacts — raw PDFs, parsed output, embeddings
+# Exception: data/pdfs/.gitkeep is tracked to preserve the directory
+data/*
+!data/pdfs/
+data/pdfs/*
+!data/pdfs/.gitkeep
+cve_embeddings.npy
+cve_metadata.jsonl
+data/_issue1_preflight.md
+
+# Service storage volumes
+qdrant_storage/
+neo4j_data/
+
+# Eval outputs
+eval_results.json
+eval_summary.txt
+
+# Logs
+*.log
+/tmp/
+
+# IDE / OS junk
+.vscode/
+.idea/
+.DS_Store
