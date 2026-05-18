@@ -21,6 +21,8 @@ data/pdfs/*
 !data/pdfs/.gitkeep
 !data/alias_dictionary.json
 !data/chunks/
+!data/chunks_categorized/
+!data/category_map.yaml
 data/parsed/
 cve_embeddings.npy
 cve_metadata.jsonl

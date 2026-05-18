@@ -1,0 +1,490 @@
+# UNICC Threat Intelligence — section path → category map
+#
+# Matching: case-insensitive substring match against the joined section_path.
+#   e.g. pattern "ransomware" matches "4. RANSOMWARE", "4.1 LOCKBIT", "· Ransomware".
+# Multi-category: a chunk may match multiple categories; all matches are recorded.
+# Exclude fallback: if a chunk matches ONLY patterns in `exclude:` (no category
+#   pattern matched), it gets categories=[]. If both exclude AND a category
+#   match, the category wins.
+#
+# Reviewed: 2026-06-19, 7 reports.
+# Corpus: ENISA 2023/2024/2025-booklet, MS DDFR 2023-execsummary/2024/2025, ATT_CSRIC_v6.
+# Updated: 2026-06-19 — added patterns to cover uncategorized sections found in Phase 2 run.
+
+categories:
+
+  ransomware:
+    - "ransomware"
+    - "ransom demand"
+    - "ransom payment"
+    - "raas"
+    - "lockbit"
+    - "alphv"
+    - "bian lian"
+    - "cl0p"
+    - "play group"
+    - "extortion"
+    - "double-dipping"
+    - "leaks site"
+    - "human-operated ransomware"
+    - "franken ransomware"
+    - "wipers"
+    - "ransom-linked"
+
+  malware:
+    - "malware"
+    - "information stealer"
+    - "infostealer"
+    - "redline"
+    - "agent tesla"
+    - "pegasus"
+    - "cobalt strike"
+    - "lolbin"
+    - "trojanis"
+    - "destructive malware"
+    - "mobile malware"
+    - "mobile spyware"
+    - "spyware"
+    - "malware-as-a-service"
+    - "as-a-service"
+    - "loop attack"
+    - "pre-installed malware"
+    - "misuse of legitimate"      # living-off-the-land / tool abuse
+    - "novel technique"           # new malware delivery
+    - "non-traditional programming"
+    - "old tricks remain"         # classic malware tactics
+    - "anonymi"                   # anonymisation/anonymization evasion networks
+    - "virtualisation"            # malware targeting virtualised environments
+    - "virtualization"
+    - "tampering with security"   # how cybercriminals tamper with security products
+
+  social_engineering:
+    - "social engineering"
+    - "phishing"
+    - "phaas"
+    - "phishing kit"
+    - "bec"
+    - "vendor email compromise"
+    - "business email compromise"
+    - "call-back"
+    - "aitm"
+    - "qr code"
+    - "sim swap"
+    - "helpdesk social engineering"
+    - "impersonation"
+    - "techscam"
+    - "teams and skype"
+    - "bypassing mfa"
+    - "abusing multi-factor"
+    - "multi-factor authentication"
+    - "scattered spider"
+    - "trusted entities impersonation"
+    - "macros"                    # microsoft macros as delivery vector
+    - "onenote"                   # OneNote lures
+    - "web3"                      # web3 phishing/scam ecosystem
+    - "financial fraud"           # cyber-enabled financial fraud
+    - "e-commerce"                # e-commerce fraud / scam trends
+    - "ukraine used as the lure"  # Ukraine geopolitical social engineering lures
+    - "war against ukraine"
+
+  supply_chain:
+    - "supply chain"
+    - "log4shell"
+    - "managed service provider"
+    - " msp "
+    - "it supplier"
+    - "third-party connected"
+    - "identity provider"
+    - "midnight blizzard threatens it"
+    - "hardware supply"           # attacks on hardware supply vector
+    - "employees as entry points" # social supply chain via insider access
+
+  ddos:
+    - "ddos"
+    - "denial of service"
+    - "rdos"
+    - "dos attack"
+    - "botnet"
+    - "tcp vs udp"
+    - "application vs network"
+    - "attacks are getting larger"   # 8.1 section heading in ENISA reports
+    - "application attack"           # application-layer DDoS
+
+  availability:
+    - "threats against availability"
+    - "internet threat"
+    - "internet shutdown"
+    - "internet disruption"
+    - "cable cut"
+    - "power outage"
+    - "natural disaster"
+    - "internet censorship"
+    - "internet graffiti"
+    - "ddos"
+    - "denial of service"
+    - "internet infrastructure"      # physical destruction of internet infrastructure
+    - "physical take-over"           # physical takeover of infra (ENISA 9.6)
+    - "cyberattack"                  # 9.5 CYBERATTACKS in internet threats chapter
+
+  data_threats:
+    - "threats against data"
+    - "data breach"
+    - "data compromise"
+    - "identity theft"
+    - "synthetic identity"
+    - "synthetic information"
+    - "data security"
+    - "data perimeter"
+    - "data attack"
+    - "costs of a data breach"
+    - "data attacks on machine learning"
+
+  vulnerability_mgmt:
+    - "vulnerabilit"        # vulnerability, vulnerabilities
+    - "cve"
+    - "kev"
+    - "known exploited"
+    - "zero-day"
+    - "0-day"
+    - "one-day"
+    - "exploit prediction"
+    - "epss"
+    - "nvd"
+    - "edge device"
+    - "exploiting vulnerabilities"
+    - "exploiting applications"
+    - "categorizing the vulnerabilities"
+
+  ai_threats:
+    - "artificial intelligence"
+    - "generative ai"
+    - "ai for"
+    - "ai's impact"
+    - "ai impact"
+    - "ai-enabled"
+    - "ai-generated"
+    - "ai-affiliated"
+    - "ai integration"
+    - "ai security"
+    - "ai cyberattack"
+    - "ai chatbot"
+    - "ai exploit"
+    - "ai threat"
+    - "ai influence"
+    - "deepfake"
+    - "cheap fake"
+    - "llm"
+    - "raise"
+    - "storm-2139"
+    - "harnessing ai"
+    - "harnessing generative ai"
+    - "extending ai across"
+    - "ai's early"                   # AI's early impact on SOC / cybersecurity
+    - "with ai"                      # detecting/disrupting attacks with AI
+    - "using ai"
+
+  threat_actors:
+    - "threat actor"
+    - "state-nexus"
+    - "nation-state"
+    - "nation state"
+    - "cybercrime actor"
+    - "private sector offensive actor"
+    - "midnight blizzard"
+    - "octo tempest"
+    - "storm-2139"
+    - "scattered spider"
+    - "sandworm"
+    - "lockbit"
+    - "alphv"
+    - "cl0p"
+    - "play group"
+    - "china-affiliated"
+    - "iran-affiliated"
+    - "russia-affiliated"
+    - "chinese threat"
+    - "north korea"
+    - "hacktivis"
+    - "regime opposing"
+    - "initial access broker"
+    - " iab"
+    - "ideology driven"
+    - "state-aligned"
+    - "blurring lines between nation"
+    - "advanced persistent"
+    - "geopolitical motivation"
+    - "geopolitical situation"
+    - "geopolitical event"           # activities fuelled by geopolitical events
+    - "activities fuelled"
+    - "cybercrime market"            # cybercrime market / criminal ecosystem
+    - "targeting individuals"
+    - "targeting by region"
+    - "targeting high-value"
+    - "system threat"                # system-level threat actor activity
+    - "ecosystem threat"             # ecosystem-wide threats
+    - "hybrid war"                   # the many faces of hybrid war
+    - "most targeted sector"         # nation-state targeting by sector
+    - "top 10 targeted"
+    - "top targeted"
+    - "conflict driven"              # conflict-driven threat motivations
+    - "state of cybercrime"          # overview of cybercrime landscape
+    - "adversaries are targeting"
+    - "attacks are for money"        # MDDR 2025 motivation section
+    - "adversaries are targeting"
+    - "initial access"               # diverse vectors for initial access
+    - " russia "                     # standalone Russia / Russia chapter headings
+    - " china "                      # standalone China chapter headings
+    - " iran "                       # standalone Iran chapter headings
+    - "war of aggression"
+    - "the many faces"
+
+  information_manipulation:
+    - "information manipulation"
+    - "interference"
+    - "misinformation"
+    - "disinformation"
+    - "foreign interference"
+    - "influence actor"
+    - "influence operation"
+    - "election"
+    - "russia, iran, and china influence"
+    - "limiting foreign influence"
+    - "inauthentic channel"
+    - "frn - a complex and persistent"
+    - "cybersecurity narrative"      # exploiting the cybersecurity narrative
+    - "maximisation of exposure"     # maximisation of exposure through digital presence
+    - "political initiative"         # political initiatives and work on the ground
+    - "seizing the opportunity"      # seizing the opportunity of major events
+    - "localised targeting"          # localised targeting on a global scale
+    - " fud "                        # FUD - Fear, Uncertainty, and Doubt
+    - "general trend"                # general trends subsections in info manip chapters
+
+  iot_ot:
+    - "operational technology"
+    - " ot "
+    - "(ot)"
+    - "ot system"
+    - "ot environment"
+    - "ot equipment"
+    - "ot network"
+    - "ot software"
+    - "ot application"
+    - "ot supply chain"
+    - "codesys"
+    - "embedded device"
+    - "industrial"
+    - "critical infrastructure"
+    - "iot"
+    - "ics"
+    - "datacenter"
+    - "critical environment"         # critical environments in OT/ICS context
+    - "managed device"               # managing device updates in OT
+    - "device update"                # device/firmware update challenges
+    - "security stories"             # security stories from the frontline of OT
+    - "emerging challenges"          # emerging challenges in OT/ICS
+
+  cloud_threats:
+    - "cloud"
+    - "stormy skies"
+    - "leveraging cloud"
+    - "relying on cloud"
+    - "role of cloud"
+    - "xaas"
+
+  identity_attacks:
+    - " identity"             # leading space so "identity provider" still hits
+    - "account takeover"
+    - " ato"
+    - "passkey"
+    - "credential phishing"
+    - "credential"
+    - "valid account"
+    - "token theft"
+    - "sim swap"
+    - "identity infrastructure"
+    - "identity compromise"
+    - "cloud identity"
+    - "targeting identit"            # targeting identity / identities
+
+  quantum:
+    - "quantum"
+
+  security_management:
+    - "best practices"
+    - "cyberinsurance"
+    - "cyber insurance"
+    - "awareness training"
+    - "staffing"
+    - "skills shortage"
+    - "workforce"
+    - "ciso"
+    - "iso/iec"
+    - "policy level"
+    - "strategic level"
+    - "operational level"
+    - "public-private partnership"
+    - "public/private"               # public/private partnerships (slash variant)
+    - "international standard"
+    - "regulation"
+    - "regulatory"
+    - "governance"
+    - "secure future initiative"
+    - "secure by default"
+    - "technical debt"
+    - "shadow it"
+    - "resilience maturity"
+    - "preparedness"
+    - "simulation exercise"
+    - "policy initiative"
+    - "policymaker"
+    - "addressing the geopolitical"
+    - "multistakeholder"
+    - "mercenar"
+    - "deterrence"
+    - "deterring"                    # deterring the most advanced threats
+    - "global cyber resilience"
+    - "cyber resilience"             # increasing the cyber resilience of emerging economies
+    - "consequences for nation-state"
+    - "private sector retaliation"
+    - "impose diverse consequences"
+    - "japan's new defense"
+    - "european union"
+    - "the united states"
+    - "canada is boosting"
+    - "enhancing france"
+    - "cyber poverty line"
+    - "collective defense"
+    - "key takeaway"
+    - "non-profit, academia"
+    - "weakest link"
+    - "perceived threats"
+    # — Phase 2 additions: section headings found uncategorized in the corpus —
+    - "executive summary"
+    - "threat landscape"             # 1. THREAT LANDSCAPE OVERVIEW and sub-sections
+    - "prime threat"                 # 1.1/1.2 PRIME THREATS overview sections
+    - "key trend"                    # 1.2/1.3 KEY TRENDS overview sections
+    - "sectoral analysis"            # 1.4 SECTORAL ANALYSIS
+    - "sectorial analysis"           # ENISA 2024 variant spelling
+    - "impact assessment"            # 1.5 IMPACT ASSESSMENT
+    - "motivation"                   # 1.6 MOTIVATION
+    - "nist"                         # NIST Cybersecurity Framework (CSF)
+    - "law enforcement"              # sections on law enforcement actions
+    - "risk assessment"              # risk assessment programs
+    - "cybersecurity challenge"
+    - "cybersecurity defense"
+    - "innovating for security"
+    - "security and resilience"
+    - "key development"              # Key developments sections in MDDR
+    - "hierarchy of cybersecurity"
+    - "thinking differently"
+    - "pre-breach"                   # pre-breach attack path analysis
+    - "single pane of glass"
+    - "asset management"
+    - "path management"              # attack path management
+    - "reporting lines"
+    - "roles and responsibilities"
+    - "tough lesson"
+    - "digital transformation"
+    - "legislative"                  # other legislative initiatives
+    - "global hunting"               # Global Hunting Oversight and Strategic Triage
+    - "efficiencies in"              # seven areas of efficiencies in MSFT security ops
+    - "security literacy"            # tips to build security literacy
+    - "security to the max"
+    - "attack landscape"
+    - "evolving landscape"
+    - "evolving threat"
+    - "targeted sectors"             # top targeted sectors worldwide / in EU
+    - "protect against"              # how can we protect against 99% of attacks
+    - "multifactor"                  # Enable multifactor authentication (MFA)
+    - " mfa"                         # MFA as standalone section heading
+    - "introduction:"                # Introduction: ... section headings
+    - "confronting"
+    - "sharing responsibility"
+    - "cross-team"
+    - " ngo"                         # NGO cybersecurity sections
+    - "mobilizing"                   # mobilizing for impact (MDDR 2025)
+    - "diverse consequence"          # impose diverse consequences (handles OCR space artifact)
+    - "defensive advantage"
+    - "offensive advantage"
+    - "limits on"                    # limits on targets / tools and techniques (policy)
+    - "attack vector"                # attack vector analysis sections
+    - "landscape and trends"
+    - "vantage point"
+    - "overview"                     # generic overview sections
+    - "complex, challenging"
+    - "deep dive"                    # deep dive sections (ATT_CSRIC)
+    - "expand risk"
+    - "invest strategically"
+    - "partnership in building"
+    - "power of partner"
+    - "the power of public"
+    - "additional trend"             # 7.9 ADDITIONAL TRENDS sections
+    - "emerging threat landscape"
+    - "make it clear"                # security awareness sub-bullets
+    - "make it easy"
+    - "make it engaging"
+    - "avoiding blame"
+    - "sharing responsibility"
+
+# ──────────────────────────────────────────────────────────────────────────
+# Exclude: chunks matching ONLY these (no category match) get categories=[]
+# Front-matter, bylines, navigation, copyright, and statistical callout headers.
+exclude:
+  - "about enisa"
+  - "acknowledgements"
+  - " contact"
+  - "copyright notice"
+  - "legal notice"
+  - " editors"
+  - "contents of the full report"
+  - "additional reading"
+  - "for more information:"
+  - " sources"
+  - "report scope"
+  - "report viewing"
+  - "report navigating"
+  - "what's new in this year"
+  - "contributing teams"
+  - " links"
+  - "joy chik"
+  - "amy hogan-burney"
+  - "tom burt"
+  - "our commitment to developing"
+  - "our commitment to preserving"
+  - "structure of the report"
+  - "1.7 methodology"
+  - "1.1 methodology"
+  - "methodological note"
+  - "b annex"
+  - "block the use of disk images"
+  # — Phase 2 additions —
+  - "actionable insights"           # repeated nav header in MDDR reports
+  - "key information"               # navigation section in MDDR reports
+  - "microsoft digital defense report"   # title page chunks
+  - "key steps included"            # sub-point navigation
+  - "our unique vantage point"      # framing section (not threat content)
+  - "a continuously improving security partnership"
+  - "from categories to context"    # MDDR section divider
+  - "methodology"                   # standalone methodology sections (space-padded match)
+  - "background"                    # standalone background sections
+  - "geographical spread"           # chart-label sections in ENISA
+  - "industrial sector spread"      # chart-label sections in ENISA
+  - "additional facts and numbers"  # stats aggregation sections
+  - " contents"                     # table of contents navigation
+  - "about the global state"        # ATT_CSRIC survey intro
+  - " summary"                      # standalone summary nav sections
+  - "sharing microsoft"             # "Sharing Microsoft's unique vantage point" framing
+  - " 54%"                          # statistical callout headers
+  - "65 trillion"
+  - " 70%"
+  - "80-90%"
+  - "300+"
+  - "100,000+"
+  - "135 million"
+  - "15,000+"
+  - "38.2%"
+  - "60% phishing"
+  - "79.4%"
+  - "top 5 targeted sectors"        # ENISA 2025 stat callout
+  - " examples"                     # standalone examples nav sections
+  - "closing"                       # standalone closing/conclusion nav section
