@@ -21,34 +21,22 @@ from pathlib import Path
 from dotenv import load_dotenv
 from neo4j import GraphDatabase
 
+from ingest.stoplist import STOPLIST, STOPLIST_KEYS
+
 load_dotenv()
 
 logger = logging.getLogger(__name__)
 
 # ── STOPLIST ──────────────────────────────────────────────────────────────────
-# Hand-curated aliases to drop from the dictionary.
-# Reviewed and approved 2026-06-18. Format: lowercase alias → reason.
-STOPLIST: dict[str, str] = {
-    "net":    "Generic .NET/networking; ubiquitous in every report sentence",
-    "empire": "Geopolitical/figurative false positives ('criminal empire', historical)",
-    "carbon": "VMware Carbon Black + common chemistry term",
-    "anchor": "HTML anchors, nautical, journalism",
-    "rover":  "Vehicle brand + common English noun",
-    "agent":  "Ubiquitous in LLM/monitoring/general prose",
-    "play":   "'Google Play', sentence-initial, verb form; case-sensitive match insufficient",
-    "page":   "Too generic: web pages, document pages, proper names",
-    "ping":   "Networking verb; appears in every operational sentence",
-    "spark":  "Apache Spark confusion",
-    "meek":   "Common adjective; Tor transport context too rare to justify noise",
-    # Considered and rejected — kept in dictionary:
-    # regin:          case-sensitive match sufficient; Regin is an unambiguous codename
-    # flame:          same; 'Flame' capitalised is unambiguous in CTI prose
-    # maze:           same; 'Maze' capitalised is unambiguous in CTI prose
-    # gold/wing/iron/bronze/silver: only appear as parts of multi-word aliases
-    #                 (e.g. "IRON TWILIGHT") — standalone form not present in data
-}
-
-_TRUE_STOPLIST: frozenset[str] = frozenset(STOPLIST)
+# Imported from ingest/stoplist.py — single source of truth shared with
+# entity_matcher.py. This file uses it at alias-dictionary *generation* time
+# to drop ambiguous aliases from the JSON. entity_matcher.py applies the same
+# list at *match* time to both canonical names and aliases.
+#
+# DO NOT regenerate data/alias_dictionary.json after STOPLIST changes unless
+# you also intend to change the set of aliases stored in the JSON. The JSON
+# is ground truth for what entities exist; STOPLIST is a matching-time concern.
+_TRUE_STOPLIST: frozenset[str] = STOPLIST_KEYS
 
 # ── Inline English word set for audit ─────────────────────────────────────────
 # Common single English words that are risky as entity matchers.
