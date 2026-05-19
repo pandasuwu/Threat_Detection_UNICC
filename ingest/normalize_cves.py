@@ -260,50 +260,46 @@ def _worker(args: tuple) -> tuple[str, Optional[dict], Optional[str]]:
         return (path_str, None, str(exc))
 
 
-# ── Main ──────────────────────────────────────────────────────────────────────
+# ── Importable orchestration ──────────────────────────────────────────────────
 
-def main():
-    parser = argparse.ArgumentParser(description="Normalize CVE JSON 5.x → flat JSONL")
-    parser.add_argument("--input",   type=Path, default=DEFAULT_INPUT,
-                        help=f"Path to cvelistV5/cves directory (default: {DEFAULT_INPUT})")
-    parser.add_argument("--output",  type=Path, default=DEFAULT_OUTPUT,
-                        help=f"Output .jsonl file (default: {DEFAULT_OUTPUT})")
-    parser.add_argument("--workers", type=int,  default=DEFAULT_WORKERS,
-                        help=f"Parallel workers (default: {DEFAULT_WORKERS})")
-    parser.add_argument("--limit",   type=int,  default=0,
-                        help="Only process first N files (0 = all, for testing)")
-    args = parser.parse_args()
+def run_normalization(
+    cve_root: Path,
+    output_path: Path,
+    workers: int = DEFAULT_WORKERS,
+    limit: int = 0,
+    include_rejected: bool = False,
+) -> dict:
+    """
+    Normalize all CVE JSON 5.x files under cve_root → flat JSONL at output_path.
 
-    cve_root: Path = args.input
+    Returns a stats dict with keys: total, written, skipped, errors, elapsed_s.
+    Importable by cve_sync.py and other orchestrators.
+    """
     if not cve_root.exists():
-        print(f"[ERROR] Input path not found: {cve_root}", file=sys.stderr)
-        print("  Expected: ~/data/json/cvelistV5/cves", file=sys.stderr)
-        sys.exit(1)
+        raise FileNotFoundError(f"CVE root not found: {cve_root}")
 
-    print(f"[INFO] Scanning {cve_root} …")
+    print(f"[INFO] Scanning {cve_root} …", file=sys.stderr)
     all_files = sorted(cve_root.rglob("CVE-*.json"))
-    if args.limit:
-        all_files = all_files[:args.limit]
+    if limit:
+        all_files = all_files[:limit]
     total = len(all_files)
-    print(f"[INFO] Found {total:,} CVE JSON files  |  workers={args.workers}")
+    print(f"[INFO] Found {total:,} CVE JSON files  |  workers={workers}", file=sys.stderr)
 
-    args.output.parent.mkdir(parents=True, exist_ok=True)
+    output_path.parent.mkdir(parents=True, exist_ok=True)
 
-    written  = 0
-    skipped  = 0   # REJECTED or missing data
-    errors   = 0
-    no_desc  = 0
-    no_cvss  = 0
-    no_cwe   = 0
+    written = 0
+    skipped = 0
+    errors  = 0
+    no_desc = 0
+    no_cvss = 0
+    no_cwe  = 0
 
     t0 = datetime.now(timezone.utc)
-
     task_args = [(str(f), str(cve_root)) for f in all_files]
 
-    with open(args.output, "w", encoding="utf-8") as out_fh:
-        with ProcessPoolExecutor(max_workers=args.workers) as pool:
+    with open(output_path, "w", encoding="utf-8") as out_fh:
+        with ProcessPoolExecutor(max_workers=workers) as pool:
             futures = {pool.submit(_worker, a): a[0] for a in task_args}
-
             done = 0
             for fut in as_completed(futures):
                 done += 1
@@ -319,7 +315,6 @@ def main():
                     skipped += 1
                     continue
 
-                # Track coverage gaps (useful for downstream validation)
                 if not record["description"]:
                     no_desc += 1
                 if not record["cvss_v3"]:
@@ -335,24 +330,61 @@ def main():
                     rate = done / elapsed if elapsed else 0
                     print(f"  [{done:>7,}/{total:,}]  written={written:,}  "
                           f"skipped={skipped:,}  errors={errors}  "
-                          f"({rate:.0f} files/s)")
+                          f"({rate:.0f} files/s)", file=sys.stderr)
 
     elapsed = (datetime.now(timezone.utc) - t0).total_seconds()
+    return {
+        "total":    total,
+        "written":  written,
+        "skipped":  skipped,
+        "errors":   errors,
+        "elapsed_s": elapsed,
+    }
+
+
+# ── Main ──────────────────────────────────────────────────────────────────────
+
+def main():
+    parser = argparse.ArgumentParser(description="Normalize CVE JSON 5.x → flat JSONL")
+    parser.add_argument("--input",   type=Path, default=DEFAULT_INPUT,
+                        help=f"Path to cvelistV5/cves directory (default: {DEFAULT_INPUT})")
+    parser.add_argument("--output",  type=Path, default=DEFAULT_OUTPUT,
+                        help=f"Output .jsonl file (default: {DEFAULT_OUTPUT})")
+    parser.add_argument("--workers", type=int,  default=DEFAULT_WORKERS,
+                        help=f"Parallel workers (default: {DEFAULT_WORKERS})")
+    parser.add_argument("--limit",   type=int,  default=0,
+                        help="Only process first N files (0 = all, for testing)")
+    args = parser.parse_args()
+
+    if not args.input.exists():
+        print(f"[ERROR] Input path not found: {args.input}", file=sys.stderr)
+        print("  Expected: ~/data/json/cvelistV5/cves", file=sys.stderr)
+        sys.exit(1)
+
+    try:
+        stats = run_normalization(
+            cve_root=args.input,
+            output_path=args.output,
+            workers=args.workers,
+            limit=args.limit,
+            include_rejected=INCLUDE_REJECTED,
+        )
+    except FileNotFoundError as e:
+        print(f"[ERROR] {e}", file=sys.stderr)
+        sys.exit(1)
+
+    elapsed = stats["elapsed_s"]
+    total   = stats["total"]
     print()
     print("=" * 60)
     print("NORMALIZATION COMPLETE")
     print("=" * 60)
     print(f"  Output file : {args.output}")
     print(f"  Total files : {total:,}")
-    print(f"  Written     : {written:,}")
-    print(f"  Skipped     : {skipped:,}  (REJECTED or non-CVE)")
-    print(f"  Errors      : {errors}")
-    print(f"  Time        : {elapsed:.1f}s  ({total/elapsed:.0f} files/s)")
-    print()
-    print("Coverage gaps (fields missing in output records):")
-    print(f"  No description : {no_desc:,}  ({100*no_desc/max(written,1):.1f}%)")
-    print(f"  No CVSS v3     : {no_cvss:,}  ({100*no_cvss/max(written,1):.1f}%)")
-    print(f"  No CWE         : {no_cwe:,}  ({100*no_cwe/max(written,1):.1f}%)")
+    print(f"  Written     : {stats['written']:,}")
+    print(f"  Skipped     : {stats['skipped']:,}  (REJECTED or non-CVE)")
+    print(f"  Errors      : {stats['errors']}")
+    print(f"  Time        : {elapsed:.1f}s  ({total/max(elapsed,0.001):.0f} files/s)")
 
 
 if __name__ == "__main__":

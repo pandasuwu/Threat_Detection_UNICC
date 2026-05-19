@@ -4,6 +4,12 @@ Shared reference for Issues #3–#5. Update in place as observations accumulate.
 
 ---
 
+## CVE corpus refresh (Issue #5)
+
+The `cve_descriptions` Qdrant collection is refreshed daily by `ingest/cve_sync.py` via `systemd/cve-sync.timer` (fires at 03:00 local, `Persistent=true` to catch up missed runs). Each run does a `git pull` on the cvelistV5 repo and diffs against `source_commit_hash` in `data/cve_sync_state.json`, processing only changed/added files. On a typical day this is 50–500 CVEs; the initial load processes all files in the sparse checkout. Point IDs are `uuid5(cve_id)` so upserts are idempotent.
+
+---
+
 ## Corpus version
 
 **7 reports** in `data/chunks/` as of Issue #2 (2026-06-19).
