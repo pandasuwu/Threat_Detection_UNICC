@@ -155,18 +155,6 @@ Expected result: **~1400× efficiency multiplier** (analyst hours → seconds).
 
 All sources are publicly available. No proprietary or confidential data.
 
----
-
-## Key Design Decisions
-
-**Why Neo4j + Qdrant instead of just a vector DB?**
-CVE→CWE→ATT&CK→Actor relationships are graph traversals, not similarity searches. A pure vector DB can't answer "what threat groups use techniques linked to this CVE's weakness class." Neo4j handles the structured graph; Qdrant handles semantic similarity. They're complementary.
-
-**Why deterministic CWE→ATT&CK mapping instead of NER?**
-GLiNER-based NER was attempted (see `archive/gliner_ner.py`) but produced too many false positives on CVE description text. A curated 100-entry lookup table covering ~95% of the corpus with a CWE assigned gave better precision at zero API cost. See `phase3/cwe_to_attack.py`.
-
-**Why grounded LLM instead of RAG-style generation?**
-The LLM is given only the content retrieved from Neo4j and Qdrant — it cannot add information not present in the context. This is enforced by the system prompt in `narrative.py`. Result: 0 hallucinations on the 70-query eval set. The tradeoff is that narrative quality depends entirely on retrieval quality.
 
 ---
 
