@@ -69,6 +69,7 @@ threat-intel-pipeline/
 │   ├── parse.py               # PDF → MD + JSON via docling (Docker)
 │   ├── normalize_cves.py      # CVE List v5 → cve_normalized.jsonl
 │   ├── embedder.py            # CVE descriptions → embeddings (.npy)
+│   ├── qdrant_loader.py       # cve_embeddings.npy → Qdrant (uuid5 IDs, --wipe)
 │   └── pdf_chunk_loader.py    # Parsed PDF chunks → Qdrant (three-tier)
 │
 ├── graph/

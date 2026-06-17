@@ -135,8 +135,10 @@ python ingest/embedder.py
 ## Step 6 — Load CVE embeddings into Qdrant
 
 ```bash
-python ingest/qdrant_loader.py
-# Output: 249k vectors in Qdrant collection 'cve_descriptions'
+python ingest/qdrant_loader.py \
+    --embeddings ingest/cve_embeddings.npy \
+    --metadata   ingest/cve_metadata.jsonl
+# Output: 249k vectors in Qdrant collection 'cve_descriptions' (uuid5 IDs, idempotent)
 ```
 
 ---
