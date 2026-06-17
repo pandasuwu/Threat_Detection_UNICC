@@ -9,7 +9,7 @@ Endpoints:
   GET  /health
 
 Start:
-  uvicorn api:app --host 0.0.0.0 --port 8000 --reload
+  uvicorn api.api:app --host 0.0.0.0 --port 8000 --reload
 
 Env vars (required):
   NEO4J_URI           bolt://localhost:7687
@@ -31,9 +31,7 @@ from fastapi.middleware.cors import CORSMiddleware
 
 from .narrative import generate_narrative
 
-import sys
-sys.path.insert(0, os.path.dirname(__file__))
-from search import HybridSearchEngine, CVESearchResult, TechniquePivotResult
+from search.search import HybridSearchEngine, CVESearchResult, TechniquePivotResult
 
 logger = logging.getLogger(__name__)
 
@@ -201,7 +199,7 @@ def get_technique(attack_id: str):
 #
 # Step 1: Add this import at the top of api.py (with your other imports):
 #
-#   from narrative import generate_narrative
+#   from api.narrative import generate_narrative
 #
 # Step 2: Add GEMINI_API_KEY to your env vars. In your shell:
 #

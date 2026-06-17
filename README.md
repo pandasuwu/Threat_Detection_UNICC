@@ -65,24 +65,29 @@ Data Sources
 
 ```
 threat-intel-pipeline/
-├── parse/
+├── ingest/
 │   ├── parse.py               # PDF → MD + JSON via docling (Docker)
-│   └── normalize_cves.py      # CVE List v5 → cve_normalized.jsonl
+│   ├── normalize_cves.py      # CVE List v5 → cve_normalized.jsonl
+│   ├── embedder.py            # CVE descriptions → embeddings (.npy)
+│   └── pdf_chunk_loader.py    # Parsed PDF chunks → Qdrant (three-tier)
 │
-├── phase3/
+├── graph/
 │   ├── stix_to_neo4j.py       # ATT&CK STIX bundle → Neo4j nodes
 │   ├── fast_attack_rels.py    # ATT&CK STIX edges (indexed MATCH, 30s vs 600s)
 │   ├── pipeline.py            # CVE → Neo4j orchestrator (structural subcommand)
 │   ├── stix_builder.py        # CVE record → STIX2.1 Vulnerability objects
-│   └── cwe_to_attack.py       # CWE → ATT&CK lookup table (100 mappings)
+│   ├── cwe_to_attack.py       # CWE → ATT&CK lookup table (100 mappings)
+│   └── neo4j_loader.py        # Neo4j loading utilities
 │
-├── phase4/
+├── search/
+│   └── search.py              # HybridSearchEngine (Qdrant + Neo4j)
+│
+├── api/
 │   ├── api.py                 # FastAPI entrypoint
-│   ├── search.py              # HybridSearchEngine (Qdrant + Neo4j)
-│   ├── narrative.py           # OpenRouter LLM narrative generation
-│   ├── embedder.py            # CVE descriptions → embeddings (.npy)
-│   ├── pdf_chunk_loader.py    # Parsed PDF chunks → Qdrant (three-tier)
-│   ├── eval.py                # Eval runner (imports eval_queries.py)
+│   └── narrative.py           # OpenRouter LLM narrative generation
+│
+├── eval/
+│   ├── eval.py                # Eval runner
 │   └── eval_queries.py        # 70 ground-truth queries + manual baselines
 │
 ├── data/
@@ -108,8 +113,7 @@ See [SETUP.md](./SETUP.md) for the full step-by-step setup from scratch.
 **Quick start** (if Neo4j + Qdrant are already running with data loaded):
 
 ```bash
-cd phase4
-uvicorn api:app --host 0.0.0.0 --port 8000
+uvicorn api.api:app --host 0.0.0.0 --port 8000
 ```
 
 Then open `http://localhost:8000/docs` for the interactive API explorer.
