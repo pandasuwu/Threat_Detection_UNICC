@@ -11,7 +11,7 @@ Given a natural language query from a security analyst — *"What do we know abo
 
 1. Searches 323,647 CVE records and 8 threat landscape reports (ENISA, Microsoft, AT&T) using hybrid vector + graph retrieval
 2. Traverses a Neo4j knowledge graph to surface linked ATT&CK techniques, threat actor groups, malware, and mitigations
-3. Generates a grounded 5-section narrative via LLM — every claim is anchored to a verified source node, zero hallucinations on the eval set
+3. Generates a grounded 5-section narrative via LLM — every claim is anchored to a verified source node
 
 Designed for internal use by security operations teams. All data is local; no external transmission of query content.
 
@@ -27,8 +27,8 @@ Designed for internal use by security operations teams. All data is local; no ex
 | Qdrant vector search (249k CVE + 691 ATT&CK vectors) | 
 | PDF threat report ingestion (8 reports) | 
 | Search API (`/search`, `/investigate`, `/cve`, `/technique`) | 
-| Grounded LLM narratives (0 hallucinations on eval set) | 
-| Eval suite + efficiency multiplier proof | 
+| Grounded LLM narratives (hallucination rate measured by eval suite) | 
+| Eval suite + efficiency multiplier (computed, not hardcoded) | 
 
 ---
 
@@ -135,14 +135,15 @@ Then open `http://localhost:8000/docs` for the interactive API explorer.
 
 ## Evaluation
 
-The eval suite runs 70 ground-truth queries across 5 categories (CVE lookup, technique pivot, actor attribution, analyst free-text, campaign analysis) against a manual analyst baseline of ~2,800 minutes (~46.7 hours).
+The eval suite runs 50 ground-truth queries across 5 categories (CVE lookup, technique pivot, actor attribution, analyst free-text, campaign analysis) against a manual analyst baseline of 1,604 minutes (26.7 hours).
 
 ```bash
 bash run_eval.sh
-# Outputs: eval_results.json + eval_summary.txt
+# Preflight: checks API + Qdrant collections are non-empty
+# Outputs:   eval_results.json + eval_summary.txt
 ```
 
-Expected result: **~1400× efficiency multiplier** (analyst hours → seconds).
+The efficiency multiplier (analyst hours ÷ system seconds) is computed from actual run timings and printed in `eval_summary.txt`.
 
 ---
 
