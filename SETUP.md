@@ -155,6 +155,11 @@ python phase3/pipeline.py structural
 ## Step 8 — Parse and ingest PDF threat reports
 
 **Parse PDFs** (requires Docker):
+
+> `data/pdfs/` is gitignored. Drop the source PDF files there before running the
+> parse step. The directory exists after a fresh clone (via `data/pdfs/.gitkeep`);
+> just copy the PDFs in.
+
 ```bash
 # Place PDFs in data/pdfs/
 docker run --rm \

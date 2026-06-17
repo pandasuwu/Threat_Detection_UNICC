@@ -81,16 +81,14 @@ threat-intel-pipeline/
 │   ├── search.py              # HybridSearchEngine (Qdrant + Neo4j)
 │   ├── narrative.py           # OpenRouter LLM narrative generation
 │   ├── embedder.py            # CVE descriptions → embeddings (.npy)
-│   ├── qdrant_loader.py       # cve_embeddings.npy → Qdrant
 │   ├── pdf_chunk_loader.py    # Parsed PDF chunks → Qdrant (three-tier)
 │   ├── eval.py                # Eval runner (imports eval_queries.py)
 │   └── eval_queries.py        # 70 ground-truth queries + manual baselines
 │
 ├── data/
-│   └── pdfs/                  # Source PDFs (ENISA, Microsoft MSTIC, AT&T OTX)
+│   └── pdfs/                  # Source PDFs — gitignored; see SETUP.md §8
 │
-├── docs/
-│   └── pdf_ingestion_analysis.md  # Design doc: three-tier chunking rationale
+├── run_eval.sh                # Runs eval suite (API must be up on :8000)
 │
 ├── archive/
 │   └── gliner_ner.py          # Deferred: CUDA NER, not integrated
