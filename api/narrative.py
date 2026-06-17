@@ -58,12 +58,17 @@ End with a line: CONFIDENCE: HIGH|MEDIUM|LOW — <one sentence reason>"""
 
 
 def build_context(search_results: list, cve_details: Optional[dict]) -> tuple[str, str]:
+    # search_results is list[dict] from hybrid_search (CVE entries only)
     cve_lines = []
     for r in search_results[:5]:
-        techs = ", ".join(t["attack_id"] for t in r.techniques if t.get("attack_id")) or "none mapped"
-        score_str = f"CVSS {r.cvss_score:.1f}" if r.cvss_score else "CVSS N/A"
+        techs = ", ".join(
+            t["attack_id"] for t in (r.get("techniques") or []) if t.get("attack_id")
+        ) or "none mapped"
+        score = r.get("cvss_score")
+        score_str = f"CVSS {score:.1f}" if score else "CVSS N/A"
+        desc = (r.get("description") or "")[:200]
         cve_lines.append(
-            f"- {r.cve_id} [{r.severity or 'UNKNOWN'}, {score_str}]: {r.description[:200]}...\n"
+            f"- {r.get('cve_id')} [{r.get('severity') or 'UNKNOWN'}, {score_str}]: {desc}...\n"
             f"  ATT&CK: {techs}"
         )
     cve_context = "\n".join(cve_lines) if cve_lines else "No CVE matches found."
@@ -82,7 +87,7 @@ def build_context(search_results: list, cve_details: Optional[dict]) -> tuple[st
     else:
         all_techs = {}
         for r in search_results[:5]:
-            for t in r.techniques:
+            for t in (r.get("techniques") or []):
                 if t.get("attack_id"):
                     all_techs[t["attack_id"]] = t.get("name", "")
         if all_techs:
@@ -141,7 +146,7 @@ def generate_narrative(
         "query": query,
         "narrative": narrative,
         "confidence": confidence,
-        "sources": list({r.cve_id for r in search_results[:5]}),
+        "sources": list({r.get("cve_id") for r in search_results[:5] if r.get("cve_id")}),
         "n_cves_retrieved": len(search_results),
         "graph_context_used": graph_context != "No graph context available.",
     }
