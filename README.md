@@ -89,7 +89,7 @@ threat-intel-pipeline/
 │
 ├── eval/
 │   ├── eval.py                # Eval runner
-│   └── eval_queries.py        # 70 ground-truth queries + manual baselines
+│   └── eval_queries.py        # 50 ground-truth queries + manual baselines
 │
 ├── data/
 │   └── pdfs/                  # Source PDFs — gitignored; see SETUP.md §8

@@ -177,7 +177,7 @@ docker run --rm \
 ```bash
 python ingest/pdf_chunk_loader.py
 # Output: pdf_chunks collection in Qdrant
-# Uses three-tier chunking: hard-anchored / soft-anchored / narrative
+# Payload fields per chunk: text, source, source_type, page, chunk_index, doc_id
 ```
 
 **Validate ingestion:**
@@ -187,9 +187,17 @@ from qdrant_client import QdrantClient
 from collections import Counter
 c = QdrantClient("localhost", port=6333)
 results, _ = c.scroll("pdf_chunks", limit=10000, with_payload=True)
-print(Counter(r.payload["entity_confidence"] for r in results))
+counts = Counter(r.payload.get("source", "unknown") for r in results)
+print("Chunks by source report:")
+for src, n in counts.most_common():
+    print(f"  {src}: {n}")
+if results:
+    sample = results[0].payload
+    print(f"\nSample chunk (source={sample['source']}, page={sample.get('page')}):")
+    print(f"  {sample['text'][:200]}")
 EOF
-# Expected: Counter({'low': ~60%, 'high': ~15%, 'narrative': ~25%})
+# Expected: one entry per ingested report (e.g. ENISA_2024, Microsoft_DDFR_2023),
+# each contributing hundreds of text chunks.
 ```
 
 ---
