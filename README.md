@@ -88,7 +88,7 @@ threat-intel-pipeline/
 │
 ├── eval/
 │   ├── eval.py                # Eval runner
-│   └── eval_queries.py        # 70 ground-truth queries + manual baselines
+│   └── eval_queries.py        # 50 ground-truth queries + manual baselines
 │
 ├── data/
 │   └── pdfs/                  # Source PDFs — gitignored; see SETUP.md §8
@@ -134,14 +134,14 @@ Then open `http://localhost:8000/docs` for the interactive API explorer.
 
 ## Evaluation
 
-The eval suite runs 70 ground-truth queries across 5 categories (CVE lookup, technique pivot, actor attribution, analyst free-text, campaign analysis) against a manual analyst baseline of ~2,800 minutes (~46.7 hours).
+The eval suite runs 50 ground-truth queries across 5 categories (CVE lookup, technique pivot, actor attribution, analyst free-text, campaign analysis) against a manual analyst baseline of 1,604 minutes (26.7 hours).
 
 ```bash
 bash run_eval.sh
 # Outputs: eval_results.json + eval_summary.txt
 ```
 
-Expected result: **~1400× efficiency multiplier** (analyst hours → seconds).
+The efficiency multiplier (analyst hours ÷ system seconds) is computed from actual run timings and printed in `eval_summary.txt`.
 
 ---
 
