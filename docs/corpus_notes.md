@@ -39,9 +39,8 @@ All 7 source PDFs produce **flat level-1 section paths** — Docling does not de
 
 ## Trend observations
 
-*To be filled in during Issue #3 hand-mapping of section paths to threat categories.*
+1. **ENISA 2023→2024 taxonomy stability with growing AI integration.** ENISA reports show a consistent threat taxonomy across 2023 and 2024 (ransomware, malware, social engineering, supply chain, availability, data, information manipulation), making year-over-year comparison reliable. AI-related sub-sections grow noticeably from 2023 to 2024 — from one scattered sub-section to multiple dedicated sub-sections under social engineering, malware, and information manipulation. ENISA 2025 is booklet-only (8 chunks); the full 2025 report is not available and should be acquired before drawing 2025 trend conclusions.
 
-<!-- Example format:
-- "DDoS" appears as a heading keyword in ENISA_2023 (3 sections), ENISA_2024 (2 sections), MDDR_2024 (1 section).
-- "Ransomware" is the most frequent heading keyword across all 7 reports.
--->
+2. **Microsoft DDFR pivots from technical landscape (2024) to policy/regulation lens (2025).** MDDR 2024 is the full technical report (232 chunks), covering AI defense, nation-state targeting by sector, OT/ICS security, identity attacks, and cloud threats. MDDR 2025 is a government executive summary (29 chunks) focused on deterrence, ransomware geopolitics, quantum, cyber mercenaries, and multistakeholder regulation — a different lens entirely. MDDR 2023 is an exec-summary only (28 chunks); neither 2023 nor 2025 full versions are available, limiting longitudinal technical analysis.
+
+3. **ATT_CSRIC_v6 is a workforce/management survey, not a threat-content report.** Almost all chunks categorize under `security_management` (15 of 22); zero chunks land in ransomware, malware, DDoS, supply chain, or AI threats. Content centers on staffing shortages, cyberinsurance, awareness training, and risk investment rather than attack techniques or actor activity. Retrieval recall for threat-vector queries against this source will be near zero by design. Consider excluding ATT_CSRIC_v6 from threat-vector search results if eval relevance confirms low signal.
