@@ -14,12 +14,14 @@ build/
 !.env.example
 
 # Data artifacts — raw PDFs, parsed output, embeddings
-# Exceptions: data/pdfs/.gitkeep preserves the directory; alias_dictionary.json is committed
+# Exceptions: data/pdfs/.gitkeep, alias_dictionary.json, and data/chunks/ are committed
 data/*
 !data/pdfs/
 data/pdfs/*
 !data/pdfs/.gitkeep
 !data/alias_dictionary.json
+!data/chunks/
+data/parsed/
 cve_embeddings.npy
 cve_metadata.jsonl
 data/_issue1_preflight.md
