@@ -17,24 +17,6 @@ Designed for internal use by security operations teams. All data is local; no ex
 
 ---
 
-## Current Status
-
-| Component | Status |
-|---|---|
-| CVE ingestion (323,647 records from NVD) |  
-| MITRE ATT&CK STIX graph (691 techniques, 172 groups, 784 software) | 
-| CWE → ATT&CK deterministic mapping (~95% corpus coverage) |
-| Qdrant vector search (249k CVE + 691 ATT&CK vectors) | 
-| PDF threat report ingestion (7 reports) | 
-| Daily CVE auto-update (systemd timer, idempotent upsert) | 
-| Categorized PDF corpus (section-path keyword map) | 
-| Entity matching — ATT&CK Groups, Software, CVE-IDs, T-IDs in PDF chunks | 
-| Search API (`/search`, `/investigate`, `/cve`, `/technique`) | 
-| Grounded LLM narratives (hallucination rate measured by eval suite) | 
-| Eval suite + efficiency multiplier (computed, not hardcoded) | 
-
----
-
 ## Architecture
 
 ```
@@ -78,7 +60,7 @@ threat-intel-pipeline/
 │   ├── categorize.py          # Classify chunks by section-path keyword map
 │   ├── entity_matcher.py      # Scan chunks for ATT&CK Groups/Software, CVE-IDs, T-IDs
 │   ├── pdf_loader.py          # Categorized chunks → Qdrant + Neo4j (uuid5 IDs, idempotent)
-│   ├── pdf_chunk_loader.py    # Legacy PDF loader (superseded by pdf_loader.py)
+│   ├── pdf_chunk_loader.py    # PDF chunks → Qdrant
 │   ├── stoplist.py            # Shared alias-matching stoplist (applied at match time)
 │   └── alias_dictionary.py    # ATT&CK Groups + Software → data/alias_dictionary.json
 │
@@ -113,9 +95,6 @@ threat-intel-pipeline/
 │   └── pdfs/                  # Source PDFs — gitignored; see SETUP.md §8
 │
 ├── run_eval.sh                # Runs eval suite (API must be up on :8000)
-│
-├── archive/
-│   └── gliner_ner.py          # Deferred: CUDA NER, not integrated
 │
 ├── SETUP.md                   # Step-by-step setup from scratch
 └── README.md                  # This file
@@ -225,8 +204,8 @@ The efficiency multiplier (analyst hours ÷ system seconds) is computed from act
 | MITRE ATT&CK Enterprise | 697 techniques, 174 groups, 821 software — STIX 2.1 bundle (spec 3.3.0) | — |
 | ENISA Threat Landscape 2023 | full report | `ENISA_2023` |
 | ENISA Threat Landscape 2024 | full report | `ENISA_2024` |
-| ENISA Threat Landscape 2025 | booklet only (6 pp; full ETL not available) | `ENISA_2025` |
-| Microsoft Digital Defense Report 2023 | executive summary only (13 pp) | `Microsoft_DDFR_2023` |
+| ENISA Threat Landscape 2025 | booklet (6 pp) | `ENISA_2025` |
+| Microsoft Digital Defense Report 2023 | executive summary (13 pp) | `Microsoft_DDFR_2023` |
 | Microsoft Digital Defense Report 2024 | full report | `Microsoft_DDFR_2024` |
 | Microsoft Digital Defense Report 2025 | government exec. summary | `Microsoft_DDFR_2025` |
 | AT&T Cybersecurity Insights Report v6 | full report | `ATT_CSRIC_v6` |
