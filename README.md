@@ -26,6 +26,9 @@ Designed for internal use by security operations teams. All data is local; no ex
 | CWE → ATT&CK deterministic mapping (~95% corpus coverage) |
 | Qdrant vector search (249k CVE + 691 ATT&CK vectors) | 
 | PDF threat report ingestion (7 reports) | 
+| Daily CVE auto-update (systemd timer, idempotent upsert) | 
+| Categorized PDF corpus (section-path keyword map) | 
+| Entity matching — ATT&CK Groups, Software, CVE-IDs, T-IDs in PDF chunks | 
 | Search API (`/search`, `/investigate`, `/cve`, `/technique`) | 
 | Grounded LLM narratives (hallucination rate measured by eval suite) | 
 | Eval suite + efficiency multiplier (computed, not hardcoded) | 
@@ -36,9 +39,9 @@ Designed for internal use by security operations teams. All data is local; no ex
 
 ```
 Data Sources
-├── CVE List v5 (323k JSON files)          ──► normalize_cves.py
+├── CVE List v5 (323k JSON files)          ──► normalize_cves.py  ──► cve_sync.py (daily)
 ├── MITRE ATT&CK STIX 2.1 bundle           ──► stix_to_neo4j.py + fast_attack_rels.py
-└── Threat Reports (7 PDFs)                ──► pdf_chunk_loader.py
+└── Threat Reports (7 PDFs)                ──► chunker.py ──► categorize.py ──► entity_matcher.py ──► pdf_loader.py
         │                                          │
         ▼                                          ▼
    Neo4j 5.13                              Qdrant 1.7
@@ -70,7 +73,13 @@ threat-intel-pipeline/
 │   ├── normalize_cves.py      # CVE List v5 → cve_normalized.jsonl
 │   ├── embedder.py            # CVE descriptions → embeddings (.npy)
 │   ├── qdrant_loader.py       # cve_embeddings.npy → Qdrant (uuid5 IDs, --wipe)
-│   ├── pdf_chunk_loader.py    # Parsed PDF chunks → Qdrant (three-tier)
+│   ├── cve_sync.py            # Daily CVE auto-update (git pull → normalize → embed → upsert)
+│   ├── chunker.py             # Heading-aware PDF chunker (section_path + token counts)
+│   ├── categorize.py          # Classify chunks by section-path keyword map
+│   ├── entity_matcher.py      # Scan chunks for ATT&CK Groups/Software, CVE-IDs, T-IDs
+│   ├── pdf_loader.py          # Categorized chunks → Qdrant + Neo4j (uuid5 IDs, idempotent)
+│   ├── pdf_chunk_loader.py    # Legacy PDF loader (superseded by pdf_loader.py)
+│   ├── stoplist.py            # Shared alias-matching stoplist (applied at match time)
 │   └── alias_dictionary.py    # ATT&CK Groups + Software → data/alias_dictionary.json
 │
 ├── graph/
@@ -92,7 +101,15 @@ threat-intel-pipeline/
 │   ├── eval.py                # Eval runner
 │   └── eval_queries.py        # 50 ground-truth queries + manual baselines
 │
+├── systemd/
+│   ├── cve-sync.service       # systemd service for daily CVE sync
+│   └── cve-sync.timer         # systemd timer (daily at 03:00, Persistent=true)
+│
+├── docs/
+│   └── corpus_notes.md        # PDF corpus coverage notes
+│
 ├── data/
+│   ├── category_map.yaml      # Section-path keyword → category mapping
 │   └── pdfs/                  # Source PDFs — gitignored; see SETUP.md §8
 │
 ├── run_eval.sh                # Runs eval suite (API must be up on :8000)
@@ -138,6 +155,23 @@ python -m ingest.alias_dictionary --generate
 ```
 
 The `--audit` mode prints all aliases ≤5 characters and single common English words for STOPLIST review. The `STOPLIST` constant in `ingest/alias_dictionary.py` documents every dropped alias and its rationale.
+
+---
+
+## Daily CVE Sync
+
+`ingest/cve_sync.py` keeps the CVE corpus current by diffing the upstream CVE List v5 git repo, normalizing only changed files, and upserting into Qdrant and Neo4j. All operations are idempotent — interrupted runs resume cleanly from the last successful commit hash.
+
+```bash
+# One-off run:
+python -m ingest.cve_sync
+
+# As a systemd service (daily at 03:00, survives reboots):
+sudo cp systemd/cve-sync.{service,timer} /etc/systemd/system/
+sudo systemctl daemon-reload && sudo systemctl enable --now cve-sync.timer
+```
+
+State is persisted to `data/cve_sync_state.json`; logs go to `data/cve_sync.log`.
 
 ---
 
